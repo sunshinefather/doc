@@ -1,0 +1,50 @@
+﻿new_git			118.24.7.39(172.27.16.17)	root	zD*Espvc!4-*
+
+new_jira_jekins		118.24.5.149(172.27.16.16)	root	+wdri{:$O:y
+
+new_mysql_redis		111.231.203.172(172.27.16.15)	root	<:bQa_6I)QGy xianhu  ZczybyJ1-*XH   --服务器已经禁root登录
+
+new_dubbo_zookeeper 	111.231.208.96(172.27.16.14)	root	yOBC*]>m>WWe
+
+new_clinic_other	111.231.203.201(172.27.16.13)	root	t;{4Z8Ixio}Z
+
+new_clinic_user		118.24.83.26(172.27.16.12)	root	%y3~QP~VEFM!
+
+new_clinic_file		111.231.191.254(172.27.16.11)	root	<:bQa_6I)QGy
+
+new_vpn_nginx		118.24.18.114(172.27.16.10)	root	zD*Espvc!4-*
+
+old			111.231.222.139(172.27.16.7)	root    zD*Espvc!4-*	zhangchao ZczybyJ1-*XH  
+ 
+
+//腾讯云账号
+tech@cdsunhealth.com
+sunhealth_028
+
+
+
+//开启可以登录的ip
+cat /etc/hosts.allow
+sshd:172.27.16.*:allow
+sshd:111.9.8.229:allow
+sshd:10.8.0.*:allow
+
+
+//禁止所有ip登录
+cat /etc/hosts.deny
+sshd:all:deny
+
+
+//加快ssh访问速度
+vi /etc/ssh/sshd_config
+将  UseDNS yes
+改为 UseDNS no
+
+
+//修改ssh端口禁root账号
+cat /etc/ssh/sshd_config
+Port 22119
+PermitRootLogin no
+
+
+https://blog.csdn.net/lemon89/article/details/52796775
