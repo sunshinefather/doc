@@ -1,0 +1,13 @@
+bugzilla,
+loadrunner,
+qtp,
+jmeter,
+qc,
+ìøµÀ£¬
+bugfree,
+fiddler
+Charles
+
+ÔËÎ¬
+ansible jenkins+pipeline
+zabbix
