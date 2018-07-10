@@ -43,7 +43,7 @@ vi /etc/ssh/sshd_config
 
 //修改ssh端口禁root账号
 cat /etc/ssh/sshd_config
-Port 22119
+Port 22
 PermitRootLogin no
 
 
