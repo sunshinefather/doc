@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>在线帮助 - 小幺鸡</title>
+    <title>在线帮助 - API</title>
     <jsp:include page="/WEB-INF/includes/meta.jsp"/>
     <link rel="stylesheet" href="${assets}/css/index.css?v=${v}">
 </head>

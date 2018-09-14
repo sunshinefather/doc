@@ -1,0 +1,13 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "系统集成"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5805A32C014F"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list)
+    logical_presentations 	(list unit_reference_list))

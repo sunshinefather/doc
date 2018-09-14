@@ -1,0 +1,1613 @@
+
+(object Petal
+    version    	47
+    _written   	"Rose 8.0.0303.1400"
+    charSet    	134)
+
+(object Class_Category "病历管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"sc"
+	    name       	"SourceControlSpec"
+	    value      	(value Text 
+|"$/实体类设计/HIS医院业务数据库", LEAAAAAA
+	    ))
+	(object Attribute
+	    tool       	"sc"
+	    name       	"SourceControlAuxProjPath"
+	    value      	"\\\\172.18.107.203\\HIPDesign$\\,"))
+    quid       	"56D0488202CD"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "病人病历PatEMR"
+	    quid       	"56C6DE990027"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）病历类型编号MRTpyeCd"
+		    quid       	"56C6DEAB0152")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"56C6DEB202B2")
+		(object ClassAttribute "（就诊记录）就诊编号PAAdmCd"
+		    quid       	"56C6DEBA0335")
+		(object ClassAttribute "PatCardNo病人卡号"
+		    quid       	"56CC16530354")
+		(object ClassAttribute "DiagDate诊断日期"
+		    quid       	"56CC16610320")
+		(object ClassAttribute "DiagDocCd诊断医生"
+		    quid       	"56CC16680343")
+		(object ClassAttribute "DiagDeptCd诊断科室"
+		    quid       	"56CC166F0253")
+		(object ClassAttribute "ChfComplaints病人主诉"
+		    quid       	"56CC15AA00AE")
+		(object ClassAttribute "VitalSign查体"
+		    quid       	"56CC15AD0302")
+		(object ClassAttribute "SecDiag次要诊断"
+		    quid       	"56CC1684017C")
+		(object ClassAttribute "PrstIllness现病史"
+		    quid       	"56CC168F0234")
+		(object ClassAttribute "MainDiagICD主要诊断ICD"
+		    quid       	"56CC169902C9")
+		(object ClassAttribute "Infectious是否传染病"
+		    quid       	"56CC16A70302")
+		(object ClassAttribute "AccidentDate发病日期"
+		    quid       	"56CC16AE0126")
+		(object ClassAttribute "Direction病人去向"
+		    quid       	"56CC16BC004F")
+		(object ClassAttribute "Disposal处置意见"
+		    quid       	"56CC16C60320")
+		(object ClassAttribute "AccidentPlace发病地点"
+		    quid       	"56CC16CE000E")
+		(object ClassAttribute "BloodTp病人血型"
+		    quid       	"56CC16DA0324")
+		(object ClassAttribute "ZYZD中医诊断"
+		    quid       	"56CC16ED0215")
+		(object ClassAttribute "ZYZX中医症型"
+		    quid       	"56CC16F301FA")
+		(object ClassAttribute "ZYZF中医治法"
+		    quid       	"56CC16F902FD")
+		(object ClassAttribute "ZYFM中医方名"
+		    quid       	"56CC170302D9")
+		(object ClassAttribute "DiagExam辅助检查"
+		    quid       	"56CC170E0176")
+		(object ClassAttribute "Remarks备注"
+		    quid       	"56CC15C900ED")
+		(object ClassAttribute "（病人病历）关联病历编号MRCd"
+		    quid       	"56CC162201A1")))
+	(object Class "检查记录InspectReport"
+	    quid       	"56CC17340117"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "申请检查时间AppExamTim"
+		    quid       	"56CC177B017E")
+		(object ClassAttribute "检查时间ExamTim"
+		    quid       	"56CC178002EC")
+		(object ClassAttribute "报告时间RepTim"
+		    quid       	"56CC1B0D0182")
+		(object ClassAttribute "申请医生AppDoc"
+		    quid       	"56CC178601EA")
+		(object ClassAttribute "申请科室AppDep"
+		    quid       	"56CC18DC0009")
+		(object ClassAttribute "检查报告结果ExamReport"
+		    quid       	"56CC17B501AD")
+		(object ClassAttribute "结果建议Suggest"
+		    quid       	"56CC17D60361")
+		(object ClassAttribute "检查报告XMLReport"
+		    quid       	"56CC17C20167")
+		(object ClassAttribute "影像图片ImagePicture"
+		    quid       	"56CC1B460229")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"56CC1C4B0130")
+		(object ClassAttribute "（就诊记录）就诊编号PAAdmCd"
+		    quid       	"56CC1C51038E")
+		(object ClassAttribute "（医嘱）医嘱编号OdrCd"
+		    quid       	"56CD6ACF03C1")))
+	(object Class "检验记录ExamRecord"
+	    quid       	"56CC173B0169"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "申请检验时间AppExamTim"
+		    quid       	"56CC18070243")
+		(object ClassAttribute "检验名称Nam"
+		    quid       	"56CD0B7E021F")
+		(object ClassAttribute "送检时间SendTim"
+		    quid       	"56CC1AF80138")
+		(object ClassAttribute "检验时间ExamTim"
+		    quid       	"56CC1812013F")
+		(object ClassAttribute "报告时间RptTim"
+		    quid       	"56CC1B060291")
+		(object ClassAttribute "申请医生AppDoc"
+		    quid       	"56CC182400AF")
+		(object ClassAttribute "申请科室AppDep"
+		    quid       	"56CC1828002A")
+		(object ClassAttribute "（术语）检验样本SpecimenCd"
+		    quid       	"56CC182C0272")
+		(object ClassAttribute "检验条码号Barcode"
+		    quid       	"56CC18BA0310")
+		(object ClassAttribute "（术语）检验类型ExamTpCd"
+		    quid       	"56CC18CF0318")
+		(object ClassAttribute "（就诊记录）就诊编号PAAdmCd"
+		    quid       	"56CC1A1B021B")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"56CC1A2F01BD")
+		(object ClassAttribute "病人姓名PatNam"
+		    quid       	"56CC1ABB0371")
+		(object ClassAttribute "病人年龄PatAge"
+		    quid       	"56CC1ABE0293")
+		(object ClassAttribute "病人性别PatSex"
+		    quid       	"56CC1AC103D9")
+		(object ClassAttribute "（医嘱）医嘱编号OdrCd"
+		    quid       	"56CD0B5D00ED")))
+	(object Class "检验项目ExamItem"
+	    quid       	"56CC174E01B7"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（检验记录）检验记录编号ExamCd"
+		    quid       	"56CC18E40297")
+		(object ClassAttribute "检验条码号Barcode"
+		    quid       	"56CC197F017C")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"56D00DA002B1")
+		(object ClassAttribute "病人姓名PatNam"
+		    quid       	"56CC18F10035")
+		(object ClassAttribute "年龄PatAge"
+		    quid       	"56CC1AE001DB")
+		(object ClassAttribute "性别PatSex"
+		    quid       	"56CC1AE30216")
+		(object ClassAttribute "样本名称Specimen"
+		    quid       	"56CC198D0221")
+		(object ClassAttribute "项目名称（中文）CNZHNam"
+		    quid       	"56CC199B00F6")
+		(object ClassAttribute "项目名称（英文）ENUSNam"
+		    quid       	"56CC19C401EF")
+		(object ClassAttribute "值ResultValue"
+		    quid       	"56CC19CD010F")
+		(object ClassAttribute "范围Rang"
+		    quid       	"56CC19D1032E")
+		(object ClassAttribute "结果状态Result"
+		    quid       	"56CC19D401F5")
+		(object ClassAttribute "单位Unit"
+		    quid       	"56CC19D90072")
+		(object ClassAttribute "备注Remark"
+		    quid       	"56CC19DB0271")
+		(object ClassAttribute "（就诊记录）就诊编号PAAdmCd"
+		    quid       	"56CC1A110017")))
+	(object Class "病程记录ProgressNote"
+	    quid       	"56CC1C9A03A3"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "记录时间RecTim"
+		    quid       	"56CC1CC20021")
+		(object ClassAttribute "病程描述Description"
+		    quid       	"56CC1CC4037B")
+		(object ClassAttribute "记录医生RecDoc"
+		    quid       	"56CC1D930189")
+		(object ClassAttribute "（病人病历）病历编号MRCd"
+		    quid       	"56CC1D8100DF")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"56CD5A2C0098")))
+	(object Class "主诉ChiefComp"
+	    quid       	"56CD0ACA01AA"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "病史及体征HisSigns"
+		    quid       	"56CD4F8900DD")
+		(object ClassAttribute "ICD诊断Diagnosis"
+		    quid       	"56CD4F9F000E")
+		(object ClassAttribute "ICD描述ICDDesp"
+		    quid       	"56CD4FCF033A")
+		(object ClassAttribute "诊断描述DiaDesp"
+		    quid       	"56CD4FE301D3")
+		(object ClassAttribute "诊断日期DiaTim"
+		    quid       	"56CD50110003")
+		(object ClassAttribute "诊断医生DiaDoc"
+		    quid       	"56CD503200B0")
+		(object ClassAttribute "（术语）诊断类型DiaTpCd"
+		    quid       	"56CD50360165")
+		(object ClassAttribute "（就诊记录）就诊编号PAAdmCd"
+		    quid       	"56CD50DC003C")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"56CD50E501A4")))
+	(object Class "病历录入ClinicalInput"
+	    quid       	"576B82370249"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）就诊状态AdmStatus"
+		    quid       	"576B829D039C")
+		(object ClassAttribute "（就诊记录）就诊编号AdmCd"
+		    quid       	"576B82E701B0")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"576B82F801C9")
+		(object ClassAttribute "年龄Age"
+		    quid       	"576BA1560049")
+		(object ClassAttribute "体重weight"
+		    quid       	"576BA15D00B8")
+		(object ClassAttribute "（术语）性别编号SexCd"
+		    quid       	"576B83150075")
+		(object ClassAttribute "（术语）危急程度CritiDeg"
+		    quid       	"576B8356013A")
+		(object ClassAttribute "发病日期OnsetDate"
+		    quid       	"576B837902B9")
+		(object ClassAttribute "（术语）发病地点OnsetPlace"
+		    quid       	"576B83B202DB")
+		(object ClassAttribute "（术语）来源Source"
+		    quid       	"576B83C202AA")
+		(object ClassAttribute "（术语）血型BloTpCd"
+		    quid       	"576B83CE0308")
+		(object ClassAttribute "（术语）婚姻状况MarStaCd"
+		    quid       	"576B83E703D4")
+		(object ClassAttribute "（术语）职业OccCd"
+		    quid       	"576B83F603D7")
+		(object ClassAttribute "备注Des"
+		    quid       	"576B84050232")
+		(object ClassAttribute "（术语）去向Whereabo"
+		    quid       	"576B842001E6")
+		(object ClassAttribute "联系方式Phone"
+		    quid       	"576B842C0380")
+		(object ClassAttribute "是否传染病IfInfection"
+		    quid       	"576B845E024F")
+		(object ClassAttribute "地址PatAddress"
+		    quid       	"576B846702AD")
+		(object ClassAttribute "主诉complaint"
+		    quid       	"576B847300AE")
+		(object ClassAttribute "个人史/家族史FamMedHist"
+		    quid       	"576B847D0320")
+		(object ClassAttribute "现病史HPI"
+		    quid       	"576B848F0114")
+		(object ClassAttribute "既往史PastHistCond"
+		    quid       	"576B849701B2")
+		(object ClassAttribute "过敏史Allergy"
+		    quid       	"576B849E025B")
+		(object ClassAttribute "查体、辅助检查CheckSE"
+		    quid       	"576B84E4038F")
+		(object ClassAttribute "处置意见Disopinion"
+		    quid       	"576B850903C9")
+		(object ClassAttribute "辩证调护DialeMain"
+		    quid       	"576B851902FF")
+		(object ClassAttribute "辩证分析DialeAnaly"
+		    quid       	"576B85310189")
+		(object ClassAttribute "中医诊断TCMDiag"
+		    quid       	"576B85590331")
+		(object ClassAttribute "中医证型TCMSyndr"
+		    quid       	"576B856E03E6")
+		(object ClassAttribute "中医治法TCMTreatm"
+		    quid       	"576B85840210")
+		(object ClassAttribute "中医方名TCMNam"
+		    quid       	"576B85DF0078")))
+	(object Association "$UNNAMED$0"
+	    quid       	"56CC123203E6"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"56CC123302A1"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::过敏史Allergy"
+		    quidu      	"54D4551F0360")
+		(object Role "$UNNAMED$2"
+		    quid       	"56CC123302A3"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$3"
+	    quid       	"56CC12350330"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"56CC123600EF"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::疾病史Desease"
+		    quidu      	"54D4546302A3")
+		(object Role "$UNNAMED$5"
+		    quid       	"56CC123600FE"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$6"
+	    quid       	"56CC12380121"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"56CC12380374"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::既往病史PastHistCond"
+		    quidu      	"54D454880392")
+		(object Role "$UNNAMED$8"
+		    quid       	"56CC12380376"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$9"
+	    quid       	"56CC14F60005"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"56CC14F602D3"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::家族史FamMedHist"
+		    quidu      	"54D8AF910222")
+		(object Role "$UNNAMED$11"
+		    quid       	"56CC14F602E3"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$12"
+	    quid       	"56CC176A0274"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"56CC176A03E3"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检验项目ExamItem"
+		    quidu      	"56CC174E01B7")
+		(object Role "$UNNAMED$14"
+		    quid       	"56CC176A03E5"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检验记录ExamRecord"
+		    quidu      	"56CC173B0169")))
+	(object Association "$UNNAMED$15"
+	    quid       	"56CC1C90008F"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"56CC1C900216"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::治疗史TreatProgress"
+		    quidu      	"54D45514015F")
+		(object Role "$UNNAMED$17"
+		    quid       	"56CC1C900218"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$18"
+	    quid       	"56CC1C920290"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"56CC1C9300BB"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::用药史Drugs"
+		    quidu      	"54D454970272"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$20"
+		    quid       	"56CC1C9300CA"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$21"
+	    quid       	"56CC1C96005B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"56CC1C9602DC"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::手术史Operation"
+		    quidu      	"54D4547201EF")
+		(object Role "$UNNAMED$23"
+		    quid       	"56CC1C9602DE"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$24"
+	    quid       	"56CD59F60090"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"56CD59F60293"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027"
+		    client_cardinality 	(value cardinality "1"))
+		(object Role "$UNNAMED$26"
+		    quid       	"56CD59F602B2"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1"
+		    client_cardinality 	(value cardinality "0..*"))))
+	(object Association "$UNNAMED$27"
+	    quid       	"56CD5A5801D7"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"56CD5A5900EC"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检查记录InspectReport"
+		    quidu      	"56CC17340117")
+		(object Role "$UNNAMED$29"
+		    quid       	"56CD5A5900EE"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1")))
+	(object Association "$UNNAMED$30"
+	    quid       	"56CD61CA02F3"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$31"
+		    quid       	"56CD61CB016E"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病程记录ProgressNote"
+		    quidu      	"56CC1C9A03A3")
+		(object Role "$UNNAMED$32"
+		    quid       	"56CD61CB0176"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$33"
+	    quid       	"56CD6A880107"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$34"
+		    quid       	"56CD6A8803E5"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::主诉ChiefComp"
+		    quidu      	"56CD0ACA01AA")
+		(object Role "$UNNAMED$35"
+		    quid       	"56CD6A8803E7"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027")))
+	(object Association "$UNNAMED$36"
+	    quid       	"56CD6AB301FB"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$37"
+		    quid       	"56CD6AB400E0"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检验记录ExamRecord"
+		    quidu      	"56CC173B0169"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$38"
+		    quid       	"56CD6AB400E2"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1")))
+	(object Association "$UNNAMED$39"
+	    quid       	"570607A80119"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$40"
+		    quid       	"570607A80271"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检查记录InspectReport"
+		    quidu      	"56CC17340117"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$41"
+		    quid       	"570607A80273"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1")))
+	(object Association "$UNNAMED$42"
+	    quid       	"572AF00C03CD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$43"
+		    quid       	"572AF00D01A4"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检验记录ExamRecord"
+		    quidu      	"56CC173B0169")
+		(object Role "$UNNAMED$44"
+		    quid       	"572AF00D01A6"
+		    supplier   	"Logical View::实体类设计::CDR临床数据存储库::就诊记录::就诊Admission"
+		    quidu      	"54D45A2702D4")))
+	(object Association "$UNNAMED$45"
+	    quid       	"572AF014022E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$46"
+		    quid       	"572AF0150175"
+		    supplier   	"Logical View::实体类设计::CDR临床数据存储库::就诊记录::就诊Admission"
+		    quidu      	"54D45A2702D4"
+		    client_cardinality 	(value cardinality "0..*"))
+		(object Role "$UNNAMED$47"
+		    quid       	"572AF0150185"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$48"
+	    quid       	"572AF023017C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$49"
+		    quid       	"572AF023033E"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检查记录InspectReport"
+		    quidu      	"56CC17340117")
+		(object Role "$UNNAMED$50"
+		    quid       	"572AF0230341"
+		    supplier   	"Logical View::实体类设计::CDR临床数据存储库::就诊记录::就诊Admission"
+		    quidu      	"54D45A2702D4")))
+	(object Association "$UNNAMED$51"
+	    quid       	"572AF02A0285"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$52"
+		    quid       	"572AF02B01CF"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::医嘱HISOrder"
+		    quidu      	"56C6744300EE")
+		(object Role "$UNNAMED$53"
+		    quid       	"572AF02B01D1"
+		    supplier   	"Logical View::实体类设计::CDR临床数据存储库::就诊记录::就诊Admission"
+		    quidu      	"54D45A2702D4")))
+	(object Association "$UNNAMED$54"
+	    quid       	"57352E41017B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$55"
+		    quid       	"57352E410366"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1"
+		    client_cardinality 	(value cardinality "0..*"))
+		(object Role "$UNNAMED$56"
+		    quid       	"57352E410375"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR"
+		    quidu      	"56C6DE990027"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$57"
+	    quid       	"57352E4D03D4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$58"
+		    quid       	"57352E4E01A2"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检验记录ExamRecord"
+		    quidu      	"56CC173B0169")
+		(object Role "$UNNAMED$59"
+		    quid       	"57352E4E01A6"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1")))
+	(object Association "$UNNAMED$60"
+	    quid       	"57352E6300B3"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$61"
+		    quid       	"57352E64006A"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::病历管理::检查记录InspectReport"
+		    quidu      	"56CC17340117")
+		(object Role "$UNNAMED$62"
+		    quid       	"57352E64006E"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1")))
+	(object Association "$UNNAMED$63"
+	    quid       	"57352E69008B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$64"
+		    quid       	"57352E690330"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::医嘱HISOrder"
+		    quidu      	"56C6744300EE")
+		(object Role "$UNNAMED$65"
+		    quid       	"57352E690340"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord"
+		    quidu      	"56C6736600E1"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "病历管理"
+	    quid       	"56C66FD401F9"
+	    title      	"病历管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object NoteView @1
+		    location   	(3054, 1368)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(2748, 1302)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	577
+			label      	
+|检验类型
+|（普通、微生物、生化）
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	637
+		    height     	144)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::EMPI::过敏史Allergy" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1736, 262)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1425, 13)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	622
+			justify    	0
+			label      	"过敏史Allergy")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54D4551F0360"
+		    compartment 	(object Compartment
+			Parent_View 	@2
+			location   	(1425, 99)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	625)
+		    width      	640
+		    height     	518
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::EMPI::疾病史Desease" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2453, 237)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(2142, 50)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	622
+			justify    	0
+			label      	"疾病史Desease")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54D4546302A3"
+		    compartment 	(object Compartment
+			Parent_View 	@3
+			location   	(2142, 136)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	625)
+		    width      	640
+		    height     	394
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::EMPI::既往病史PastHistCond" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2444, 606)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(2200, 459)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	488
+			justify    	0
+			label      	"既往病史PastHistCond")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54D454880392"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(2200, 545)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	493)
+		    width      	506
+		    height     	314
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::EMPI::家族史FamMedHist" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3005, 1024)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(2729, 877)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	552
+			justify    	0
+			label      	"家族史FamMedHist")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54D8AF910222"
+		    compartment 	(object Compartment
+			Parent_View 	@5
+			location   	(2729, 963)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	556)
+		    width      	570
+		    height     	314
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::病程记录ProgressNote" @6
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2256, 1201)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1981, 1052)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	550
+			justify    	0
+			label      	"病程记录ProgressNote")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CC1C9A03A3"
+		    compartment 	(object Compartment
+			Parent_View 	@6
+			location   	(1981, 1104)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	553)
+		    width      	568
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::主诉ChiefComp" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2450, 1772)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(2143, 1541)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	614
+			justify    	0
+			label      	"主诉ChiefComp")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CD0ACA01AA"
+		    compartment 	(object Compartment
+			Parent_View 	@7
+			location   	(2143, 1593)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	618)
+		    width      	632
+		    height     	482
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::检验项目ExamItem" @8
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1347, 3182)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(952, 2828)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	790
+			justify    	0
+			label      	"检验项目ExamItem")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CC174E01B7"
+		    compartment 	(object Compartment
+			Parent_View 	@8
+			location   	(952, 2880)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	16
+			max_width  	670)
+		    width      	808
+		    height     	728
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::病人病历PatEMR" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(337, 590)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(18, 31)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	638
+			justify    	0
+			label      	"病人病历PatEMR")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56C6DE990027"
+		    compartment 	(object Compartment
+			Parent_View 	@9
+			location   	(18, 83)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	26
+			max_width  	640)
+		    width      	656
+		    height     	1138
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @10
+		    location   	(1040, 423)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CC123203E6"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @11
+			    Parent_View 	@10
+			    location   	(474, -133)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC123302A1"
+			    client     	@10
+			    supplier   	@2
+			    line_style 	0)
+			(object RoleView "$UNNAMED$2" @12
+			    Parent_View 	@10
+			    location   	(474, -133)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC123302A3"
+			    client     	@10
+			    supplier   	@9
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$3" @13
+		    location   	(1398, 411)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CC12350330"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @14
+			    Parent_View 	@13
+			    location   	(832, -145)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC123600EF"
+			    client     	@13
+			    supplier   	@3
+			    line_style 	0)
+			(object RoleView "$UNNAMED$5" @15
+			    Parent_View 	@13
+			    location   	(832, -145)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC123600FE"
+			    client     	@13
+			    supplier   	@9
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$6" @16
+		    location   	(1427, 598)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CC12380121"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$7" @17
+			    Parent_View 	@16
+			    location   	(861, 42)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC12380374"
+			    client     	@16
+			    supplier   	@4
+			    line_style 	0)
+			(object RoleView "$UNNAMED$8" @18
+			    Parent_View 	@16
+			    location   	(861, 42)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC12380376"
+			    client     	@16
+			    supplier   	@9
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$9" @19
+		    location   	(1692, 809)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CC14F60005"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$10" @20
+			    Parent_View 	@19
+			    location   	(1126, 253)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC14F602D3"
+			    client     	@19
+			    supplier   	@5
+			    line_style 	0)
+			(object RoleView "$UNNAMED$11" @21
+			    Parent_View 	@19
+			    location   	(1126, 253)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC14F602E3"
+			    client     	@19
+			    supplier   	@9
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$30" @22
+		    location   	(1318, 901)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CD61CA02F3"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$31" @23
+			    Parent_View 	@22
+			    location   	(755, 326)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD61CB016E"
+			    client     	@22
+			    supplier   	@6
+			    line_style 	0)
+			(object RoleView "$UNNAMED$32" @24
+			    Parent_View 	@22
+			    location   	(755, 326)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD61CB0176"
+			    client     	@22
+			    supplier   	@9
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$33" @25
+		    location   	(1399, 1183)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CD6A880107"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$34" @26
+			    Parent_View 	@25
+			    location   	(836, 608)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD6A8803E5"
+			    client     	@25
+			    supplier   	@7
+			    line_style 	0)
+			(object RoleView "$UNNAMED$35" @27
+			    Parent_View 	@25
+			    location   	(836, 608)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD6A8803E7"
+			    client     	@25
+			    supplier   	@9
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::检验记录ExamRecord" @28
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(489, 3071)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@28
+			location   	(129, 2696)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	720
+			justify    	0
+			label      	"检验记录ExamRecord")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CC173B0169"
+		    compartment 	(object Compartment
+			Parent_View 	@28
+			location   	(129, 2748)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	17
+			max_width  	611)
+		    width      	738
+		    height     	770
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$12" @29
+		    location   	(900, 3123)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CC176A0274"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$13" @30
+			    Parent_View 	@29
+			    location   	(-375, 1404)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC176A03E3"
+			    client     	@29
+			    supplier   	@8
+			    line_style 	0)
+			(object RoleView "$UNNAMED$14" @31
+			    Parent_View 	@29
+			    location   	(-375, 1404)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CC176A03E5"
+			    client     	@29
+			    supplier   	@28
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::检查记录InspectReport" @32
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1412, 2306)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@32
+			location   	(1105, 2013)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	614
+			justify    	0
+			label      	"检查记录InspectReport")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CC17340117"
+		    compartment 	(object Compartment
+			Parent_View 	@32
+			location   	(1105, 2065)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	13
+			max_width  	618)
+		    width      	632
+		    height     	606
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::就诊管理::医嘱HISOrder" @33
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2554, 3469)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@33
+			location   	(1939, 2113)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1230
+			justify    	0
+			label      	"医嘱HISOrder")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56C6744300EE"
+		    compartment 	(object Compartment
+			Parent_View 	@33
+			location   	(1939, 2199)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	64
+			max_width  	1046)
+		    width      	1248
+		    height     	2732
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::就诊管理::就诊记录AdmRecord" @34
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(336, 1817)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@34
+			location   	(61, 1757)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	550
+			justify    	0
+			label      	"就诊记录AdmRecord")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56C6736600E1"
+		    width      	568
+		    height     	140
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$54" @35
+		    location   	(336, 1452)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57352E41017B"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$55" @36
+			    Parent_View 	@35
+			    location   	(-111, 781)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E410366"
+			    client     	@35
+			    supplier   	@34
+			    line_style 	0
+			    label      	(object SegLabel @37
+				Parent_View 	@36
+				location   	(283, 1717)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$56" @38
+			    Parent_View 	@35
+			    location   	(-111, 781)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E410375"
+			    client     	@35
+			    supplier   	@9
+			    line_style 	0
+			    label      	(object SegLabel @39
+				Parent_View 	@38
+				location   	(390, 1189)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object AssociationViewNew "$UNNAMED$57" @40
+		    location   	(391, 2286)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57352E4D03D4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$58" @41
+			    Parent_View 	@40
+			    location   	(-979, -1121)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E4E01A2"
+			    client     	@40
+			    supplier   	@28
+			    line_style 	0)
+			(object RoleView "$UNNAMED$59" @42
+			    Parent_View 	@40
+			    location   	(-979, -1121)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E4E01A6"
+			    client     	@40
+			    supplier   	@34
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$60" @43
+		    location   	(792, 2023)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57352E6300B3"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$61" @44
+			    Parent_View 	@43
+			    location   	(44, -440)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E64006A"
+			    client     	@43
+			    supplier   	@32
+			    line_style 	0)
+			(object RoleView "$UNNAMED$62" @45
+			    Parent_View 	@43
+			    location   	(44, -440)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E64006E"
+			    client     	@43
+			    supplier   	@34
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$63" @46
+		    location   	(1179, 2445)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57352E69008B"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$64" @47
+			    Parent_View 	@46
+			    location   	(431, -18)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E690330"
+			    client     	@46
+			    supplier   	@33
+			    line_style 	0)
+			(object RoleView "$UNNAMED$65" @48
+			    Parent_View 	@46
+			    location   	(431, -18)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57352E690340"
+			    client     	@46
+			    supplier   	@34
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::病历管理::病历录入ClinicalInput" @49
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1067, 1220)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@49
+			location   	(768, 538)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	598
+			justify    	0
+			label      	"病历录入ClinicalInput")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"576B82370249"
+		    compartment 	(object Compartment
+			Parent_View 	@49
+			location   	(768, 590)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	32
+			max_width  	603)
+		    width      	616
+		    height     	1384
+		    annotation 	8
+		    autoResize 	TRUE)))))

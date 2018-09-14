@@ -1,0 +1,2230 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "收费管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"571F0A4F023A"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "号段使用情况NoSegmeUsage"
+	    quid       	"57206C260282"
+	    used_nodes 	(list uses_relationship_list
+		(object Uses_Relationship
+		    quid       	"57207CD601FD"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")
+		(object Uses_Relationship
+		    quid       	"5720C04D006E"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::出库记录详情LibraryRecDet"
+		    quidu      	"5671499F0231"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"572072F603E7")
+		(object ClassAttribute "名称Nam"
+		    quid       	"57455B190087")
+		(object ClassAttribute "（商品分类）票据商品分类CategoriesCd"
+		    quid       	"57455B1B03B1")
+		(object ClassAttribute "（票据商品）票据商品编号CommoCd"
+		    quid       	"5720861C00DB")
+		(object ClassAttribute "（出库记录）出库记录编号LibraRecCd"
+		    quid       	"572C60DA00E1")
+		(object ClassAttribute "开始字母StWord"
+		    quid       	"5720861701C6")
+		(object ClassAttribute "开始号码StNo"
+		    quid       	"572073550050")
+		(object ClassAttribute "结束号码EndNo"
+		    quid       	"57207359014B")
+		(object ClassAttribute "总数量Total"
+		    quid       	"5720735C014F")
+		(object ClassAttribute "当前可用号码CurrNo"
+		    quid       	"5720736403A5")
+		(object ClassAttribute "剩余可用数量LastNum"
+		    quid       	"5720736D037F")
+		(object ClassAttribute "（参与者）使用人UsePeople"
+		    quid       	"572073CB0220")
+		(object ClassAttribute "号段状态SegStatus"
+		    quid       	"573589D30027")))
+	(object Class "结算日报BillStatements"
+	    quid       	"56CD70E40086"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "结算时间BillTim"
+		    quid       	"56CD71EB0092")
+		(object ClassAttribute "（参与者）收款员BillObjCd"
+		    quid       	"56CD71EE0030")
+		(object ClassAttribute "结算总金额BillAmount"
+		    quid       	"56CD70F10076")
+		(object ClassAttribute "结算上缴额PaidAmount"
+		    quid       	"56CD721B02C5")
+		(object ClassAttribute "开始结算时间StTim"
+		    quid       	"56CD722401DC")
+		(object ClassAttribute "结束结算时间EndTim"
+		    quid       	"56CD722E00B3")
+		(object ClassAttribute "是否审核ISAudit"
+		    quid       	"56CD724100B4")
+		(object ClassAttribute "（术语）结算类型BillType"
+		    quid       	"5704D6EF01B5")
+		(object ClassAttribute "现金金额CashAmount"
+		    quid       	"5704D73301C5")
+		(object ClassAttribute "其他金额OtherAmount"
+		    quid       	"5704D739033C")
+		(object ClassAttribute "收款金额ReceivAmount"
+		    quid       	"5704D73E0157")
+		(object ClassAttribute "退款金额RefundAmount"
+		    quid       	"5704D7400128")
+		(object ClassAttribute "退款收据数RefundNum"
+		    quid       	"5704D74D02EE")
+		(object ClassAttribute "作废收据数InvaNum（作废）"
+		    quid       	"570F41080383")
+		(object ClassAttribute "收据使用数量InvoNum"
+		    quid       	"570F06F00155")
+		(object ClassAttribute "收款号段InvoSegme"
+		    quid       	"570F0719009C")
+		(object ClassAttribute "退款收据RefundInvoice"
+		    quid       	"570F0722014B")
+		(object ClassAttribute "预交金收据使用数PreInvoNum"
+		    quid       	"57EA1D9701AE")
+		(object ClassAttribute "预交金退款收据数PreRefundNum"
+		    quid       	"57EA1D9E0105")
+		(object ClassAttribute "预交金收款号段PreInvoSegme"
+		    quid       	"57EA1DA4036D")
+		(object ClassAttribute "预交金退款号段PreRefundSegme"
+		    quid       	"57EA1DAB016A")
+		(object ClassAttribute "费用误差CostError"
+		    quid       	"57EBC73F0265")
+		(object ClassAttribute "发票使用数RelInvoNum"
+		    quid       	"580474D101C0")
+		(object ClassAttribute "退款发票数RefundRelNum"
+		    quid       	"580475B80107")
+		(object ClassAttribute "收款发票号段RelInvoSegme"
+		    quid       	"580475C30343")
+		(object ClassAttribute "退款发票RefundRInvoice"
+		    quid       	"580475CF0069")))
+	(object Class "费用结算详情CostBillDet"
+	    quid       	"570F04DF00BD"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（结算日报）结算日报编号BillStatCd"
+		    quid       	"570F05110106")
+		(object ClassAttribute "（术语）费用类型CostTypeCd"
+		    quid       	"570F069600D8")
+		(object ClassAttribute "总金额TotalAmount"
+		    quid       	"570F05740373")
+		(object ClassAttribute "总人次TotalPeople"
+		    quid       	"570F05760298")
+		(object ClassAttribute "退费金额RefundAmount"
+		    quid       	"570F057F0392")
+		(object ClassAttribute "退费人次RefundPeople"
+		    quid       	"570F05870250")
+		(object ClassAttribute "作废金额InvaAmount（作废）"
+		    quid       	"570F058E00B1")
+		(object ClassAttribute "作废人次InvaPeople（作废）"
+		    quid       	"570F059000A7")
+		(object ClassAttribute "收款金额ReceivAmount"
+		    quid       	"5754F1460336")
+		(object ClassAttribute "收款人次ReceivPeople"
+		    quid       	"5754F14F03A0")))
+	(object Class "收费票据TollInvoice"
+	    quid       	"56CD22050005"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（号段使用情况）号段编号NoSegmeCd"
+		    quid       	"56CD224100DD")
+		(object ClassAttribute "（票据商品）票据商品编号CommoCd"
+		    quid       	"574FEF8A0227")
+		(object ClassAttribute "（参与者）消费者ConsumerCd（作废）"
+		    quid       	"5772914602FE")
+		(object ClassAttribute "（数据对象类型）消费者对象类型编号ConsuObjTpCd"
+		    quid       	"57C697F4012A")
+		(object ClassAttribute "消费者对象编号ConsuObjCd"
+		    quid       	"57C697FD02BC")
+		(object ClassAttribute "消费者名称ConsumerNam"
+		    quid       	"577291480074")
+		(object ClassAttribute "（凭证类型）凭证类型编号CredTpCd"
+		    quid       	"577291620243")
+		(object ClassAttribute "凭证类型名称CredTpNam"
+		    quid       	"577291630190")
+		(object ClassAttribute "凭证号CredNum"
+		    quid       	"5772915A0396")
+		(object ClassAttribute "票据号InvoiceNo"
+		    quid       	"573480AE0099")
+		(object ClassAttribute "金额Money"
+		    quid       	"5720B895031A")
+		(object ClassAttribute "票据状态Status"
+		    quid       	"56CD22510095")
+		(object ClassAttribute "打印次数PrintFreq"
+		    quid       	"571599E70123")
+		(object ClassAttribute "（参与者）操作员Operator"
+		    quid       	"56CD250700CE")
+		(object ClassAttribute "操作员名称CharOperatorNam"
+		    quid       	"5773CDB900BD")
+		(object ClassAttribute "（账单）账单编号BillCd"
+		    quid       	"56CD2512032D")
+		(object ClassAttribute "票据作废标志InvalidSign"
+		    quid       	"5736D1CE0006")
+		(object ClassAttribute "作废时间InvalidDateTime"
+		    quid       	"574FE84300EF")
+		(object ClassAttribute "（参与者）作废操作员InvalidOperaCd"
+		    quid       	"574FE8590141")
+		(object ClassAttribute "（收费票据）分组发票编号RelInvCd"
+		    quid       	"58043AAB0072")
+		(object ClassAttribute "分组发票号RelInvNo"
+		    quid       	"58043AB003C8")
+		(object ClassAttribute "实收金额RealMoney"
+		    quid       	"58043AC50228")
+		(object ClassAttribute "应退金额RefdMoney"
+		    quid       	"58043ACE012B")
+		(object ClassAttribute "实退金额RealRefdMoney"
+		    quid       	"58043AD60212")
+		(object ClassAttribute "（收费票据）退费关联发票编号RefundInvCd"
+		    quid       	"58043ADF0361")))
+	(object Class "账单ConsumerBill"
+	    quid       	"566A366C0302"
+	    used_nodes 	(list uses_relationship_list
+		(object Uses_Relationship
+		    quid       	"572B54550338"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")
+		(object Uses_Relationship
+		    quid       	"5735A3340212"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::财务管理::HIS账单HISPatBill"
+		    quidu      	"5720ACCA01AB"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566A367C0355")
+		(object ClassAttribute "名称Nam"
+		    quid       	"566A3682011A")
+		(object ClassAttribute "（术语） 账单类型编号BillTpCd"
+		    quid       	"566A36D701DA")
+		(object ClassAttribute "（病人类别）费别编号FeeTpCd"
+		    quid       	"566A40E4002A")
+		(object ClassAttribute "（参与者）消费者ConsumerCd（作废）"
+		    quid       	"5720ADFB0172")
+		(object ClassAttribute "（数据对象类型）消费者对象类型编号ConsuObjTpCd"
+		    quid       	"57A3F51A02FD")
+		(object ClassAttribute "消费者对象编号ConsuObjCd"
+		    quid       	"57A3F52202AF")
+		(object ClassAttribute "（凭证类型）凭证类型编号CredTpCd"
+		    quid       	"574D34C800CE")
+		(object ClassAttribute "凭证号CredNum"
+		    quid       	"574D34D30309")
+		(object ClassAttribute "（参与者）接收科室RecDep"
+		    quid       	"574801EB03C7")
+		(object ClassAttribute "账单总金额Amount"
+		    quid       	"5728124D0335")
+		(object ClassAttribute "折扣总金额TotalSpec"
+		    quid       	"57281254015B")
+		(object ClassAttribute "实收总金额RealAmo"
+		    quid       	"5728125903AA")
+		(object ClassAttribute "结算标志BillSign"
+		    quid       	"5736F7C70168")
+		(object ClassAttribute "结算时间BillDateTim"
+		    quid       	"5736F73B02C8")
+		(object ClassAttribute "（参与者） 费用操作员编号CharOpeCd"
+		    quid       	"57370328038F")
+		(object ClassAttribute "（账单）原账单编号OrigBillCd"
+		    quid       	"5747FCA90094")
+		(object ClassAttribute "（账单）退费负值账单RelaNegaBillCd"
+		    quid       	"5747FA340242")
+		(object ClassAttribute "（账单）退费新开账单RelaNewBillCd"
+		    quid       	"5747FA6C01D0")
+		(object ClassAttribute "（账单支付记录）账单支付记录编号ConsuBillRecCd（作废）"
+		    quid       	"575069A800AD")))
+	(object Class "账单明细ConsBillDet"
+	    quid       	"566A41240372"
+	    used_nodes 	(list uses_relationship_list
+		(object Uses_Relationship
+		    quid       	"572B5458035E"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")
+		(object Uses_Relationship
+		    quid       	"5735A32B01BE"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::财务管理::HIS账单明细HISPatBillDet"
+		    quidu      	"56CD4B0C012B"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566A426902A4")
+		(object ClassAttribute "名称Nam"
+		    quid       	"566A426D0242")
+		(object ClassAttribute "（账单）账单编号PatBillCd"
+		    quid       	"566A426F0267")
+		(object ClassAttribute "（收费项目） 收费项编号FeeItemCd"
+		    quid       	"566A427D00BE")
+		(object ClassAttribute "（收费项目大类）收费项目根类CharItemCate"
+		    quid       	"575B86BC0304")
+		(object ClassAttribute "（收费项目大类）收费项目叶子类CateDetail"
+		    quid       	"575B86CA000C")
+		(object ClassAttribute "（库存商品）库存商品编号StockCd"
+		    quid       	"574AB24E00DD")
+		(object ClassAttribute "数量Qty"
+		    quid       	"566A43270087")
+		(object ClassAttribute "单价Price"
+		    quid       	"566A43340161")
+		(object ClassAttribute "总额TotalAmount"
+		    quid       	"5728126A03B6")
+		(object ClassAttribute "实收金额RealAmo"
+		    quid       	"566A4369036B")
+		(object ClassAttribute "折扣金额TotalSpec"
+		    quid       	"566A436F0315")
+		(object ClassAttribute "（参与者）开单人员编号BillReopleCd"
+		    quid       	"566A428603A2")
+		(object ClassAttribute "（参与者） 开单科室编号BillDeptCd"
+		    quid       	"566A428D00AA")
+		(object ClassAttribute "（参与者）处置人员编号HandPeopleCd"
+		    quid       	"566A429700DA")
+		(object ClassAttribute "（参与者） 处置科室编号HandDeptCd"
+		    quid       	"566A42A10191")
+		(object ClassAttribute "（资源） 处置位置DispPosi"
+		    quid       	"566A42AC0392")
+		(object ClassAttribute "（参与者） 费用操作员编号CharOpeCd"
+		    quid       	"566A42C602F3")
+		(object ClassAttribute "（参与者）计费操作员编号CalcOperCd"
+		    quid       	"5747F92E016A")
+		(object ClassAttribute "（账单支付记录）支付记录编号ConBillRecCd"
+		    quid       	"574D3A890295")
+		(object ClassAttribute "（账单退费记录）退费记录编号RefundRecCd"
+		    quid       	"574FD8800321")
+		(object ClassAttribute "作废标志InvalidSign"
+		    quid       	"566A42E70159")
+		(object ClassAttribute "收费时间CharDateTime"
+		    quid       	"566A42F20372")
+		(object ClassAttribute "退费时间CancelDateTime"
+		    quid       	"566A42F60111")
+		(object ClassAttribute "计费时间CalcDateTime"
+		    quid       	"5747F04501EB")
+		(object ClassAttribute "票据号InvoiceNo"
+		    quid       	"566A691902F3")
+		(object ClassAttribute "（票据）票据编号TollInvoice"
+		    quid       	"572B54070220")
+		(object ClassAttribute "结帐标志CheckSign"
+		    quid       	"566A7DCB0378")
+		(object ClassAttribute "结算标志SetAccSign"
+		    quid       	"566BCD6701D2")))
+	(object Class "账单支付记录ConsuBillRec"
+	    quid       	"5736C6E401BE"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）支付方式PaidWayCd"
+		    quid       	"5736C7EC0216")
+		(object ClassAttribute "支付卡号PaidCardNo"
+		    quid       	"573833E40214")
+		(object ClassAttribute "支付流水号SerNum"
+		    quid       	"57499A690026")
+		(object ClassAttribute "（术语）银行编号BankCd"
+		    quid       	"5756834500D2")
+		(object ClassAttribute "（术语）银行卡类型BankCardTpCd"
+		    quid       	"5756836800DB")
+		(object ClassAttribute "金额Money"
+		    quid       	"5736C804036E")
+		(object ClassAttribute "支付时间CharDateTime"
+		    quid       	"57401EFC02B5")
+		(object ClassAttribute "退费金额RefundMoney（作废）"
+		    quid       	"57401C5801B2")
+		(object ClassAttribute "退费时间RefundDateTime（作废）"
+		    quid       	"57401C67031A")
+		(object ClassAttribute "（参与者）退费操作员RefundOpeCd（作废）"
+		    quid       	"57401D35028B")
+		(object ClassAttribute "（参与者）费用操作员编号CharOpeCd"
+		    quid       	"574FF8F00199")
+		(object ClassAttribute "（账单）账单编号PatBillCd"
+		    quid       	"5738331000F4")))
+	(object Class "票据商品InvoiceSeg"
+	    quid       	"57393BC70198"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"57393BCD007F")
+		(object ClassAttribute "名称Nam"
+		    quid       	"573D285C00C4")
+		(object ClassAttribute "助记码MneCd"
+		    quid       	"57459E6A010E")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569CD0026A")
+		(object ClassAttribute "（商品）源表编号SourcTableCd"
+		    quid       	"573D285E033B")
+		(object ClassAttribute "是否补零IsZeros"
+		    quid       	"57393CE40306")
+		(object ClassAttribute "长度Length"
+		    quid       	"57393CFD019D")))
+	(object Class "账单退费记录ConsuRefundRec"
+	    quid       	"574FD0BC02A3"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）退费方式RefundWayCd"
+		    quid       	"574FD15C02D8")
+		(object ClassAttribute "退费卡号RefundCardNo"
+		    quid       	"574FD15D033C")
+		(object ClassAttribute "退费流水号SerNum"
+		    quid       	"574FD1660269")
+		(object ClassAttribute "退费金额RefundMoney"
+		    quid       	"574FD16B0014")
+		(object ClassAttribute "退费时间RefundDateTime"
+		    quid       	"574FD1730378")
+		(object ClassAttribute "（参与者） 费用操作员编号CharOpeCd"
+		    quid       	"574FD26D0067")
+		(object ClassAttribute "（账单）账单编号PatBillCd"
+		    quid       	"574FDF0500C8")))
+	(object Class "票据支付方式InvoicePaidWay"
+	    quid       	"57563D520186"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（账单支付记录）支付记录编号ConBill"
+		    quid       	"57563D680294")
+		(object ClassAttribute "（术语）支付方式PaidWayCd"
+		    quid       	"57563DB801D0")
+		(object ClassAttribute "（票据）票据编号TollInvoice"
+		    quid       	"57563D71014F")))
+	(object Class "票据打印设置InvoiPrintSet"
+	    quid       	"577226A301CB"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"577226B50029")
+		(object ClassAttribute "（打印机参数）打印机编号PrinterCd"
+		    quid       	"577226C00381")
+		(object ClassAttribute "（票据商品）票据商品编号InvoiceCd"
+		    quid       	"57722D4303E4")
+		(object ClassAttribute "（参与者）参与者编号PartyCd"
+		    quid       	"577228D50061")))
+	(object Class "打印机参数PrinterConfig"
+	    quid       	"577227F100CB"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"5772280602DE")
+		(object ClassAttribute "名称Nam"
+		    quid       	"5772280F02FB")
+		(object ClassAttribute "（票据商品）票据商品编号InvoiceCd"
+		    quid       	"577229BA01CC")))
+	(object Class "收费票据打印项ToInvPrintItm"
+	    quid       	"5772845101A9"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"577287F401FA")
+		(object ClassAttribute "名称Nam"
+		    quid       	"5772881B00CD")
+		(object ClassAttribute "（收费票据）收费票据编号TollInvoiceCd"
+		    quid       	"577288FE0117")
+		(object ClassAttribute "（发票）发票编号TaxInvoice"
+		    quid       	"57737BDE0372")
+		(object ClassAttribute "单价Price"
+		    quid       	"577288270119")
+		(object ClassAttribute "数量Number"
+		    quid       	"577288280197")
+		(object ClassAttribute "金额Amount"
+		    quid       	"5772882902C2")
+		(object ClassAttribute "接收科室RecDep"
+		    quid       	"5772882B0328")
+		(object ClassAttribute "收费时间CharDateTime"
+		    quid       	"57737654013A")
+		(object ClassAttribute "兑换发票标志ChangeInvoSign"
+		    quid       	"577375730307")
+		(object ClassAttribute "兑换发票时间ChangeDateTime"
+		    quid       	"5773757C0355")))
+	(object Class "费用误差CostError"
+	    quid       	"57E9CE2000A1"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（参与者）费用操作员编号CharOpeCd"
+		    quid       	"57E9CE3103E7")
+		(object ClassAttribute "（就诊记录）就诊记录编号AdmRecCd"
+		    quid       	"57E9E5FD01F0")
+		(object ClassAttribute "（账单）账单编号PatBillCd"
+		    quid       	"57E9CE39028A")
+		(object ClassAttribute "（HIS账单）HIS账单编号HISPatBillCd"
+		    quid       	"57E9CE41011E")
+		(object ClassAttribute "（数据对象类型）消费者对象类型编号ConsuObjTpCd"
+		    quid       	"57E9E35902A7")
+		(object ClassAttribute "误差来源ErrorReason"
+		    quid       	"57EB61CB01C2")
+		(object ClassAttribute "消费者对象编号ConsuObjCd"
+		    quid       	"57E9E3680325")
+		(object ClassAttribute "消费者名称ConsumerNam"
+		    quid       	"57E9E36D0348")
+		(object ClassAttribute "（术语）性别编号SexCd"
+		    quid       	"57E9E6A10376")
+		(object ClassAttribute "年龄Age"
+		    quid       	"57E9E6A902AF")
+		(object ClassAttribute "（凭证类型）凭证类型编号CredTpCd"
+		    quid       	"57E9E372022C")
+		(object ClassAttribute "凭证类型名称CredTpNam"
+		    quid       	"57E9E37803AD")
+		(object ClassAttribute "凭证号CredNum"
+		    quid       	"57E9E3810390")
+		(object ClassAttribute "结算标志BillSign"
+		    quid       	"57E9CE6F0238")
+		(object ClassAttribute "结算时间BillDateTime"
+		    quid       	"57E9E6EF0088")
+		(object ClassAttribute "实际金额ActAmo"
+		    quid       	"57E9CE7A0048")
+		(object ClassAttribute "实收金额RealAmo"
+		    quid       	"57E9CE7B039D")
+		(object ClassAttribute "误差Error"
+		    quid       	"57E9CE7E00CE")))
+	(object Association "$UNNAMED$0"
+	    quid       	"572065D3002B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"572065D3022F"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm"
+		    quidu      	"566FE7E40108")
+		(object Role "$UNNAMED$2"
+		    quid       	"572065D30240"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::财务管理::HIS账单明细HISPatBillDet"
+		    quidu      	"56CD4B0C012B")))
+	(object Association "$UNNAMED$3"
+	    quid       	"57208CFC0360"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"57208CFD0147"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单ConsumerBill"
+		    quidu      	"566A366C0302")
+		(object Role "$UNNAMED$5"
+		    quid       	"57208CFD0156"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")))
+	(object Association "$UNNAMED$6"
+	    quid       	"57208CFF0090"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"57208CFF02E9"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::财务管理::HIS账单明细HISPatBillDet"
+		    quidu      	"56CD4B0C012B")
+		(object Role "$UNNAMED$8"
+		    quid       	"57208CFF02FF"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单ConsumerBill"
+		    quidu      	"566A366C0302")))
+	(object Association "$UNNAMED$9"
+	    quid       	"5720AE7801D2"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"5720AE7803DA"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单明细ConsBillDet"
+		    quidu      	"566A41240372")
+		(object Role "$UNNAMED$11"
+		    quid       	"5720AE790002"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")))
+	(object Association "$UNNAMED$12"
+	    quid       	"5720AE7A03C7"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"5720AE7B01D6"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单明细ConsBillDet"
+		    quidu      	"566A41240372"
+		    client_cardinality 	(value cardinality "1..*"))
+		(object Role "$UNNAMED$14"
+		    quid       	"5720AE7B01D8"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单ConsumerBill"
+		    quidu      	"566A366C0302"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$15"
+	    quid       	"5720AE8301C9"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"5720AE8303D3"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm"
+		    quidu      	"566FE7E40108")
+		(object Role "$UNNAMED$17"
+		    quid       	"5720AE8303D5"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单明细ConsBillDet"
+		    quidu      	"566A41240372")))
+	(object Association "$UNNAMED$18"
+	    quid       	"5736C6FC019A"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"5736C6FC02F6"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单ConsumerBill"
+		    quidu      	"566A366C0302")
+		(object Role "$UNNAMED$20"
+		    quid       	"5736C6FC0303"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单支付记录ConsuBillRec"
+		    quidu      	"5736C6E401BE")))
+	(object Association "$UNNAMED$21"
+	    quid       	"573E86BB03A0"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"573E86BC0138"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::票据商品InvoiceSeg"
+		    quidu      	"57393BC70198")
+		(object Role "$UNNAMED$23"
+		    quid       	"573E86BC01EC"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::号段使用情况NoSegmeUsage"
+		    quidu      	"57206C260282")))
+	(object Association "$UNNAMED$24"
+	    quid       	"573E86D40140"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"573E86D40264"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity"
+		    quidu      	"567164470389")
+		(object Role "$UNNAMED$26"
+		    quid       	"573E86D402DE"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::票据商品InvoiceSeg"
+		    quidu      	"57393BC70198")))
+	(object Association "$UNNAMED$27"
+	    quid       	"574FD8C503D1"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"574FD8C60144"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单ConsumerBill"
+		    quidu      	"566A366C0302")
+		(object Role "$UNNAMED$29"
+		    quid       	"574FD8C60153"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::账单退费记录ConsuRefundRec"
+		    quidu      	"574FD0BC02A3")))
+	(object Association "$UNNAMED$30"
+	    quid       	"57563F5401BE"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$31"
+		    quid       	"57563F5402E9"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")
+		(object Role "$UNNAMED$32"
+		    quid       	"57563F5402FC"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::票据支付方式InvoicePaidWay"
+		    quidu      	"57563D520186")))
+	(object Association "$UNNAMED$33"
+	    quid       	"577226CD0222"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$34"
+		    quid       	"577226CD0373"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::票据打印设置InvoiPrintSet"
+		    quidu      	"577226A301CB")
+		(object Role "$UNNAMED$35"
+		    quid       	"577226CD0375"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::票据商品InvoiceSeg"
+		    quidu      	"57393BC70198")))
+	(object Association "$UNNAMED$36"
+	    quid       	"577227F70232"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$37"
+		    quid       	"577227F703B1"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::票据打印设置InvoiPrintSet"
+		    quidu      	"577226A301CB")
+		(object Role "$UNNAMED$38"
+		    quid       	"577227F703B3"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::打印机参数PrinterConfig"
+		    quidu      	"577227F100CB")))
+	(object Association "$UNNAMED$39"
+	    quid       	"577288CD01F1"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$40"
+		    quid       	"577288CD0369"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据打印项ToInvPrintItm"
+		    quidu      	"5772845101A9")
+		(object Role "$UNNAMED$41"
+		    quid       	"577288CD037C"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "收费管理"
+	    quid       	"57201F040107"
+	    title      	"收费管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	1160
+	    items      	(list diagram_item_list
+		(object NoteView @1
+		    location   	(1315, 288)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(1018, 178)
+			fill_color 	13434879
+			nlines     	5
+			max_width  	558
+			justify    	1
+			label      	
+|费用类型：
+|现金，预交金，银行卡，欠费，社保
+|结算类型：
+|预交金，挂号，办卡，门诊收费
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	618
+		    height     	232)
+		(object NoteView @2
+		    location   	(3050, 701)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(2781, 613)
+			fill_color 	13434879
+			nlines     	4
+			max_width  	502
+			justify    	1
+			label      	"同步【商品Commodity】表，包含该表所有字段")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	562
+		    height     	188)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3994, 1232)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(3578, 840)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	832
+			justify    	0
+			label      	"（专属对象）收费项目ChargeItm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FE7E40108"
+		    compartment 	(object Compartment
+			Parent_View 	@3
+			location   	(3578, 926)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	17
+			max_width  	830
+			justify    	1)
+		    width      	850
+		    height     	804
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::账单明细ConsBillDet" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3071, 1583)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(2625, 942)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	892
+			justify    	0
+			label      	"账单明细ConsBillDet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566A41240372"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(2625, 994)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	30
+			max_width  	889
+			justify    	1)
+		    width      	910
+		    height     	1302
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$15" @5
+		    location   	(3532, 1407)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5720AE8301C9"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$16" @6
+			    Parent_View 	@5
+			    location   	(855, -522)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5720AE8303D3"
+			    client     	@5
+			    supplier   	@3
+			    vertices   	(list Points
+				(3532, 1407)
+				(3994, 1232))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$17" @7
+			    Parent_View 	@5
+			    location   	(855, -522)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5720AE8303D5"
+			    client     	@5
+			    supplier   	@4
+			    vertices   	(list Points
+				(3532, 1407)
+				(3071, 1583))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::账单支付记录ConsuBillRec" @8
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(907, 3201)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(474, 2909)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	866
+			justify    	0
+			label      	"账单支付记录ConsuBillRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5736C6E401BE"
+		    compartment 	(object Compartment
+			Parent_View 	@8
+			location   	(474, 2961)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	13
+			max_width  	864
+			justify    	1)
+		    width      	884
+		    height     	604
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::账单ConsumerBill" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2028, 2848)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(1437, 2392)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1182
+			justify    	0
+			label      	"账单ConsumerBill")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566A366C0302"
+		    compartment 	(object Compartment
+			Parent_View 	@9
+			location   	(1437, 2444)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	21
+			max_width  	1179
+			justify    	1)
+		    width      	1200
+		    height     	932
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$12" @10
+		    location   	(2512, 2257)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5720AE7A03C7"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$13" @11
+			    Parent_View 	@10
+			    location   	(813, 27)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5720AE7B01D6"
+			    client     	@10
+			    supplier   	@4
+			    vertices   	(list Points
+				(2512, 2257)
+				(2615, 2134))
+			    line_style 	0
+			    label      	(object SegLabel @12
+				Parent_View 	@11
+				location   	(2645, 2182)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$14" @13
+			    Parent_View 	@10
+			    location   	(813, 27)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5720AE7B01D8"
+			    client     	@10
+			    supplier   	@9
+			    vertices   	(list Points
+				(2512, 2257)
+				(2409, 2381))
+			    line_style 	0
+			    label      	(object SegLabel @14
+				Parent_View 	@13
+				location   	(2462, 2403)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object AssociationViewNew "$UNNAMED$18" @15
+		    location   	(1388, 3047)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5736C6FC019A"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$19" @16
+			    Parent_View 	@15
+			    location   	(-713, 251)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5736C6FC02F6"
+			    client     	@15
+			    supplier   	@9
+			    vertices   	(list Points
+				(1388, 3047)
+				(1427, 3036))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$20" @17
+			    Parent_View 	@15
+			    location   	(-713, 251)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5736C6FC0303"
+			    client     	@15
+			    supplier   	@8
+			    vertices   	(list Points
+				(1388, 3047)
+				(1349, 3059))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::账单退费记录ConsuRefundRec" @18
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3184, 3095)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@18
+			location   	(2802, 2905)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	764
+			justify    	0
+			label      	"账单退费记录ConsuRefundRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574FD0BC02A3"
+		    compartment 	(object Compartment
+			Parent_View 	@18
+			location   	(2802, 2957)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	761
+			justify    	1)
+		    width      	782
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$27" @19
+		    location   	(2710, 2992)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574FD8C503D1"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$28" @20
+			    Parent_View 	@19
+			    location   	(429, -52)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574FD8C60144"
+			    client     	@19
+			    supplier   	@9
+			    vertices   	(list Points
+				(2710, 2992)
+				(2628, 2975))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$29" @21
+			    Parent_View 	@19
+			    location   	(429, -52)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574FD8C60153"
+			    client     	@19
+			    supplier   	@18
+			    vertices   	(list Points
+				(2710, 2992)
+				(2792, 3010))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::号段使用情况NoSegmeUsage" @22
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2255, 365)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@22
+			location   	(1851, 52)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	808
+			justify    	0
+			label      	"号段使用情况NoSegmeUsage")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57206C260282"
+		    compartment 	(object Compartment
+			Parent_View 	@22
+			location   	(1851, 104)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	14
+			max_width  	805
+			justify    	1)
+		    width      	826
+		    height     	646
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity" @23
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3683, 716)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@23
+			location   	(3502, 642)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	362
+			justify    	0
+			label      	"商品Commodity")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"567164470389"
+		    width      	380
+		    height     	172
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::票据商品InvoiceSeg" @24
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3114, 277)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@24
+			location   	(2793, 87)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	642
+			justify    	0
+			label      	"票据商品InvoiceSeg")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57393BC70198"
+		    compartment 	(object Compartment
+			Parent_View 	@24
+			location   	(2793, 139)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	639
+			justify    	1)
+		    width      	660
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @25
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@24
+		    supplier   	@2
+		    vertices   	(list Points
+			(3083, 477)
+			(3064, 606))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$21" @26
+		    location   	(2725, 316)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573E86BB03A0"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$22" @27
+			    Parent_View 	@26
+			    location   	(898, -470)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573E86BC0138"
+			    client     	@26
+			    supplier   	@24
+			    vertices   	(list Points
+				(2725, 316)
+				(2783, 310))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$23" @28
+			    Parent_View 	@26
+			    location   	(898, -470)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573E86BC01EC"
+			    client     	@26
+			    supplier   	@22
+			    vertices   	(list Points
+				(2725, 316)
+				(2668, 322))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$24" @29
+		    location   	(3472, 553)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573E86D40140"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$25" @30
+			    Parent_View 	@29
+			    location   	(655, 7)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573E86D40264"
+			    client     	@29
+			    supplier   	@23
+			    vertices   	(list Points
+				(3472, 553)
+				(3570, 629))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$26" @31
+			    Parent_View 	@29
+			    location   	(655, 7)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573E86D402DE"
+			    client     	@29
+			    supplier   	@24
+			    vertices   	(list Points
+				(3472, 553)
+				(3374, 477))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::票据打印设置InvoiPrintSet" @32
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4038, 244)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@32
+			location   	(3666, 116)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	744
+			justify    	0
+			label      	"票据打印设置InvoiPrintSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"577226A301CB"
+		    width      	762
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::打印机参数PrinterConfig" @33
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4494, 591)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@33
+			location   	(4123, 483)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	742
+			justify    	0
+			label      	"打印机参数PrinterConfig")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"577227F100CB"
+		    width      	760
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$36" @34
+		    location   	(4280, 427)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"577227F70232"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$37" @35
+			    Parent_View 	@34
+			    location   	(188, -241)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"577227F703B1"
+			    client     	@34
+			    supplier   	@32
+			    vertices   	(list Points
+				(4280, 427)
+				(4221, 382))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$38" @36
+			    Parent_View 	@34
+			    location   	(188, -241)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"577227F703B3"
+			    client     	@34
+			    supplier   	@33
+			    vertices   	(list Points
+				(4280, 427)
+				(4339, 472))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::项目管理::审批记录ProApprRec" @37
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(511, 2570)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@37
+			location   	(9, 2321)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1004
+			justify    	0
+			label      	"审批记录ProApprRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FD50203A9"
+		    compartment 	(object Compartment
+			Parent_View 	@37
+			location   	(9, 2407)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	1001
+			justify    	1)
+		    width      	1022
+		    height     	518
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::费用结算详情CostBillDet" @38
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(550, 387)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@38
+			location   	(168, 136)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	764
+			justify    	0
+			label      	"费用结算详情CostBillDet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"570F04DF00BD"
+		    compartment 	(object Compartment
+			Parent_View 	@38
+			location   	(168, 188)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	11
+			max_width  	761
+			justify    	1)
+		    width      	782
+		    height     	522
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @39
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@38
+		    supplier   	@1
+		    vertices   	(list Points
+			(941, 335)
+			(1005, 326))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::结算日报BillStatements" @40
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(437, 1309)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@40
+			location   	(112, 730)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	650
+			justify    	0
+			label      	"结算日报BillStatements")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CD70E40086"
+		    compartment 	(object Compartment
+			Parent_View 	@40
+			location   	(112, 782)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	27
+			max_width  	647
+			justify    	1)
+		    width      	668
+		    height     	1178
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "" @41
+		    location   	(482, 2104)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"570DF3BD01F4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @42
+			    Parent_View 	@41
+			    location   	(46, 654)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DF3BD0384"
+			    client     	@41
+			    supplier   	@37
+			    vertices   	(list Points
+				(482, 2104)
+				(494, 2310))
+			    line_style 	0)
+			(object RoleView "" @43
+			    Parent_View 	@41
+			    location   	(46, 654)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DF3BD0386"
+			    client     	@41
+			    supplier   	@40
+			    vertices   	(list Points
+				(482, 2104)
+				(470, 1898))
+			    line_style 	0)))
+		(object AssociationViewNew "" @44
+		    location   	(511, 683)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"570F05190015"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @45
+			    Parent_View 	@44
+			    location   	(75, -766)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570F051902A2"
+			    client     	@44
+			    supplier   	@38
+			    vertices   	(list Points
+				(511, 683)
+				(516, 648))
+			    line_style 	0
+			    label      	(object SegLabel @46
+				Parent_View 	@45
+				location   	(463, 645)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "" @47
+			    Parent_View 	@44
+			    location   	(75, -766)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570F051902A5"
+			    client     	@44
+			    supplier   	@40
+			    vertices   	(list Points
+				(511, 683)
+				(507, 719))
+			    line_style 	0
+			    label      	(object SegLabel @48
+				Parent_View 	@47
+				location   	(542, 650)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	-1.000000
+				height     	27
+				orientation 	0))))
+		(object AttachView "" @49
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@40
+		    supplier   	@1
+		    vertices   	(list Points
+			(771, 918)
+			(1213, 404))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::票据支付方式InvoicePaidWay" @50
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(916, 2112)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@50
+			location   	(525, 2004)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	782
+			justify    	0
+			label      	"票据支付方式InvoicePaidWay")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57563D520186"
+		    compartment 	(object Compartment
+			Parent_View 	@50
+			location   	(525, 2056)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	4
+			max_width  	779
+			justify    	1)
+		    width      	800
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::收费票据打印项ToInvPrintItm" @51
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1391, 778)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@51
+			location   	(975, 506)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	832
+			justify    	0
+			label      	"收费票据打印项ToInvPrintItm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5772845101A9"
+		    compartment 	(object Compartment
+			Parent_View 	@51
+			location   	(975, 558)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	12
+			max_width  	830
+			justify    	1)
+		    width      	850
+		    height     	564
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice" @52
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1925, 1678)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@52
+			location   	(1418, 1119)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1014
+			justify    	0
+			label      	"收费票据TollInvoice")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CD22050005"
+		    compartment 	(object Compartment
+			Parent_View 	@52
+			location   	(1418, 1171)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	26
+			max_width  	1011
+			justify    	1)
+		    width      	1032
+		    height     	1138
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "" @53
+		    location   	(1089, 1469)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CD73290245"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @54
+			    Parent_View 	@53
+			    location   	(844, 372)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD732A01B7"
+			    client     	@53
+			    supplier   	@52
+			    vertices   	(list Points
+				(1089, 1469)
+				(1408, 1548))
+			    line_style 	0
+			    label      	(object SegLabel @55
+				Parent_View 	@54
+				location   	(1364, 1592)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "" @56
+			    Parent_View 	@53
+			    location   	(844, 372)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD732A01C8"
+			    client     	@53
+			    supplier   	@40
+			    vertices   	(list Points
+				(1089, 1469)
+				(771, 1391))
+			    line_style 	0
+			    label      	(object SegLabel @57
+				Parent_View 	@56
+				location   	(792, 1451)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object UsesView "" @58
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"572B5458035E"
+		    client     	@4
+		    supplier   	@52
+		    vertices   	(list Points
+			(2615, 1619)
+			(2441, 1634))
+		    line_style 	0)
+		(object UsesView "" @59
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"572B54550338"
+		    client     	@9
+		    supplier   	@52
+		    vertices   	(list Points
+			(1986, 2381)
+			(1974, 2247))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$30" @60
+		    location   	(1298, 1946)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57563F5401BE"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$31" @61
+			    Parent_View 	@60
+			    location   	(57, -190)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57563F5402E9"
+			    client     	@60
+			    supplier   	@52
+			    vertices   	(list Points
+				(1298, 1946)
+				(1408, 1899))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$32" @62
+			    Parent_View 	@60
+			    location   	(57, -190)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57563F5402FC"
+			    client     	@60
+			    supplier   	@50
+			    vertices   	(list Points
+				(1298, 1946)
+				(1188, 1993))
+			    line_style 	0)))
+		(object UsesView "" @63
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57207CD601FD"
+		    client     	@22
+		    supplier   	@52
+		    vertices   	(list Points
+			(2172, 688)
+			(2067, 1108))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$39" @64
+		    location   	(1658, 1228)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"577288CD01F1"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$40" @65
+			    Parent_View 	@64
+			    location   	(-247, -537)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"577288CD0369"
+			    client     	@64
+			    supplier   	@51
+			    vertices   	(list Points
+				(1658, 1228)
+				(1391, 778))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$41" @66
+			    Parent_View 	@64
+			    location   	(-247, -537)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"577288CD037C"
+			    client     	@64
+			    supplier   	@52
+			    vertices   	(list Points
+				(1658, 1228)
+				(1925, 1678))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::收费管理::费用误差CostError" @67
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4241, 2175)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@67
+			location   	(3734, 1760)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1014
+			justify    	0
+			label      	"费用误差CostError")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57E9CE2000A1"
+		    compartment 	(object Compartment
+			Parent_View 	@67
+			location   	(3734, 1812)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	19
+			max_width  	1011
+			justify    	1)
+		    width      	1032
+		    height     	850
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @68
+		    location   	(5119, 2170)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@68
+			location   	(4856, 2067)
+			fill_color 	13434879
+			nlines     	5
+			max_width  	490
+			justify    	1
+			label      	"误差来源：退费，收费，预交金收费，预交金退费，结算补款，结算退款")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	550
+		    height     	219)
+		(object AttachView "" @69
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@67
+		    supplier   	@68
+		    vertices   	(list Points
+			(4757, 2171)
+			(4843, 2171))
+		    line_style 	0)))))

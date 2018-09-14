@@ -1,0 +1,665 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "医疗卫生服务人员"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"sc"
+	    name       	"SourceControlSpec"
+	    value      	(value Text 
+|"/实体类设计/BAS基础信息库", CAAAAAAA
+	    )))
+    quid       	"5486612B0138"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "医疗卫生服务人员MedCarStaf"
+	    quid       	"54868C8F0196"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54868DDA0128")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54868DE4002E")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"5756920800A2")
+		(object ClassAttribute "（术语）医疗卫生服务人员类型编号MCSTpCd"
+		    quid       	"54868E030232")
+		(object ClassAttribute "工号WorkNum"
+		    quid       	"5489239103A9")
+		(object ClassAttribute "（术语）职称编号TitCd"
+		    quid       	"54892B5402EE")
+		(object ClassAttribute "（术语） 岗位编号QuaCd"
+		    quid       	"54892B5C0290")
+		(object ClassAttribute "（术语）学历编号EduCd"
+		    quid       	"54892B7E03C8")
+		(object ClassAttribute "（医疗卫生机构）所属医疗卫生机构编号AttMedOrgCd"
+		    quid       	"54892B880000")
+		(object ClassAttribute "（医学专业） 主要医学专业编号MainMedSpeCd"
+		    quid       	"54894CD101C5")
+		(object ClassAttribute "简介Introduction"
+		    quid       	"54892C4E0261")
+		(object ClassAttribute "详细介绍DetIntr"
+		    quid       	"54892C5D0203")
+		(object ClassAttribute "特长及专业说明FeaSpeIntr"
+		    quid       	"54892C6102FD")
+		(object ClassAttribute "入职时间EntryTim"
+		    quid       	"54892C8F00CB")
+		(object ClassAttribute "工龄Seniority"
+		    quid       	"54892C9B006D")
+		(object ClassAttribute "（术语） 级别编号LevCd"
+		    quid       	"54892CAE01F4")
+		(object ClassAttribute "照片Photo"
+		    quid       	"54892DA60128")
+		(object ClassAttribute "图片签名PhoSig"
+		    quid       	"54892DAA01E4")
+		(object ClassAttribute "入党时间WUBCTime（新增）"
+		    quid       	"57B1A8C4015D")
+		(object ClassAttribute "出生日期BirthDate（新增）"
+		    quid       	"57B1A8F6027E")
+		(object ClassAttribute "原有学历OriEdu（新增）"
+		    quid       	"57B1A96D007D")
+		(object ClassAttribute "现有学历NowEdu（新增）"
+		    quid       	"57B1A98603BD")
+		(object ClassAttribute "编制IsAuthorCd（新增）"
+		    quid       	"57B1AA25038D")))
+	(object Class "医疗卫生服务人员映射MedCarStafMap"
+	    quid       	"54868D8F029F"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54914BCB01FB")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"575692390354")
+		(object ClassAttribute "（医疗卫生服务人员） 医疗卫生服务人员编号MCSCd"
+		    quid       	"54868E320271")
+		(object ClassAttribute "（医院系统） 医院系统编号HospSysCd"
+		    quid       	"54868E550148")
+		(object ClassAttribute "医院系统医疗卫生服务人员编号HospSysMCSCd"
+		    quid       	"54868E6D0196")
+		(object ClassAttribute "医院系统医疗卫生服务人员名称(医疗系统医疗卫生服务人员)HospSysMCSNam"
+		    quid       	"54868E8A031C")))
+	(object Class "医疗卫生服务人员联系方式MCSContMeth"
+	    quid       	"54892CD30186"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54892D0E0213")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54943A9501C7")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569232027A")
+		(object ClassAttribute "（术语） 联系方式编号ContMethCd"
+		    quid       	"54892D11034B")
+		(object ClassAttribute "联系方式ContMeth"
+		    quid       	"54892D170399")
+		(object ClassAttribute "（医疗卫生服务人员） 医疗卫生服务人员编号MCSCd"
+		    quid       	"54892D1B030D")))
+	(object Class "医疗卫生服务人员凭证MCSCred"
+	    quid       	"54892CEC01C5"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54892D300242")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54943AEF0164")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569227017B")
+		(object ClassAttribute "（术语）凭证类型编号CredTpCd"
+		    quid       	"54892D3F00AB")
+		(object ClassAttribute "凭证号CredCd"
+		    quid       	"54892D490109")
+		(object ClassAttribute "（医疗卫生服务人员）医疗卫生服务人员编号MCSCd"
+		    quid       	"54892D4D02AF")))
+	(object Class "医疗卫生服务人员医学专业MCSMedSpe"
+	    quid       	"548956B4005D"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"548956C900EA")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54943AC501DF")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569203035B")
+		(object ClassAttribute "（医疗卫生服务人员）医疗卫生服务人员编号MCSCd"
+		    quid       	"548956CB036B")
+		(object ClassAttribute "（术语） 医学专业编号MedSpeCd"
+		    quid       	"548956D50157")
+		(object ClassAttribute "（术语）主要专业MainSpe"
+		    quid       	"548956DC035B")))
+	(object Association "$UNNAMED$0"
+	    quid       	"5486B4700251"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5486B47101A5"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员MedCarStaf"
+		    quidu      	"54868C8F0196"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"5486B47101A7"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员映射MedCarStafMap"
+		    quidu      	"54868D8F029F"
+		    client_cardinality 	(value cardinality "0..*"))))
+	(object Association "$UNNAMED$3"
+	    quid       	"5486B5420196"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5486B5430119"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::参与者::医院系统HospitalSystem"
+		    quidu      	"546205F6005D"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"5486B5430128"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员映射MedCarStafMap"
+		    quidu      	"54868D8F029F")))
+	(object Association "$UNNAMED$6"
+	    quid       	"54892D6201A5"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"54892D62037A"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员联系方式MCSContMeth"
+		    quidu      	"54892CD30186"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"54892D62037C"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员MedCarStaf"
+		    quidu      	"54868C8F0196")))
+	(object Association "$UNNAMED$9"
+	    quid       	"54892D6D01D4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"54892D6D03A9"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员凭证MCSCred"
+		    quidu      	"54892CEC01C5"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"54892D6D03AB"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员MedCarStaf"
+		    quidu      	"54868C8F0196")))
+	(object Association "$UNNAMED$12"
+	    quid       	"54894D0A0222"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"54894D0B0399"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医学术语::医学专业MedSpecialty"
+		    quidu      	"54894A910157"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$14"
+		    quid       	"54894D0B039B"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员MedCarStaf"
+		    quidu      	"54868C8F0196")))
+	(object Association "$UNNAMED$15"
+	    quid       	"548956F401D4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"548956F500BB"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员MedCarStaf"
+		    quidu      	"54868C8F0196"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$17"
+		    quid       	"548956F500CB"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员医学专业MCSMedSpe"
+		    quidu      	"548956B4005D")))
+	(object Association "$UNNAMED$18"
+	    quid       	"548956F80000"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"548956F90177"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医学术语::医学专业MedSpecialty"
+		    quidu      	"54894A910157"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$20"
+		    quid       	"548956F90179"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员医学专业MCSMedSpe"
+		    quidu      	"548956B4005D"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "医疗卫生服务人员"
+	    quid       	"548562BB02AF"
+	    title      	"医疗卫生服务人员"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	247
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员映射MedCarStafMap" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1029, 1662)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(165, 1431)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	1728
+			justify    	0
+			label      	"医疗卫生服务人员映射MedCarStafMap")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54868D8F029F"
+		    compartment 	(object Compartment
+			Parent_View 	@1
+			location   	(165, 1492)
+			font       	(object Font
+			    size       	12
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	1734
+			justify    	1)
+		    width      	1746
+		    height     	486
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员联系方式MCSContMeth" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(642, 547)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(41, 316)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	1202
+			justify    	0
+			label      	"医疗卫生服务人员联系方式MCSContMeth")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54892CD30186"
+		    compartment 	(object Compartment
+			Parent_View 	@2
+			location   	(41, 377)
+			font       	(object Font
+			    size       	12
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	1209
+			justify    	1)
+		    width      	1220
+		    height     	486
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员凭证MCSCred" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3957, 500)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(3368, 269)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	1178
+			justify    	0
+			label      	"医疗卫生服务人员凭证MCSCred")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54892CEC01C5"
+		    compartment 	(object Compartment
+			Parent_View 	@3
+			location   	(3368, 330)
+			font       	(object Font
+			    size       	12
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	1184
+			justify    	1)
+		    width      	1196
+		    height     	486
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员MedCarStaf" @4
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2298, 687)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1684, 56)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1228
+			justify    	0
+			label      	"医疗卫生服务人员MedCarStaf")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54868C8F0196"
+		    compartment 	(object Compartment
+			Parent_View 	@4
+			location   	(1684, 117)
+			font       	(object Font
+			    size       	12
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	24
+			max_width  	1225
+			justify    	1)
+		    width      	1246
+		    height     	1286
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @5
+		    location   	(1509, 1291)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5486B4700251"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @6
+			    Parent_View 	@5
+			    location   	(896, 385)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5486B47101A5"
+			    client     	@5
+			    supplier   	@4
+			    vertices   	(list Points
+				(1509, 1291)
+				(1674, 1164))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$2" @7
+			    Parent_View 	@5
+			    location   	(896, 385)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5486B47101A7"
+			    client     	@5
+			    supplier   	@1
+			    vertices   	(list Points
+				(1509, 1291)
+				(1344, 1418))
+			    line_style 	0
+			    label      	(object SegLabel @8
+				Parent_View 	@7
+				location   	(1395, 1447)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object AssociationViewNew "$UNNAMED$6" @9
+		    location   	(1463, 615)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54892D6201A5"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$7" @10
+			    Parent_View 	@9
+			    location   	(-73, 114)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54892D62037A"
+			    client     	@9
+			    supplier   	@2
+			    vertices   	(list Points
+				(1463, 615)
+				(1252, 597))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$8" @11
+			    Parent_View 	@9
+			    location   	(-73, 114)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54892D62037C"
+			    client     	@9
+			    supplier   	@4
+			    vertices   	(list Points
+				(1463, 615)
+				(1674, 633))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$9" @12
+		    location   	(3139, 590)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54892D6D01D4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$10" @13
+			    Parent_View 	@12
+			    location   	(1591, 95)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54892D6D03A9"
+			    client     	@12
+			    supplier   	@3
+			    vertices   	(list Points
+				(3139, 590)
+				(3358, 566))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$11" @14
+			    Parent_View 	@12
+			    location   	(1591, 95)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54892D6D03AB"
+			    client     	@12
+			    supplier   	@4
+			    vertices   	(list Points
+				(3139, 590)
+				(2921, 615))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::医疗卫生服务人员::医疗卫生服务人员医学专业MCSMedSpe" @15
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2799, 1637)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@15
+			location   	(2210, 1406)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	1178
+			justify    	0
+			label      	"医疗卫生服务人员医学专业MCSMedSpe")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"548956B4005D"
+		    compartment 	(object Compartment
+			Parent_View 	@15
+			location   	(2210, 1467)
+			font       	(object Font
+			    size       	12
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	1184
+			justify    	1)
+		    width      	1196
+		    height     	486
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$15" @16
+		    location   	(2653, 1361)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"548956F401D4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$16" @17
+			    Parent_View 	@16
+			    location   	(149, 280)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"548956F500BB"
+			    client     	@16
+			    supplier   	@4
+			    vertices   	(list Points
+				(2653, 1361)
+				(2636, 1330))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$17" @18
+			    Parent_View 	@16
+			    location   	(149, 280)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"548956F500CB"
+			    client     	@16
+			    supplier   	@15
+			    vertices   	(list Points
+				(2653, 1361)
+				(2670, 1393))
+			    line_style 	0)))))))

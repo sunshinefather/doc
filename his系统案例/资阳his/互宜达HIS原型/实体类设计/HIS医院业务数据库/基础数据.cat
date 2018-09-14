@@ -1,0 +1,3182 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "基础数据"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"573315B4032C"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "医嘱收费关系ARCItmRela"
+	    quid       	"5729E5F9035C"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（医嘱项）医嘱项编号ARCItmMastCd"
+		    quid       	"5729E63201F2")
+		(object ClassAttribute "（收费项目）收费项目编号ChargeItmCd"
+		    quid       	"5729E6490144")
+		(object ClassAttribute "收费项数量CharItmNum"
+		    quid       	"575BB13A0085")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569ADB01BE")))
+	(object Class "商品药学关系PharmRela"
+	    quid       	"5729B53F022A"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（商品）商品编号CommodCd"
+		    quid       	"5729B5B901C5")
+		(object ClassAttribute "（药学项）药学项编号PharmaCd"
+		    quid       	"5729B5C800B2")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569AA5030C")))
+	(object Class "HIS参数HISConfig"
+	    quid       	"57371504039C"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"57371558029D")
+		(object ClassAttribute "名称Nam"
+		    quid       	"5737155B0313")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569A150049")
+		(object ClassAttribute "（术语）HIS参数分类HISConfigTpCd"
+		    quid       	"573E819B007C")
+		(object ClassAttribute "值Value"
+		    quid       	"5737157501CB")
+		(object ClassAttribute "最大阈值MaxThreshold"
+		    quid       	"5737157D0121")
+		(object ClassAttribute "最小阈值MinThreshold"
+		    quid       	"5737157F007A")
+		(object ClassAttribute "描述Description"
+		    quid       	"57371581021D")))
+	(object Class "诊号动态分配AdmNODynamic"
+	    quid       	"5737E6DB03B0"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"5737E7260284")
+		(object ClassAttribute "名称Nam"
+		    quid       	"5737E7290276")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569A170346")
+		(object ClassAttribute "（排班表）排班表编号RSSchedCd"
+		    quid       	"5737E72D00FB")
+		(object ClassAttribute "（参与者）服务提供对象ServObjCd"
+		    quid       	"5737EB3602A0")
+		(object ClassAttribute "回归时间ReturnTime"
+		    quid       	"5737ED550285")
+		(object ClassAttribute "序号队列SerialQue"
+		    quid       	"573C21B00214")))
+	(object Class "医嘱套ARCItmSet"
+	    quid       	"5746D892022C"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（医嘱项）医嘱项编号ARCItmMastCd"
+		    quid       	"5746D8BF034E")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569AE9020A")
+		(object ClassAttribute "生效日期EffeDate"
+		    quid       	"5746DB7D01AE")
+		(object ClassAttribute "失效日期ExpiDate"
+		    quid       	"5746DB860275")
+		(object ClassAttribute "医嘱套状态ItmSetStatus"
+		    quid       	"5746DBEA00F6")
+		(object ClassAttribute "打包标志"
+		    quid       	"5753E66201E3")))
+	(object Class "医嘱套明细ARCItmSetDet"
+	    quid       	"5746D8A20366"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（医嘱项）医嘱项编号ARCItmMastCd"
+		    quid       	"5746D8D40035")
+		(object ClassAttribute "（医嘱套）医嘱套编号ARCItmSetCd"
+		    quid       	"5746D8EE0315")
+		(object ClassAttribute "数量Qty"
+		    quid       	"5746D9680152")
+		(object ClassAttribute "序号SeqNumber"
+		    quid       	"5746E0190330")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569AEC0006")))
+	(object Class "导诊类型HISGuidanceTp"
+	    quid       	"574A8C870207"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"574A8E1E01C6")
+		(object ClassAttribute "名称Nam"
+		    quid       	"574A8E230145")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569A7D0205")
+		(object ClassAttribute "描述Description"
+		    quid       	"574A8F1402CE")))
+	(object Class "导诊信息模板HISGuiTemplet"
+	    quid       	"574A8D3D0382"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"574A8E2800BD")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569BA80294")
+		(object ClassAttribute "（导诊类型）导诊类型编号GuiTpCd"
+		    quid       	"574A8E35015B")
+		(object ClassAttribute "导诊单打印模板内容PrintContent"
+		    quid       	"574A90E00000")
+		(object ClassAttribute "导诊单打印是否启用PrintSign"
+		    quid       	"574A910501B1")
+		(object ClassAttribute "消息推送模板内容MsgContent"
+		    quid       	"574A913B035D")
+		(object ClassAttribute "消息推送是否启用MsgPushSign"
+		    quid       	"574A91570154")))
+	(object Class "导诊信息关键字设置HISGuiWordSet"
+	    quid       	"574A92D00107"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"574A96AD0195")
+		(object ClassAttribute "关键字名称Nam"
+		    quid       	"574A96B8010B")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569A8500DC")
+		(object ClassAttribute "（导诊信息模板）所属模板编号GuiTempCd"
+		    quid       	"574A97D70004")
+		(object ClassAttribute "关键字来源SQL语句SrcSQL"
+		    quid       	"574A9ABF00C1")))
+	(object Class "商品医嘱关系CommoRela"
+	    quid       	"574D70EB03AE"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（商品）商品编号CommodCd"
+		    quid       	"574D711003E0")
+		(object ClassAttribute "（医嘱项）医嘱项编号ARCItmMastCd"
+		    quid       	"574D71170335")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569AB90303")))
+	(object Class "医嘱服务标准关系ARCItmStdRela"
+	    quid       	"579ABB6E0007"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（医嘱项）医嘱项编号ARCItmMastCd"
+		    quid       	"579ABBB70042")
+		(object ClassAttribute "（服务标准）服务标准编号ServStdCd"
+		    quid       	"579ABBC90395")
+		(object ClassAttribute "最长预约时间MaxReseDay"
+		    quid       	"57A54932005B")
+		(object ClassAttribute "是否允许预约IsOrder"
+		    quid       	"57AA1D370031")))
+	(object Class "建卡数据初始化设置CardInitialSet"
+	    quid       	"57A57DE702C9"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"57A57DFE03A2")
+		(object ClassAttribute "名称Nam"
+		    quid       	"57A57E010145")
+		(object ClassAttribute "（凭证类型）卡类型编号CardTpCd"
+		    quid       	"57A57E6C01B1")
+		(object ClassAttribute "（术语）设备类型EquipTpCd"
+		    quid       	"57A57E8F00AC")
+		(object ClassAttribute "（凭证类型）证件类型编号CredTpCd"
+		    quid       	"57A57E9B0318")
+		(object ClassAttribute "（病人类别）病人类别编号PatCategoryCd"
+		    quid       	"57A57ECA0022")
+		(object ClassAttribute "（术语）国家编号CountryCd"
+		    quid       	"57A57EED0018")
+		(object ClassAttribute "（术语）省编号ProvinceCd"
+		    quid       	"57A57EF602E6")
+		(object ClassAttribute "（术语）地区编号RegionCd"
+		    quid       	"57A57F1401C5")
+		(object ClassAttribute "（术语）区县编号CityAreaCd"
+		    quid       	"57A57F1C0170")))
+	(object Class "医生职称关联商品属性 TitDrugAttrRel"
+	    quid       	"57EBF11C00AC"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）职称TitCd"
+		    quid       	"57EBF12C01BD")
+		(object ClassAttribute "（术语）商品属性DrugAttrCd"
+		    quid       	"57EBF1370134")))
+	(object Class "抗菌药物限制越级设置 DrugAttrLimit"
+	    quid       	"57EBF1B20155"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）商品属性DrugAttrCd"
+		    quid       	"57EBF1FD02B9")
+		(object ClassAttribute "限制使用天数上线DayNum"
+		    quid       	"57EBF239008C")))
+	(object Class "用药途径关联医嘱项ItmOdrUsageRel"
+	    quid       	"57ED1F230062"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（术语）用法编号UsageCd"
+		    quid       	"57ED1F330208")
+		(object ClassAttribute "（医嘱项）医嘱项编号ARCItmMastCd"
+		    quid       	"57ED1F3B03BD")))
+	(object Class "加号权限DocRegJurisd"
+	    quid       	"580888A8032A"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"580888DA02A4")
+		(object ClassAttribute "名称Nam"
+		    quid       	"580888DC039B")
+		(object ClassAttribute "（参与者）科室编号DeptCd"
+		    quid       	"580888DF0164")
+		(object ClassAttribute "（参与者）医生编号DocCd"
+		    quid       	"580888E5038F")
+		(object ClassAttribute "状态UseStatus"
+		    quid       	"580888EC0272")
+		(object ClassAttribute "是否允许免费IsFree"
+		    quid       	"58088A3D02C5")))
+	(object Association "$UNNAMED$0"
+	    quid       	"5729E5B60098"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"5729E5B6021F"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy"
+		    quidu      	"5729A9290027"
+		    client_cardinality 	(value cardinality "0..1"))
+		(object Role "$UNNAMED$2"
+		    quid       	"5729E5B60221"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$3"
+	    quid       	"5729E6640146"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"5729E6640371"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱收费关系ARCItmRela"
+		    quidu      	"5729E5F9035C")
+		(object Role "$UNNAMED$5"
+		    quid       	"5729E6640373"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm"
+		    quidu      	"566FE7E40108")))
+	(object Association "$UNNAMED$6"
+	    quid       	"5729E6EB021E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"5729E6EC000F"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity"
+		    quidu      	"567164470389")
+		(object Role "$UNNAMED$8"
+		    quid       	"5729E6EC0011"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::库存商品Stock"
+		    quidu      	"567144F4034F")))
+	(object Association "$UNNAMED$9"
+	    quid       	"5729E6FB02AD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"5729E6FC0035"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm"
+		    quidu      	"566FE7E40108")
+		(object Role "$UNNAMED$11"
+		    quid       	"5729E6FC0045"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::库存商品Stock"
+		    quidu      	"567144F4034F")))
+	(object Association "$UNNAMED$12"
+	    quid       	"572AB53702FF"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"572AB53802BB"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::商品药学关系PharmRela"
+		    quidu      	"5729B53F022A"
+		    client_cardinality 	(value cardinality "0..1"))
+		(object Role "$UNNAMED$14"
+		    quid       	"572AB53802BD"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity"
+		    quidu      	"567164470389"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$15"
+	    quid       	"572B18EC027A"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"572B18ED0077"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")
+		(object Role "$UNNAMED$17"
+		    quid       	"572B18ED0097"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::库存商品Stock"
+		    quidu      	"567144F4034F")))
+	(object Association "$UNNAMED$18"
+	    quid       	"5735970F0357"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"573597100144"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药理学分类PharmacType"
+		    quidu      	"5729AAE600EA")
+		(object Role "$UNNAMED$20"
+		    quid       	"57359710018A"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy"
+		    quidu      	"5729A9290027")))
+	(object Association "$UNNAMED$21"
+	    quid       	"5735971F011A"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"5735971F0295"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药品管制分类DrugContrType"
+		    quidu      	"5729AEF2018C")
+		(object Role "$UNNAMED$23"
+		    quid       	"5735971F0297"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy"
+		    quidu      	"5729A9290027")))
+	(object Association "$UNNAMED$24"
+	    quid       	"5736CCD30356"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"5736CCD4015F"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm"
+		    quidu      	"566FE7E40108")
+		(object Role "$UNNAMED$26"
+		    quid       	"5736CCD40177"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱收费关系ARCItmRela"
+		    quidu      	"5729E5F9035C")))
+	(object Association "$UNNAMED$27"
+	    quid       	"57383A3B03BD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"57383A3C0227"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::商品药学关系PharmRela"
+		    quidu      	"5729B53F022A"
+		    client_cardinality 	(value cardinality "0..*"))
+		(object Role "$UNNAMED$29"
+		    quid       	"57383A3C022D"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy"
+		    quidu      	"5729A9290027"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$30"
+	    quid       	"57466225028B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$31"
+		    quid       	"57466226002F"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy"
+		    quidu      	"5729A9290027")
+		(object Role "$UNNAMED$32"
+		    quid       	"574662260043"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$33"
+	    quid       	"5746C1FD02F4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$34"
+		    quid       	"5746C1FE00C4"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱分类ARCItmType"
+		    quidu      	"5732FF2100CA")
+		(object Role "$UNNAMED$35"
+		    quid       	"5746C1FE00C8"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$36"
+	    quid       	"5746D8AE037B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$37"
+		    quid       	"5746D8AF015C"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱套ARCItmSet"
+		    quidu      	"5746D892022C"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$38"
+		    quid       	"5746D8AF015E"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$39"
+	    quid       	"5746D8FB035F"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$40"
+		    quid       	"5746D8FC012F"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱套明细ARCItmSetDet"
+		    quidu      	"5746D8A20366")
+		(object Role "$UNNAMED$41"
+		    quid       	"5746D8FC0132"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱套ARCItmSet"
+		    quidu      	"5746D892022C")))
+	(object Association "$UNNAMED$42"
+	    quid       	"5746D9B1002C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$43"
+		    quid       	"5746D9B10246"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱套ARCItmSet"
+		    quidu      	"5746D892022C")
+		(object Role "$UNNAMED$44"
+		    quid       	"5746D9B10256"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$45"
+	    quid       	"574A91D20182"
+	    roles      	(list role_list
+		(object Role "0..1"
+		    quid       	"574A91D20324"
+		    label      	"0..1"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊信息模板HISGuiTemplet"
+		    quidu      	"574A8D3D0382")
+		(object Role "1"
+		    quid       	"574A91D20328"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊类型HISGuidanceTp"
+		    quidu      	"574A8C870207")))
+	(object Association "$UNNAMED$46"
+	    quid       	"574A9A54020A"
+	    roles      	(list role_list
+		(object Role "0..n"
+		    quid       	"574A9A540334"
+		    label      	"0..n"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊信息关键字设置HISGuiWordSet"
+		    quidu      	"574A92D00107")
+		(object Role "1"
+		    quid       	"574A9A540339"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊信息模板HISGuiTemplet"
+		    quidu      	"574A8D3D0382")))
+	(object Association "$UNNAMED$47"
+	    quid       	"574D401001BD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$48"
+		    quid       	"574D40100338"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")
+		(object Role "$UNNAMED$49"
+		    quid       	"574D4010033F"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱收费关系ARCItmRela"
+		    quidu      	"5729E5F9035C")))
+	(object Association "$UNNAMED$50"
+	    quid       	"574D480B01B8"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$51"
+		    quid       	"574D480B02ED"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy"
+		    quidu      	"5729A9290027"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$52"
+		    quid       	"574D480B02F3"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$53"
+	    quid       	"574D6F3C031C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$54"
+		    quid       	"574D6F3D0130"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity"
+		    quidu      	"567164470389"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$55"
+		    quid       	"574D6F3D0144"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$56"
+	    quid       	"574D711F02BF"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$57"
+		    quid       	"574D71200025"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity"
+		    quidu      	"567164470389"
+		    client_cardinality 	(value cardinality "1"))
+		(object Role "$UNNAMED$58"
+		    quid       	"574D71200040"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::商品医嘱关系CommoRela"
+		    quidu      	"574D70EB03AE"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$59"
+	    quid       	"574D71260383"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$60"
+		    quid       	"574D71270104"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0"
+		    client_cardinality 	(value cardinality "1"))
+		(object Role "$UNNAMED$61"
+		    quid       	"574D7127011F"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::商品医嘱关系CommoRela"
+		    quidu      	"574D70EB03AE"
+		    client_cardinality 	(value cardinality "1..*"))))
+	(object Association "$UNNAMED$62"
+	    quid       	"575BDAE700FF"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$63"
+		    quid       	"575BDAE701FB"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")
+		(object Role "$UNNAMED$64"
+		    quid       	"575BDAE70208"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户金额变动记录AccoPayment"
+		    quidu      	"573EB372011E")))
+	(object Association "$UNNAMED$65"
+	    quid       	"575BDB2502A4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$66"
+		    quid       	"575BDB2503CD"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128")
+		(object Role "$UNNAMED$67"
+		    quid       	"575BDB2503D7"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::EMPI::病人Patient"
+		    quidu      	"5486613C0399")))
+	(object Association "$UNNAMED$68"
+	    quid       	"579ABB8100FF"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$69"
+		    quid       	"579ABB820057"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱服务标准关系ARCItmStdRela"
+		    quidu      	"579ABB6E0007")
+		(object Role "$UNNAMED$70"
+		    quid       	"579ABB820059"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0")))
+	(object Association "$UNNAMED$71"
+	    quid       	"57ED26C300CC"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$72"
+		    quid       	"57ED26C70138"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::基础数据::用药途径关联医嘱项ItmOdrUsageRel"
+		    quidu      	"57ED1F230062")
+		(object Role "$UNNAMED$73"
+		    quid       	"57ED26C7013D"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast"
+		    quidu      	"54D8C7D903D0"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "药学项"
+	    quid       	"5729E5670361"
+	    title      	"药学项"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	1522
+	    origin_y   	1913
+	    items      	(list diagram_item_list
+		(object NoteView @1
+		    location   	(3874, 2011)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(3477, 1871)
+			fill_color 	13434879
+			nlines     	6
+			max_width  	758
+			justify    	1
+			label      	
+|医嘱类别：
+|药品，材料，检验，检查，治疗，手术，护理，特殊（出院，死亡，转院，分娩）
+|优先级：
+|临时医嘱，长期医嘱，即刻医嘱，出院带药，取药医嘱，临时有药，长期有药
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	818
+		    height     	293)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱套明细ARCItmSetDet" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3757, 3888)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(3395, 3739)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	724
+			justify    	0
+			label      	"医嘱套明细ARCItmSetDet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5746D8A20366"
+		    width      	742
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱套ARCItmSet" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2783, 3736)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(2421, 3567)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	724
+			justify    	0
+			label      	"医嘱套ARCItmSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5746D892022C"
+		    width      	742
+		    height     	358
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$39" @4
+		    location   	(3269, 3811)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5746D8FB035F"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$40" @5
+			    Parent_View 	@4
+			    location   	(119, 849)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5746D8FC012F"
+			    client     	@4
+			    supplier   	@2
+			    vertices   	(list Points
+				(3269, 3811)
+				(3385, 3828))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$41" @6
+			    Parent_View 	@4
+			    location   	(119, 849)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5746D8FC0132"
+			    client     	@4
+			    supplier   	@3
+			    vertices   	(list Points
+				(3269, 3811)
+				(3154, 3793))
+			    line_style 	0)))
+		(object NoteView @7
+		    location   	(2808, 4022)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(2567, 3959)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	446
+			justify    	1
+			label      	
+|医嘱套状态：
+|使用中，已失效，未使用
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	506
+		    height     	138)
+		(object NoteView @8
+		    location   	(1664, 1109)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(1333, 1012)
+			fill_color 	13434879
+			nlines     	4
+			max_width  	627
+			justify    	1
+			label      	
+|拆分标志：
+|是，否，门诊拆零，住院拆零
+|商品代码作为“型号”使用
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	687
+		    height     	206)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::住院管理::危急值项目CritValueItem" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4133, 2938)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(3737, 2710)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	792
+			justify    	0
+			label      	"危急值项目CritValueItem")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"575015B3006C"
+		    width      	810
+		    height     	476
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::药理学分类PharmacType" @10
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3799, 434)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@10
+			location   	(3425, 226)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	748
+			justify    	0
+			label      	"药理学分类PharmacType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5729AAE600EA"
+		    width      	766
+		    height     	436
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::药品管制分类DrugContrType" @11
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3803, 1035)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@11
+			location   	(3411, 848)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	784
+			justify    	0
+			label      	"药品管制分类DrugContrType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5729AEF2018C"
+		    width      	802
+		    height     	394
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::药学项Pharmacy" @12
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2831, 1099)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(2364, 10)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	934
+			justify    	0
+			label      	"药学项Pharmacy")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5729A9290027"
+		    width      	952
+		    height     	2198
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$18" @13
+		    location   	(3393, 711)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5735970F0357"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$19" @14
+			    Parent_View 	@13
+			    location   	(724, -30)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573597100144"
+			    client     	@13
+			    supplier   	@10
+			    vertices   	(list Points
+				(3393, 711)
+				(3475, 652))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$20" @15
+			    Parent_View 	@13
+			    location   	(724, -30)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57359710018A"
+			    client     	@13
+			    supplier   	@12
+			    vertices   	(list Points
+				(3393, 711)
+				(3307, 768))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$21" @16
+		    location   	(3354, 1064)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5735971F011A"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$22" @17
+			    Parent_View 	@16
+			    location   	(685, 323)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5735971F0295"
+			    client     	@16
+			    supplier   	@11
+			    vertices   	(list Points
+				(3354, 1064)
+				(3803, 1035))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$23" @18
+			    Parent_View 	@16
+			    location   	(685, 323)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5735971F0297"
+			    client     	@16
+			    supplier   	@12
+			    vertices   	(list Points
+				(3354, 1064)
+				(2831, 1099))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::商品药学关系PharmRela" @19
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1754, 673)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@19
+			location   	(1435, 565)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	638
+			justify    	0
+			label      	"商品药学关系PharmRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5729B53F022A"
+		    width      	656
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$27" @20
+		    location   	(2203, 850)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57383A3B03BD"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$28" @21
+			    Parent_View 	@20
+			    location   	(-466, 110)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57383A3C0227"
+			    client     	@20
+			    supplier   	@19
+			    vertices   	(list Points
+				(2203, 850)
+				(2055, 791))
+			    line_style 	0
+			    label      	(object SegLabel @22
+				Parent_View 	@21
+				location   	(2041, 846)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..*"
+				pctDist    	0.963173
+				height     	56
+				orientation 	0))
+			(object RoleView "$UNNAMED$29" @23
+			    Parent_View 	@20
+			    location   	(-466, 110)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57383A3C022D"
+			    client     	@20
+			    supplier   	@12
+			    vertices   	(list Points
+				(2203, 850)
+				(2354, 909))
+			    line_style 	0
+			    label      	(object SegLabel @24
+				Parent_View 	@23
+				location   	(2319, 954)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity" @25
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(537, 928)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@25
+			location   	(134, 44)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	806
+			justify    	0
+			label      	"商品Commodity")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"567164470389"
+		    width      	824
+		    height     	1788
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$12" @26
+		    location   	(1187, 791)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"572AB53702FF"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$13" @27
+			    Parent_View 	@26
+			    location   	(661, 111)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"572AB53802BB"
+			    client     	@26
+			    supplier   	@19
+			    vertices   	(list Points
+				(1187, 791)
+				(1425, 740))
+			    line_style 	0
+			    label      	(object SegLabel @28
+				Parent_View 	@27
+				location   	(1411, 799)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"0..1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$14" @29
+			    Parent_View 	@26
+			    location   	(661, 111)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"572AB53802BD"
+			    client     	@26
+			    supplier   	@25
+			    vertices   	(list Points
+				(1187, 791)
+				(949, 839))
+			    line_style 	0
+			    label      	(object SegLabel @30
+				Parent_View 	@29
+				location   	(985, 889)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object AttachView "" @31
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@25
+		    supplier   	@8
+		    vertices   	(list Points
+			(949, 992)
+			(1320, 1052))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::项目结算比例AccountRate" @32
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1433, 3238)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@32
+			location   	(1040, 3051)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	786
+			justify    	0
+			label      	"项目结算比例AccountRate")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FE9210106"
+		    width      	804
+		    height     	394
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::项目折扣比例DiscountRate" @33
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1677, 2723)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@33
+			location   	(1284, 2536)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	786
+			justify    	0
+			label      	"项目折扣比例DiscountRate")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FE8C4023E"
+		    width      	804
+		    height     	394
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目大类ChargeItmCate" @34
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(549, 3103)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@34
+			location   	(149, 2916)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	800
+			justify    	0
+			label      	"（专属对象）收费项目大类ChargeItmCate")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56D59F4E0029"
+		    width      	818
+		    height     	394
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm" @35
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(576, 2401)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@35
+			location   	(161, 2009)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	830
+			justify    	0
+			label      	"（专属对象）收费项目ChargeItm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FE7E40108"
+		    width      	848
+		    height     	804
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "" @36
+		    location   	(1109, 2921)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5670074402EE"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @37
+			    Parent_View 	@36
+			    location   	(-1366, -629)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"567007470017"
+			    client     	@36
+			    supplier   	@32
+			    vertices   	(list Points
+				(1109, 2921)
+				(1231, 3040))
+			    line_style 	0)
+			(object RoleView "" @38
+			    Parent_View 	@36
+			    location   	(-1366, -629)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56700747001B"
+			    client     	@36
+			    supplier   	@35
+			    vertices   	(list Points
+				(1109, 2921)
+				(987, 2803))
+			    line_style 	0)))
+		(object AssociationViewNew "" @39
+		    location   	(1137, 2564)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5670074900E8"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @40
+			    Parent_View 	@39
+			    location   	(-1338, -986)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5670074A0199"
+			    client     	@39
+			    supplier   	@33
+			    vertices   	(list Points
+				(1137, 2564)
+				(1274, 2603))
+			    line_style 	0)
+			(object RoleView "" @41
+			    Parent_View 	@39
+			    location   	(-1338, -986)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5670074A01A1"
+			    client     	@39
+			    supplier   	@35
+			    vertices   	(list Points
+				(1137, 2564)
+				(1000, 2524))
+			    line_style 	0)))
+		(object AssociationViewNew "" @42
+		    location   	(557, 2854)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56D59FE60151"
+		    roleview_list 	(list RoleViews
+			(object RoleView "" @43
+			    Parent_View 	@42
+			    location   	(-1237, -1001)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56D59FE6033C"
+			    client     	@42
+			    supplier   	@35
+			    vertices   	(list Points
+				(557, 2854)
+				(576, 2401))
+			    line_style 	0)
+			(object RoleView "" @44
+			    Parent_View 	@42
+			    location   	(-1237, -1001)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56D59FE60347"
+			    client     	@42
+			    supplier   	@34
+			    vertices   	(list Points
+				(557, 2854)
+				(549, 3103))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::医嘱分类ARCItmType" @45
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4115, 3455)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@45
+			location   	(3580, 3247)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1070
+			justify    	0
+			label      	"医嘱分类ARCItmType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5732FF2100CA"
+		    width      	1088
+		    height     	436
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱收费关系ARCItmRela" @46
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1798, 2230)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@46
+			location   	(1405, 2102)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	786
+			justify    	0
+			label      	"医嘱收费关系ARCItmRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5729E5F9035C"
+		    width      	804
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$24" @47
+		    location   	(1197, 2311)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5736CCD30356"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$25" @48
+			    Parent_View 	@47
+			    location   	(-636, -206)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5736CCD4015F"
+			    client     	@47
+			    supplier   	@35
+			    vertices   	(list Points
+				(1197, 2311)
+				(1000, 2338))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$26" @49
+			    Parent_View 	@47
+			    location   	(-636, -206)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5736CCD40177"
+			    client     	@47
+			    supplier   	@46
+			    vertices   	(list Points
+				(1197, 2311)
+				(1395, 2282))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::商品医嘱关系CommoRela" @50
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1790, 1641)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@50
+			location   	(1427, 1533)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	726
+			justify    	0
+			label      	"商品医嘱关系CommoRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574D70EB03AE"
+		    width      	744
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$56" @51
+		    location   	(1266, 1342)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574D711F02BF"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$57" @52
+			    Parent_View 	@51
+			    location   	(-1669, -362)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574D71200025"
+			    client     	@51
+			    supplier   	@25
+			    vertices   	(list Points
+				(1266, 1342)
+				(949, 1162))
+			    line_style 	0
+			    label      	(object SegLabel @53
+				Parent_View 	@52
+				location   	(1008, 1134)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$58" @54
+			    Parent_View 	@51
+			    location   	(-1669, -362)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574D71200040"
+			    client     	@51
+			    supplier   	@50
+			    vertices   	(list Points
+				(1266, 1342)
+				(1583, 1522))
+			    line_style 	0
+			    label      	(object SegLabel @55
+				Parent_View 	@54
+				location   	(1578, 1458)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::医嘱服务标准关系ARCItmStdRela" @56
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4077, 2464)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@56
+			location   	(3707, 2335)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	740
+			justify    	0
+			label      	"医嘱服务标准关系ARCItmStdRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"579ABB6E0007"
+		    width      	758
+		    height     	278
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::用药途径关联医嘱项ItmOdrUsageRel" @57
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1837, 3585)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@57
+			location   	(1459, 3498)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	756
+			justify    	0
+			label      	"用药途径关联医嘱项ItmOdrUsageRel")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57ED1F230062"
+		    width      	774
+		    height     	194
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::医嘱项ARCItmMast" @58
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2963, 2913)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@58
+			location   	(2519, 2377)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	888
+			justify    	0
+			label      	"医嘱项ARCItmMast")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54D8C7D903D0"
+		    width      	906
+		    height     	1092
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @59
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@58
+		    supplier   	@1
+		    vertices   	(list Points
+			(3416, 2463)
+			(3724, 2157))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$33" @60
+		    location   	(3534, 3180)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5746C1FD02F4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$34" @61
+			    Parent_View 	@60
+			    location   	(615, 1115)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5746C1FE00C4"
+			    client     	@60
+			    supplier   	@45
+			    vertices   	(list Points
+				(3534, 3180)
+				(3654, 3236))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$35" @62
+			    Parent_View 	@60
+			    location   	(615, 1115)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5746C1FE00C8"
+			    client     	@60
+			    supplier   	@58
+			    vertices   	(list Points
+				(3534, 3180)
+				(3416, 3124))
+			    line_style 	0)))
+		(object UsesView "" @63
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5746D8B80246"
+		    client     	@58
+		    supplier   	@2
+		    vertices   	(list Points
+			(3407, 3459)
+			(3625, 3728))
+		    line_style 	0)
+		(object UsesView "" @64
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5746D8B40392"
+		    client     	@58
+		    supplier   	@3
+		    vertices   	(list Points
+			(2841, 3459)
+			(2821, 3556))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$47" @65
+		    location   	(2272, 2507)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574D401001BD"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$48" @66
+			    Parent_View 	@65
+			    location   	(536, 317)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574D40100338"
+			    client     	@65
+			    supplier   	@58
+			    vertices   	(list Points
+				(2272, 2507)
+				(2509, 2646))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$49" @67
+			    Parent_View 	@65
+			    location   	(536, 317)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574D4010033F"
+			    client     	@65
+			    supplier   	@46
+			    vertices   	(list Points
+				(2272, 2507)
+				(2035, 2368))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$59" @68
+		    location   	(2203, 2091)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574D71260383"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$60" @69
+			    Parent_View 	@68
+			    location   	(-732, 387)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574D71270104"
+			    client     	@68
+			    supplier   	@58
+			    vertices   	(list Points
+				(2203, 2091)
+				(2509, 2422))
+			    line_style 	0
+			    label      	(object SegLabel @70
+				Parent_View 	@69
+				location   	(2519, 2354)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))
+			(object RoleView "$UNNAMED$61" @71
+			    Parent_View 	@68
+			    location   	(-732, 387)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574D7127011F"
+			    client     	@68
+			    supplier   	@50
+			    vertices   	(list Points
+				(2203, 2091)
+				(1898, 1759))
+			    line_style 	0
+			    label      	(object SegLabel @72
+				Parent_View 	@71
+				location   	(1969, 1757)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))))
+		(object AssociationViewNew "$UNNAMED$68" @73
+		    location   	(3573, 2666)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"579ABB8100FF"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$69" @74
+			    Parent_View 	@73
+			    location   	(582, 275)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"579ABB820057"
+			    client     	@73
+			    supplier   	@56
+			    vertices   	(list Points
+				(3573, 2666)
+				(3726, 2603))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$70" @75
+			    Parent_View 	@73
+			    location   	(582, 275)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"579ABB820059"
+			    client     	@73
+			    supplier   	@58
+			    vertices   	(list Points
+				(3573, 2666)
+				(3416, 2727))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$71" @76
+		    location   	(2253, 3335)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57ED26C300CC"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$72" @77
+			    Parent_View 	@76
+			    location   	(-710, 422)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57ED26C70138"
+			    client     	@76
+			    supplier   	@57
+			    vertices   	(list Points
+				(2253, 3335)
+				(1998, 3487))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$73" @78
+			    Parent_View 	@76
+			    location   	(-710, 422)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57ED26C7013D"
+			    client     	@76
+			    supplier   	@58
+			    vertices   	(list Points
+				(2253, 3335)
+				(2509, 3180))
+			    line_style 	0)))))
+	(object ClassDiagram "基础数据"
+	    quid       	"573714FC015D"
+	    title      	"基础数据"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	1488
+	    origin_y   	450
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::HIS参数HISConfig" @79
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(626, 284)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@79
+			location   	(261, 74)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	730
+			justify    	0
+			label      	"HIS参数HISConfig")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57371504039C"
+		    compartment 	(object Compartment
+			Parent_View 	@79
+			location   	(261, 126)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	9
+			max_width  	726
+			justify    	1)
+		    width      	748
+		    height     	440
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::诊号动态分配AdmNODynamic" @80
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1432, 273)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@80
+			location   	(1082, 83)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	700
+			justify    	0
+			label      	"诊号动态分配AdmNODynamic")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5737E6DB03B0"
+		    compartment 	(object Compartment
+			Parent_View 	@80
+			location   	(1082, 135)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	698
+			justify    	1)
+		    width      	718
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::就诊管理::医嘱模板项OrderModeItem" @81
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2850, 845)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@81
+			location   	(2458, 43)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	784
+			justify    	0
+			label      	"医嘱模板项OrderModeItem")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CFBC3201FC"
+		    compartment 	(object Compartment
+			Parent_View 	@81
+			location   	(2458, 129)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	37
+			max_width  	782
+			justify    	1)
+		    width      	802
+		    height     	1624
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::基础服务::片语管理::片语项PhraseItm" @82
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1525, 843)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@82
+			location   	(1033, 594)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	984
+			justify    	0
+			label      	"片语项PhraseItm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"573A85AA0091"
+		    compartment 	(object Compartment
+			Parent_View 	@82
+			location   	(1033, 680)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	982
+			justify    	1)
+		    width      	1002
+		    height     	518
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object UsesView "" @83
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573AFC1700E3"
+		    client     	@81
+		    supplier   	@82
+		    vertices   	(list Points
+			(2448, 844)
+			(2026, 843))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::医学术语::ICD10" @84
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1566, 1404)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@84
+			location   	(1255, 1176)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	622
+			justify    	0
+			label      	"ICD10")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"545A321C0222"
+		    compartment 	(object Compartment
+			Parent_View 	@84
+			location   	(1255, 1262)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	9
+			max_width  	619
+			justify    	1)
+		    width      	640
+		    height     	476
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object UsesView "" @85
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573AFC350187"
+		    client     	@84
+		    supplier   	@82
+		    vertices   	(list Points
+			(1547, 1165)
+			(1542, 1102))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::消息引擎::消息分类MessageAss" @86
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(686, 2051)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@86
+			location   	(158, 1802)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1056
+			justify    	0
+			label      	"消息分类MessageAss")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5487173C0290"
+		    compartment 	(object Compartment
+			Parent_View 	@86
+			location   	(158, 1888)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	1052
+			justify    	1)
+		    width      	1074
+		    height     	518
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @87
+		    location   	(1768, 2516)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@87
+			location   	(1265, 2447)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	971
+			justify    	1
+			label      	
+|导诊类型:预约取号\诊间看诊\门诊收费\门诊导诊
+|
+|说明:需同步至“消息分类”,父类为：导诊消息
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	1031
+		    height     	150)
+		(object AttachView "" @88
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@86
+		    supplier   	@87
+		    vertices   	(list Points
+			(1223, 2281)
+			(1594, 2440))
+		    line_style 	0)
+		(object NoteView @89
+		    location   	(2933, 2620)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@89
+			location   	(2498, 2495)
+			fill_color 	13434879
+			nlines     	6
+			max_width  	834
+			justify    	1
+			label      	
+|是否启用:（1是0否）
+|
+|说明:内容中的关键字用占位符[]进行标注，
+|比如 请您前往[地址][药房名称][窗口名称]刷卡取药
+|     治疗项目如下：[治疗列表]
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	894
+		    height     	263)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊类型HISGuidanceTp" @90
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1767, 2125)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@90
+			location   	(1456, 1997)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	622
+			justify    	0
+			label      	"导诊类型HISGuidanceTp")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574A8C870207"
+		    compartment 	(object Compartment
+			Parent_View 	@90
+			location   	(1456, 2049)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	619
+			justify    	1)
+		    width      	640
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @91
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@87
+		    supplier   	@90
+		    vertices   	(list Points
+			(1767, 2440)
+			(1767, 2263))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊信息关键字设置HISGuiWordSet" @92
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3985, 2125)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@92
+			location   	(3572, 1976)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	826
+			justify    	0
+			label      	"导诊信息关键字设置HISGuiWordSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574A92D00107"
+		    compartment 	(object Compartment
+			Parent_View 	@92
+			location   	(3572, 2028)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	823
+			justify    	1)
+		    width      	844
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::导诊信息模板HISGuiTemplet" @93
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2847, 2124)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@93
+			location   	(2498, 1934)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	698
+			justify    	0
+			label      	"导诊信息模板HISGuiTemplet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574A8D3D0382"
+		    compartment 	(object Compartment
+			Parent_View 	@93
+			location   	(2498, 1986)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	695
+			justify    	1)
+		    width      	716
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$45" @94
+		    location   	(2287, 2124)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574A91D20182"
+		    roleview_list 	(list RoleViews
+			(object RoleView "0..1" @95
+			    Parent_View 	@94
+			    location   	(531, 7)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @96
+				Parent_View 	@95
+				location   	(2420, 2085)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	128
+				justify    	0
+				label      	"+0..1"
+				pctDist    	0.659389
+				height     	40
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574A91D20324"
+			    client     	@94
+			    supplier   	@93
+			    vertices   	(list Points
+				(2287, 2124)
+				(2488, 2124))
+			    line_style 	0)
+			(object RoleView "1" @97
+			    Parent_View 	@94
+			    location   	(531, 7)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @98
+				Parent_View 	@97
+				location   	(2127, 2083)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+1"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574A91D20328"
+			    client     	@94
+			    supplier   	@90
+			    vertices   	(list Points
+				(2287, 2124)
+				(2087, 2124))
+			    line_style 	0)))
+		(object AttachView "" @99
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@93
+		    supplier   	@89
+		    vertices   	(list Points
+			(2880, 2324)
+			(2909, 2488))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$46" @100
+		    location   	(3383, 2124)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574A9A54020A"
+		    roleview_list 	(list RoleViews
+			(object RoleView "0..n" @101
+			    Parent_View 	@100
+			    location   	(543, 106)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @102
+				Parent_View 	@101
+				location   	(3505, 2084)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	128
+				justify    	0
+				label      	"+0..n"
+				pctDist    	0.687415
+				height     	41
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574A9A540334"
+			    client     	@100
+			    supplier   	@92
+			    vertices   	(list Points
+				(3383, 2124)
+				(3562, 2124))
+			    line_style 	0)
+			(object RoleView "1" @103
+			    Parent_View 	@100
+			    location   	(543, 106)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @104
+				Parent_View 	@103
+				location   	(3242, 2083)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+1"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574A9A540339"
+			    client     	@100
+			    supplier   	@93
+			    vertices   	(list Points
+				(3383, 2124)
+				(3205, 2124))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::单据::单据类型BillType" @105
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1147, 3458)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@105
+			location   	(653, 3209)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	988
+			justify    	0
+			label      	"单据类型BillType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54896EE9036B"
+		    compartment 	(object Compartment
+			Parent_View 	@105
+			location   	(653, 3295)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	986
+			justify    	1)
+		    width      	1006
+		    height     	518
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @106
+		    location   	(706, 2906)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@106
+			location   	(365, 2759)
+			fill_color 	13434879
+			nlines     	7
+			max_width  	646
+			justify    	1
+			label      	
+|在字典中的单据类型分类中增加:HIS门诊预约挂号业务单据
+|HIS门诊收费业务单据
+|HIS门诊医生站业务单据
+|HIS住院业务单据
+|HIS药房业务单据
+|HIS药库业务单据
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	706
+		    height     	306)
+		(object AttachView "" @107
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@106
+		    supplier   	@105
+		    vertices   	(list Points
+			(828, 3059)
+			(938, 3198))
+		    line_style 	0)
+		(object NoteView @108
+		    location   	(409, 694)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@108
+			location   	(196, 632)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	390
+			justify    	1
+			label      	"HIS参数分类：打印参数，医院编码，其他")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	450
+		    height     	137)
+		(object AttachView "" @109
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@79
+		    supplier   	@108
+		    vertices   	(list Points
+			(508, 504)
+			(443, 625))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::建卡数据初始化设置CardInitialSet" @110
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(510, 1356)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@110
+			location   	(96, 1104)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	828
+			justify    	0
+			label      	"建卡数据初始化设置CardInitialSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57A57DE702C9"
+		    compartment 	(object Compartment
+			Parent_View 	@110
+			location   	(96, 1156)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	11
+			max_width  	826
+			justify    	1)
+		    width      	846
+		    height     	524
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::加号权限DocRegJurisd" @111
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1969, 2881)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@111
+			location   	(1694, 2712)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	550
+			justify    	0
+			label      	"加号权限DocRegJurisd")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"580888A8032A"
+		    compartment 	(object Compartment
+			Parent_View 	@111
+			location   	(1694, 2764)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	13434879
+			anchor     	2
+			nlines     	7
+			max_width  	548
+			justify    	1)
+		    width      	568
+		    height     	358
+		    annotation 	8
+		    autoResize 	TRUE)))
+	(object ClassDiagram "抗生素权限设置"
+	    quid       	"57EBF0500164"
+	    title      	"抗生素权限设置"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	2746
+	    origin_y   	2562
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::医生职称关联商品属性 TitDrugAttrRel" @112
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(614, 201)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@112
+			location   	(174, 95)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	880
+			justify    	0
+			label      	"医生职称关联商品属性 TitDrugAttrRel")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57EBF11C00AC"
+		    width      	898
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIS医院业务数据库::基础数据::抗菌药物限制越级设置 DrugAttrLimit" @113
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(613, 545)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@113
+			location   	(181, 439)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	864
+			justify    	0
+			label      	"抗菌药物限制越级设置 DrugAttrLimit")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57EBF1B20155"
+		    width      	882
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::进销存管理::商品Commodity" @114
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1616, 1146)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@114
+			location   	(1207, 67)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	818
+			justify    	0
+			label      	"商品Commodity")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"567164470389"
+		    width      	836
+		    height     	2182
+		    annotation 	8
+		    autoResize 	TRUE)))))

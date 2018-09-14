@@ -1,0 +1,1804 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "财务账户"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"sc"
+	    name       	"SourceControlSpec"
+	    value      	(value Text 
+|"$/实体类设计/HIP(平台应用主控数据库)", OAAAAAAA
+	    )))
+    quid       	"548718B400AB"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "账户账单AccBill"
+	    quid       	"49E8288900C3"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"49E8290800D7")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B506FB0213")
+		(object ClassAttribute "参与者编号（参与者）PartyCd"
+		    quid       	"54B5070703C8")
+		(object ClassAttribute "接收方账户编号（账户）RecerAccoCd"
+		    quid       	"54B51A8B009C")
+		(object ClassAttribute "交易编号（交易）DealCd"
+		    quid       	"54B507220128")
+		(object ClassAttribute "金额Amount"
+		    quid       	"49E8291102AD")
+		(object ClassAttribute "折扣Discount"
+		    quid       	"54B518D80222")
+		(object ClassAttribute "折扣金额DcouAmount"
+		    quid       	"54B518DC006D")
+		(object ClassAttribute "（字典）账单类型编号BillTpCd"
+		    quid       	"5572FA850367")))
+	(object Class "账单明细AccoBillDetail"
+	    quid       	"49E8296E0032"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"49E829E10374")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B50871003E")
+		(object ClassAttribute "（账户账单）账单编号BillCd"
+		    quid       	"54B50875001F")
+		(object ClassAttribute "单价Price"
+		    quid       	"54B519CF037A")
+		(object ClassAttribute "数量Quantity"
+		    quid       	"54B519D5035B")
+		(object ClassAttribute "单位Unit"
+		    quid       	"54B519DB00BB")
+		(object ClassAttribute "金额Amount"
+		    quid       	"54B5086803D8")
+		(object ClassAttribute "折扣Discount"
+		    quid       	"54B5197B029F")
+		(object ClassAttribute "折后金额AfterDcouAmo"
+		    quid       	"54B5197F037A")
+		(object ClassAttribute "（交易明细）交易明细项编号DealDetCd"
+		    quid       	"5572F90500DF")))
+	(object Class "帐户Account"
+	    quid       	"48C5F3690128"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"48C5F4A000AB")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B4DA82036B")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"5756934C02D0")
+		(object ClassAttribute "账户类型编号（账户类型）AccoTpCd"
+		    quid       	"54B4DA8A01B5")
+		(object ClassAttribute "参与者编号（参与者）PartyCd（作废）"
+		    quid       	"54B4DAA50232")
+		(object ClassAttribute "（数据对象类型）数据对象类型编号AccObjTpCd"
+		    quid       	"578D8A28017B")
+		(object ClassAttribute "数据对象编号AccObjCd"
+		    quid       	"578D8A31015D")
+		(object ClassAttribute "登记号RegistNo"
+		    quid       	"57567C00006B")
+		(object ClassAttribute "（凭证类型）证件类型编号CredenTPCd"
+		    quid       	"57577B19008B")
+		(object ClassAttribute "证件号码CredenNum"
+		    quid       	"57577B1D0311")
+		(object ClassAttribute "姓名Name"
+		    quid       	"57567C000386")
+		(object ClassAttribute "（术语）性别SexCd"
+		    quid       	"5757833C011E")
+		(object ClassAttribute "账号AccoNum"
+		    quid       	"54B51D4C004E")
+		(object ClassAttribute "密码Password"
+		    quid       	"573D993F0168")
+		(object ClassAttribute "余额Balance"
+		    quid       	"48C5F4AF00BB")
+		(object ClassAttribute "（参与者）开户机构AccoOrg"
+		    quid       	"55719BA1001F")
+		(object ClassAttribute "透支额度Overdraft"
+		    quid       	"575674A800E9")
+		(object ClassAttribute "（术语）账户状态AccountStatus"
+		    quid       	"575687E702FD")))
+	(object Class "支付记录"
+	    quid       	"48C0A05303C8"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "金额"
+		    quid       	"48C5EBA802BF")
+		(object ClassAttribute "支付对象"
+		    quid       	"48C0A2D20261")
+		(object ClassAttribute "接收支付对象"
+		    quid       	"48C0A2DD00EA")
+		(object ClassAttribute "支付内容"
+		    quid       	"48C0A2FC00FA")
+		(object ClassAttribute "支付日期"
+		    quid       	"48C0A32603D8")
+		(object ClassAttribute "支付时间"
+		    quid       	"48C0A32C002E")
+		(object ClassAttribute "支付人"
+		    quid       	"48C0A3310203"))
+	    persistence 	"Persistent")
+	(object Class "账户支付记录AccoPayRecord"
+	    quid       	"48BE4C500271"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"48C0A3FD001F")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B502460271")
+		(object ClassAttribute "支付方账户编号（账户）PayerAccoCd"
+		    quid       	"54B50291036B")
+		(object ClassAttribute "接收方账户编号（账户）RecerAccoCd"
+		    quid       	"54B502CD004E")
+		(object ClassAttribute "（数据对象类型）账单数据对象类型编号BillObjTpCd"
+		    quid       	"573E6571006F")
+		(object ClassAttribute "账单数据对象编号BillObjCd"
+		    quid       	"573E657900EC")
+		(object ClassAttribute "金额Amount"
+		    quid       	"54B5025800FA")
+		(object ClassAttribute "折扣Discount"
+		    quid       	"54B5079C001F")
+		(object ClassAttribute "折后金额AfterDcouAmo"
+		    quid       	"54B507A30177")
+		(object ClassAttribute "（交易）交易编号DealCd"
+		    quid       	"48C0A41702CE"
+		    documentation 	"借贷")
+		(object ClassAttribute "（账户支付方式）支付方式PayMeth"
+		    quid       	"48C5F59F0167")
+		(object ClassAttribute "支付流水号SerNum"
+		    quid       	"48C5F5BB00EA")
+		(object ClassAttribute "支付类型编号（字典）PayTpCd"
+		    quid       	"54B505B30109")
+		(object ClassAttribute "（账户支付记录）关联账户支付记录编号RelaPayDetCd"
+		    quid       	"54B505CE0399")
+		(object ClassAttribute "发票号InvoiceNum"
+		    quid       	"54B5143600FA")
+		(object ClassAttribute "支付时间PayDate"
+		    quid       	"5571A0040157")))
+	(object Class "账户类型AccountType"
+	    quid       	"548FB28901A5"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54B4D8DE0148")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B4D8E603A9")
+		(object ClassAttribute "描述Description"
+		    quid       	"54B4D8EA01C5")
+		(object ClassAttribute "账户类型分类编号（字典）AccoTpAssCd"
+		    quid       	"54B4D8F100BB")))
+	(object Class "交易类型DealType"
+	    quid       	"54B5041B005D"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54B5045E02CE")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B504610177")
+		(object ClassAttribute "描述Description"
+		    quid       	"54B504630213")
+		(object ClassAttribute "交易类型分类编号（字典）DealTpAssCd"
+		    quid       	"54B5046C0109")))
+	(object Class "交易Deal"
+	    quid       	"54B5042D004E"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54B50493003E")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B5049501A5")
+		(object ClassAttribute "（交易类型）交易类型编号DealTpCd"
+		    quid       	"54B5049B000F")
+		(object ClassAttribute "交易日期DealDate"
+		    quid       	"54B508B403C8")
+		(object ClassAttribute "（数据对象类型）业务数据对象类型编号BusiDOTpCd"
+		    quid       	"5587A6A100DA")
+		(object ClassAttribute "（数据对象）业务数据对象编号BusiDOCd"
+		    quid       	"5587A6A80128")
+		(object ClassAttribute "交易状态"
+		    quid       	"575E53C701B6")
+		(object ClassAttribute "交易接收方数据对象类型编号"
+		    quid       	"575EDEDD035A")
+		(object ClassAttribute "交易接收"
+		    quid       	"575EDF120008")))
+	(object Class "账户支付记录明细AccoPayRecDet"
+	    quid       	"54B511AC00CB"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"54B511D802DE")
+		(object ClassAttribute "名称Nam"
+		    quid       	"54B511DB0148")
+		(object ClassAttribute "（账户支付记录）账户支付记录编号AccoPayRecCd"
+		    quid       	"54B511DD029F")
+		(object ClassAttribute "（账单明细）账单明细编号AccBillDetCd（暂不使用）"
+		    quid       	"54B511F500BB")
+		(object ClassAttribute "（数据对象类型）账单明细数据对象类型编号BillDetObjTpCd"
+		    quid       	"573E65AC031F")
+		(object ClassAttribute "账单明细数据对象编号BillDetObjCd"
+		    quid       	"573E65B40225")
+		(object ClassAttribute "单价Price"
+		    quid       	"54B51A0601C5")
+		(object ClassAttribute "数量Quantity"
+		    quid       	"54B51A0902EE")
+		(object ClassAttribute "单位Unit"
+		    quid       	"54B51A0C0167")
+		(object ClassAttribute "金额Amount"
+		    quid       	"54B5129702AF")
+		(object ClassAttribute "折扣Discount"
+		    quid       	"54B512A40196")
+		(object ClassAttribute "折后金额AfterDcouAmo"
+		    quid       	"54B512A602AF")))
+	(object Class "交易明细DealDet"
+	    quid       	"5572F4E9010F"
+	    used_nodes 	(list uses_relationship_list
+		(object Uses_Relationship
+		    quid       	"5572F56200FF"
+		    supplier   	"Logical View::实体类设计::OSR对外服务存储库::掌上医院::积分商品ScoreGood"
+		    quidu      	"54D8CAA001B4"))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "交易数据对象类型编号（数据对象类型）DealDOTpCd"
+		    quid       	"5572F53E0186")
+		(object ClassAttribute "交易数据对象编号DealDOCd"
+		    quid       	"5572F5740022")
+		(object ClassAttribute "（交易）交易编号DealCd"
+		    quid       	"5572F59801C0")
+		(object ClassAttribute "单价Price"
+		    quid       	"5572F5F101A9")
+		(object ClassAttribute "数量Quantity"
+		    quid       	"5572F5BF0250")
+		(object ClassAttribute "单位Unit"
+		    quid       	"5572F5C2006F")
+		(object ClassAttribute "金额Amount"
+		    quid       	"5572F5C400C1")
+		(object ClassAttribute "折扣Discount"
+		    quid       	"5572F5C60066")
+		(object ClassAttribute "折后金额AfterDcouAmo"
+		    quid       	"5572F5E50229")
+		(object ClassAttribute "（账户）商品收款账户编号RecerAccoCd"
+		    quid       	"5587A76A003E")))
+	(object Class "账户支付方式AccoPayWay（暂不使用）"
+	    quid       	"573DAAD10362"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"573DAAE10232")
+		(object ClassAttribute "名称Nam"
+		    quid       	"573DAAE503AD")
+		(object ClassAttribute "（账户）账户编号AccountCd"
+		    quid       	"573E65FD01E7")
+		(object ClassAttribute "（术语）账户支付方式PaidWayCd"
+		    quid       	"575686E6013E")
+		(object ClassAttribute "支付卡号PaidCardNo"
+		    quid       	"573E65DB00AE")
+		(object ClassAttribute "（术语）银行编号BankCd"
+		    quid       	"575686F50105")
+		(object ClassAttribute "（术语）银行卡类型BankCardTpCd"
+		    quid       	"575686FA00E2")
+		(object ClassAttribute "是否为默认支付方式IsDefault"
+		    quid       	"573E6B1A017A")))
+	(object Class "账户金额变动记录AccoPayment"
+	    quid       	"573EB372011E"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"573EB40C01B4")
+		(object ClassAttribute "名称Nam"
+		    quid       	"573EB41202AB")
+		(object ClassAttribute "（就诊记录）就诊编号AdmRecCd"
+		    quid       	"5757BE04028A")
+		(object ClassAttribute "（术语）缴费类型PaymentTypeCd"
+		    quid       	"57578257018F")
+		(object ClassAttribute "（术语）就诊类别编号AdmCategCd"
+		    quid       	"57E8BADD01D4")
+		(object ClassAttribute "（账户）账户编号AccountCd"
+		    quid       	"573EB5BA02BA")
+		(object ClassAttribute "登记号RegistNo"
+		    quid       	"575A192701DC")
+		(object ClassAttribute "姓名Name"
+		    quid       	"575A2551022B")
+		(object ClassAttribute "操作时间RechDateDateTime"
+		    quid       	"573EB419020C")
+		(object ClassAttribute "（参与者）操作员OperatorCd"
+		    quid       	"573EB4EC00BE")
+		(object ClassAttribute "缴款金额RechMoney"
+		    quid       	"573EB4F20393")
+		(object ClassAttribute "退款金额RefundMoney"
+		    quid       	"5757839F0377")
+		(object ClassAttribute "消费额ConsumMoney"
+		    quid       	"575788E10212")
+		(object ClassAttribute "前期余额BeforeBalance"
+		    quid       	"575A20CA0315")
+		(object ClassAttribute "当前余额CurrentBalance"
+		    quid       	"573EB4F60232")
+		(object ClassAttribute "（术语）支付方式PaidWayCd"
+		    quid       	"57567C8701CD")
+		(object ClassAttribute "支付卡号PaidCardNo"
+		    quid       	"57567CA1003D")
+		(object ClassAttribute "（术语）银行编号BankCd"
+		    quid       	"575685E2026A")
+		(object ClassAttribute "（术语）银行卡类型BankCardTpCd"
+		    quid       	"575685F20137")
+		(object ClassAttribute "支付流水号SerNum"
+		    quid       	"57567CBB00A9")
+		(object ClassAttribute "（票据）票据编号TollInvoice"
+		    quid       	"5756809B00FA")
+		(object ClassAttribute "票据号InvoiceNo"
+		    quid       	"575680AB027F")
+		(object ClassAttribute "（片语）退款原因RefundReasonCd"
+		    quid       	"575A80B402D5")
+		(object ClassAttribute "（片语）交款原因RechReasonCd（新增）"
+		    quid       	"57B514BF020F")
+		(object ClassAttribute "备注Remark"
+		    quid       	"575682D0001E")
+		(object ClassAttribute "结算标志SetAccSign"
+		    quid       	"57A15958021E")))
+	(object Class "账户操作记录AccoOperaRec"
+	    quid       	"57577C430395"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（账户）账户编号AccountCd"
+		    quid       	"57577CB903BB")
+		(object ClassAttribute "（术语）账户操作类型AccoOperaTPCd"
+		    quid       	"575CC4170170")
+		(object ClassAttribute "操作时间OperaDateTim"
+		    quid       	"57577D400384")
+		(object ClassAttribute "（参与者）操作员OperatorCd"
+		    quid       	"57577D4D02A0")
+		(object ClassAttribute "备注Remark"
+		    quid       	"57577D550003")
+		(object ClassAttribute "申请人姓名ApplicaNam"
+		    quid       	"57577D590225")
+		(object ClassAttribute "申请人电话ApplicaPhone"
+		    quid       	"57577D5E010D")
+		(object ClassAttribute "（凭证类型）申请人证件类型CredenTPCd"
+		    quid       	"57577D6A02CE")
+		(object ClassAttribute "申请人证件号码CredenNum"
+		    quid       	"57577D70016A")
+		(object ClassAttribute "（收费项目）操作费用编号CostCd"
+		    quid       	"57577E5500F4")
+		(object ClassAttribute "(HIS账单)HIS账单编号HISPatBillCd"
+		    quid       	"57577E5D027C")
+		(object ClassAttribute "（票据）票据编号TollInvoice"
+		    quid       	"57577E6600B0")
+		(object ClassAttribute "票据号InvoiceNo"
+		    quid       	"57577E6A0179")))
+	(object Class "变动记录账单关联PaymentBillRela"
+	    quid       	"5757B9BF01E8"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（账户金额变动记录）账户金额变动记录编号AccoPaymentCd"
+		    quid       	"5757B9E00137")
+		(object ClassAttribute "（HIS账单）HIS账单编号HISPatBillCd"
+		    quid       	"5757BD680380")))
+	(object Association "$UNNAMED$0"
+	    quid       	"54B501B10128"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"54B501B2009C"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户类型AccountType"
+		    quidu      	"548FB28901A5"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"54B501B2009E"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128")))
+	(object Association "$UNNAMED$3"
+	    quid       	"54B504D30242"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"54B504D401A5"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$5"
+		    quid       	"54B504D401B5"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录AccoPayRecord"
+		    quidu      	"48BE4C500271")))
+	(object Association "$UNNAMED$6"
+	    quid       	"54B504D901F4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"54B504DA0186"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易类型DealType"
+		    quidu      	"54B5041B005D"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"54B504DA0188"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易Deal"
+		    quidu      	"54B5042D004E")))
+	(object Association "$UNNAMED$9"
+	    quid       	"54B506E30222"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"54B506E4009C"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"54B506E400AB"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户账单AccBill"
+		    quidu      	"49E8288900C3")))
+	(object Association "$UNNAMED$12"
+	    quid       	"54B5086202CE"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"54B508640251"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户账单AccBill"
+		    quidu      	"49E8288900C3"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$14"
+		    quid       	"54B508640253"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账单明细AccoBillDetail"
+		    quidu      	"49E8296E0032")))
+	(object Association "$UNNAMED$15"
+	    quid       	"54B511CF035B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"54B511D2009C"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录AccoPayRecord"
+		    quidu      	"48BE4C500271"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$17"
+		    quid       	"54B511D2009E"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录明细AccoPayRecDet"
+		    quidu      	"54B511AC00CB")))
+	(object Association "$UNNAMED$18"
+	    quid       	"54B51A27029F"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"54B51A280119"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户账单AccBill"
+		    quidu      	"49E8288900C3"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$20"
+		    quid       	"54B51A280128"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录AccoPayRecord"
+		    quidu      	"48BE4C500271")))
+	(object Association "$UNNAMED$21"
+	    quid       	"54B51A2C0232"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"54B51A2D01A5"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账单明细AccoBillDetail"
+		    quidu      	"49E8296E0032"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$23"
+		    quid       	"54B51A2D01B5"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录明细AccoPayRecDet"
+		    quidu      	"54B511AC00CB")))
+	(object Association "$UNNAMED$24"
+	    quid       	"54B51A360000"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"54B51A370251"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易Deal"
+		    quidu      	"54B5042D004E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$26"
+		    quid       	"54B51A370253"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户账单AccBill"
+		    quidu      	"49E8288900C3")))
+	(object Association "$UNNAMED$27"
+	    quid       	"5572F55A010D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"5572F55A03CE"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易Deal"
+		    quidu      	"54B5042D004E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$29"
+		    quid       	"5572F55A03D3"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易明细DealDet"
+		    quidu      	"5572F4E9010F")))
+	(object Association "$UNNAMED$30"
+	    quid       	"5572F86C01D9"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$31"
+		    quid       	"5572F86D0231"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易Deal"
+		    quidu      	"54B5042D004E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$32"
+		    quid       	"5572F86D0236"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户账单AccBill"
+		    quidu      	"49E8288900C3")))
+	(object Association "$UNNAMED$33"
+	    quid       	"5572F8740220"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$34"
+		    quid       	"5572F87601D1"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易明细DealDet"
+		    quidu      	"5572F4E9010F"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$35"
+		    quid       	"5572F87601D5"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账单明细AccoBillDetail"
+		    quidu      	"49E8296E0032")))
+	(object Association "$UNNAMED$36"
+	    quid       	"573E65F60254"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$37"
+		    quid       	"573E65F6039C"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付方式AccoPayWay（暂不使用）"
+		    quidu      	"573DAAD10362"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$38"
+		    quid       	"573E65F603DB"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128")))
+	(object Association "$UNNAMED$39"
+	    quid       	"573EB5AA00AC"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$40"
+		    quid       	"573EB5AA022A"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128")
+		(object Role "$UNNAMED$41"
+		    quid       	"573EB5AA025D"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户金额变动记录AccoPayment"
+		    quidu      	"573EB372011E")))
+	(object Association "$UNNAMED$42"
+	    quid       	"57577EA50112"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$43"
+		    quid       	"57577EA502B3"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account"
+		    quidu      	"48C5F3690128")
+		(object Role "$UNNAMED$44"
+		    quid       	"57577EA502B5"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户操作记录AccoOperaRec"
+		    quidu      	"57577C430395")))
+	(object Association "$UNNAMED$45"
+	    quid       	"5757B9D4034C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$46"
+		    quid       	"5757B9D500FC"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户金额变动记录AccoPayment"
+		    quidu      	"573EB372011E")
+		(object Role "$UNNAMED$47"
+		    quid       	"5757B9D500FF"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::变动记录账单关联PaymentBillRela"
+		    quidu      	"5757B9BF01E8")))
+	(object Association "$UNNAMED$48"
+	    quid       	"575D20350238"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$49"
+		    quid       	"575D20350336"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户金额变动记录AccoPayment"
+		    quidu      	"573EB372011E")
+		(object Role "$UNNAMED$50"
+		    quid       	"575D20350355"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::收费管理::收费票据TollInvoice"
+		    quidu      	"56CD22050005")))
+	(object Association "$UNNAMED$51"
+	    quid       	"57C791C402FA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$52"
+		    quid       	"57C791C70082"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::财务管理::HIS账单HISPatBill"
+		    quidu      	"5720ACCA01AB")
+		(object Role "$UNNAMED$53"
+		    quid       	"57C791C70091"
+		    supplier   	"Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::变动记录账单关联PaymentBillRela"
+		    quidu      	"5757B9BF01E8"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "支付管理"
+	    quid       	"548718B400AC"
+	    title      	"支付管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	3338
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::实体类设计::OSR对外服务存储库::掌上医院::积分商品ScoreGood" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(787, 4310)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(569, 4020)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	436
+			justify    	0
+			label      	"积分商品ScoreGood")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54D8CAA001B4"
+		    width      	454
+		    height     	600
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @2
+		    location   	(1260, 1278)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(1122, 1218)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	240
+			justify    	1
+			label      	"卡内余额，银行卡快捷支付")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	300
+		    height     	132)
+		(object NoteView @3
+		    location   	(3907, 542)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(3501, 364)
+			fill_color 	13434879
+			nlines     	8
+			max_width  	777
+			justify    	1
+			label      	
+|缴费类型：收预交，退预交，结算扣款，结算时补款，结算时退款，//**补欠费，作废结算补款，作废结算退款，升级转入预交
+|
+|就诊类别：住院，门诊，急诊，网络门诊
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	837
+		    height     	369)
+		(object NoteView @4
+		    location   	(1697, 103)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1472, 34)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	415
+			justify    	1
+			label      	
+|账户状态：
+|未激活，正常，冻结，作废
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	475
+		    height     	150)
+		(object NoteView @5
+		    location   	(3770, 1205)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(3582, 1143)
+			fill_color 	13434879
+			nlines     	3
+			max_width  	340
+			justify    	1
+			label      	"账户操作类型：开户，激活，密码重置，冻结，销户，修改透支额度")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	400
+		    height     	137)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易类型DealType" @6
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(778, 2332)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(385, 2203)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	786
+			justify    	0
+			label      	"交易类型DealType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54B5041B005D"
+		    width      	804
+		    height     	278
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易明细DealDet" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(792, 3483)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(286, 3231)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1012
+			justify    	0
+			label      	"交易明细DealDet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5572F4E9010F"
+		    width      	1030
+		    height     	524
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object UsesView "" @8
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5572F56200FF"
+		    client     	@7
+		    supplier   	@1
+		    vertices   	(list Points
+			(789, 3745)
+			(788, 4009))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::交易Deal" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(792, 2808)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(286, 2577)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1012
+			justify    	0
+			label      	"交易Deal")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54B5042D004E"
+		    width      	1030
+		    height     	482
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$6" @10
+		    location   	(782, 2518)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B504D901F4"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$7" @11
+			    Parent_View 	@10
+			    location   	(143, 1079)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B504DA0186"
+			    client     	@10
+			    supplier   	@6
+			    vertices   	(list Points
+				(782, 2518)
+				(778, 2332))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$8" @12
+			    Parent_View 	@10
+			    location   	(143, 1079)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B504DA0188"
+			    client     	@10
+			    supplier   	@9
+			    vertices   	(list Points
+				(782, 2518)
+				(792, 2808))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$27" @13
+		    location   	(792, 3134)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5572F55A010D"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$28" @14
+			    Parent_View 	@13
+			    location   	(-61, 1042)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5572F55A03CE"
+			    client     	@13
+			    supplier   	@9
+			    vertices   	(list Points
+				(792, 3134)
+				(792, 3049))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$29" @15
+			    Parent_View 	@13
+			    location   	(-61, 1042)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5572F55A03D3"
+			    client     	@13
+			    supplier   	@7
+			    vertices   	(list Points
+				(792, 3134)
+				(792, 3220))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账单明细AccoBillDetail" @16
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1980, 3466)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@16
+			location   	(1588, 3194)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	784
+			justify    	0
+			label      	"账单明细AccoBillDetail")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"49E8296E0032"
+		    width      	802
+		    height     	564
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$33" @17
+		    location   	(1442, 3473)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5572F8740220"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$34" @18
+			    Parent_View 	@17
+			    location   	(-617, 1440)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5572F87601D1"
+			    client     	@17
+			    supplier   	@7
+			    vertices   	(list Points
+				(1442, 3473)
+				(1307, 3474))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$35" @19
+			    Parent_View 	@17
+			    location   	(-617, 1440)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5572F87601D5"
+			    client     	@17
+			    supplier   	@16
+			    vertices   	(list Points
+				(1442, 3473)
+				(1578, 3470))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录明细AccoPayRecDet" @20
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3370, 3465)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@20
+			location   	(2779, 3173)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1182
+			justify    	0
+			label      	"账户支付记录明细AccoPayRecDet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"54B511AC00CB"
+		    width      	1200
+		    height     	604
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$21" @21
+		    location   	(2575, 3465)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B51A2C0232"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$22" @22
+			    Parent_View 	@21
+			    location   	(746, 1592)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B51A2D01A5"
+			    client     	@21
+			    supplier   	@16
+			    vertices   	(list Points
+				(2575, 3465)
+				(2381, 3465))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$23" @23
+			    Parent_View 	@21
+			    location   	(746, 1592)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B51A2D01B5"
+			    client     	@21
+			    supplier   	@20
+			    vertices   	(list Points
+				(2575, 3465)
+				(2769, 3465))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户账单AccBill" @24
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1978, 2710)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@24
+			location   	(1605, 2479)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	746
+			justify    	0
+			label      	"账户账单AccBill")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"49E8288900C3"
+		    width      	764
+		    height     	482
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$30" @25
+		    location   	(1451, 2752)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5572F86C01D9"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$31" @26
+			    Parent_View 	@25
+			    location   	(-621, 1623)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5572F86D0231"
+			    client     	@25
+			    supplier   	@9
+			    vertices   	(list Points
+				(1451, 2752)
+				(1307, 2763))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$32" @27
+			    Parent_View 	@25
+			    location   	(-621, 1623)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5572F86D0236"
+			    client     	@25
+			    supplier   	@24
+			    vertices   	(list Points
+				(1451, 2752)
+				(1595, 2739))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$12" @28
+		    location   	(1978, 3067)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B5086202CE"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$13" @29
+			    Parent_View 	@28
+			    location   	(-1015, 1740)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B508640251"
+			    client     	@28
+			    supplier   	@24
+			    vertices   	(list Points
+				(1978, 3067)
+				(1978, 2951))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$14" @30
+			    Parent_View 	@28
+			    location   	(-1015, 1740)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B508640253"
+			    client     	@28
+			    supplier   	@16
+			    vertices   	(list Points
+				(1978, 3067)
+				(1978, 3183))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户类型AccountType" @31
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(467, 208)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@31
+			location   	(74, 79)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	786
+			justify    	0
+			label      	"账户类型AccountType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"548FB28901A5"
+		    width      	804
+		    height     	278
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付记录AccoPayRecord" @32
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2918, 2496)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@32
+			location   	(2391, 2101)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	1054
+			justify    	0
+			label      	"账户支付记录AccoPayRecord")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"48BE4C500271"
+		    width      	1072
+		    height     	810
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$15" @33
+		    location   	(3167, 3031)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B511CF035B"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$16" @34
+			    Parent_View 	@33
+			    location   	(1302, 1378)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B511D2009C"
+			    client     	@33
+			    supplier   	@32
+			    vertices   	(list Points
+				(3167, 3031)
+				(3105, 2901))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$17" @35
+			    Parent_View 	@33
+			    location   	(1302, 1378)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B511D2009E"
+			    client     	@33
+			    supplier   	@20
+			    vertices   	(list Points
+				(3167, 3031)
+				(3227, 3162))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$18" @36
+		    location   	(2448, 2603)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B51A27029F"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$19" @37
+			    Parent_View 	@36
+			    location   	(617, 1579)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B51A280119"
+			    client     	@36
+			    supplier   	@24
+			    vertices   	(list Points
+				(2448, 2603)
+				(2360, 2621))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$20" @38
+			    Parent_View 	@36
+			    location   	(617, 1579)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B51A280128"
+			    client     	@36
+			    supplier   	@32
+			    vertices   	(list Points
+				(2448, 2603)
+				(2448, 2603))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户支付方式AccoPayWay（暂不使用）" @39
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(480, 1080)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@39
+			location   	(101, 870)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	758
+			justify    	0
+			label      	"账户支付方式AccoPayWay（暂不使用）")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"573DAAD10362"
+		    width      	776
+		    height     	440
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @40
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@39
+		    supplier   	@2
+		    vertices   	(list Points
+			(868, 1178)
+			(1109, 1238))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户操作记录AccoOperaRec" @41
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2850, 1513)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@41
+			location   	(2448, 1200)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	804
+			justify    	0
+			label      	"账户操作记录AccoOperaRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"57577C430395"
+		    compartment 	(object Compartment
+			Parent_View 	@41
+			location   	(2448, 1252)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	14
+			max_width  	806
+			justify    	1)
+		    width      	822
+		    height     	646
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @42
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@5
+		    supplier   	@41
+		    vertices   	(list Points
+			(3569, 1271)
+			(3261, 1374))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::帐户Account" @43
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1704, 684)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@43
+			location   	(1240, 269)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	928
+			justify    	0
+			label      	"帐户Account")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"48C5F3690128"
+		    compartment 	(object Compartment
+			Parent_View 	@43
+			location   	(1240, 321)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	19
+			max_width  	928
+			justify    	1)
+		    width      	946
+		    height     	850
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @44
+		    location   	(1030, 424)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B501B10128"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$1" @45
+			    Parent_View 	@44
+			    location   	(-588, 46)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B501B2009C"
+			    client     	@44
+			    supplier   	@31
+			    vertices   	(list Points
+				(1030, 424)
+				(830, 347))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$2" @46
+			    Parent_View 	@44
+			    location   	(-588, 46)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B501B2009E"
+			    client     	@44
+			    supplier   	@43
+			    vertices   	(list Points
+				(1030, 424)
+				(1230, 501))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$3" @47
+		    location   	(2317, 1599)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"54B504D30242"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$4" @48
+			    Parent_View 	@47
+			    location   	(862, 615)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B504D401A5"
+			    client     	@47
+			    supplier   	@43
+			    vertices   	(list Points
+				(2317, 1599)
+				(1987, 1109))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$5" @49
+			    Parent_View 	@47
+			    location   	(862, 615)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"54B504D401B5"
+			    client     	@47
+			    supplier   	@32
+			    vertices   	(list Points
+				(2317, 1599)
+				(2645, 2090))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$36" @50
+		    location   	(1049, 894)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573E65F60254"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$37" @51
+			    Parent_View 	@50
+			    location   	(-951, 502)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573E65F6039C"
+			    client     	@50
+			    supplier   	@39
+			    vertices   	(list Points
+				(1049, 894)
+				(868, 951))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$38" @52
+			    Parent_View 	@50
+			    location   	(-951, 502)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573E65F603DB"
+			    client     	@50
+			    supplier   	@43
+			    vertices   	(list Points
+				(1049, 894)
+				(1230, 834))
+			    line_style 	0)))
+		(object AttachView "" @53
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@4
+		    supplier   	@43
+		    vertices   	(list Points
+			(1697, 178)
+			(1698, 258))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$42" @54
+		    location   	(2307, 1119)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"57577EA50112"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$43" @55
+			    Parent_View 	@54
+			    location   	(-935, -21)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57577EA502B3"
+			    client     	@54
+			    supplier   	@43
+			    vertices   	(list Points
+				(2307, 1119)
+				(2177, 1025))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$44" @56
+			    Parent_View 	@54
+			    location   	(-935, -21)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57577EA502B5"
+			    client     	@54
+			    supplier   	@41
+			    vertices   	(list Points
+				(2307, 1119)
+				(2438, 1214))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::账户金额变动记录AccoPayment" @57
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2796, 597)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@57
+			location   	(2394, 18)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	804
+			justify    	0
+			label      	"账户金额变动记录AccoPayment")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"573EB372011E"
+		    compartment 	(object Compartment
+			Parent_View 	@57
+			location   	(2394, 70)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	27
+			max_width  	802
+			justify    	1)
+		    width      	822
+		    height     	1178
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$39" @58
+		    location   	(2280, 637)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573EB5AA00AC"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$40" @59
+			    Parent_View 	@58
+			    location   	(-981, 301)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573EB5AA022A"
+			    client     	@58
+			    supplier   	@43
+			    vertices   	(list Points
+				(2280, 637)
+				(2177, 645))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$41" @60
+			    Parent_View 	@58
+			    location   	(-981, 301)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"573EB5AA025D"
+			    client     	@58
+			    supplier   	@57
+			    vertices   	(list Points
+				(2280, 637)
+				(2384, 629))
+			    line_style 	0)))
+		(object AttachView "" @61
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@57
+		    supplier   	@3
+		    vertices   	(list Points
+			(3207, 576)
+			(3488, 562))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::HIP(平台应用主控数据库)::财务账户::变动记录账单关联PaymentBillRela" @62
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3936, 926)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@62
+			location   	(3357, 838)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1158
+			justify    	0
+			label      	"变动记录账单关联PaymentBillRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5757B9BF01E8"
+		    compartment 	(object Compartment
+			Parent_View 	@62
+			location   	(3357, 890)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	3
+			max_width  	1156
+			justify    	1)
+		    width      	1176
+		    height     	196
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$45" @63
+		    location   	(3403, 770)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5757B9D4034C"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$46" @64
+			    Parent_View 	@63
+			    location   	(-399, -64)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5757B9D500FC"
+			    client     	@63
+			    supplier   	@57
+			    vertices   	(list Points
+				(3403, 770)
+				(3207, 714))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$47" @65
+			    Parent_View 	@63
+			    location   	(-399, -64)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5757B9D500FF"
+			    client     	@63
+			    supplier   	@62
+			    vertices   	(list Points
+				(3403, 770)
+				(3600, 827))
+			    line_style 	0)))))))

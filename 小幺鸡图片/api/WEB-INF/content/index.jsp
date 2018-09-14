@@ -41,19 +41,6 @@
         <p class="m-s-desc">可离线安装到内网服务器仅供公司内部使用。</p>
     </div>
 </section>
-<section class="m-sec3 ta-c">
-    <div class="about-desc">
-        <p>如果你喜欢下面这些，那你一定会喜欢上“小幺鸡”</p>
-        <div class="about-list mc">
-            <p><i class="iconfont icon-yes"></i>接口在线测试，降低接口错误率</p>
-            <p><i class="iconfont icon-yes"></i>开放源码，支持任意修改</p>
-            <p><i class="iconfont icon-yes"></i>简洁明了的API</p>
-            <p><i class="iconfont icon-yes"></i>简单的维护更新</p>
-            <p><i class="iconfont icon-yes"></i>多种导出满足不同需求</p>
-            <p class="m-sec1-go"><a href="dashboard/?v=${v}">立即使用</a></p>
-        </div>
-    </div>
-</section>
 </div>
 <br/>
 <jsp:include page="/WEB-INF/includes/footer.jsp"/>

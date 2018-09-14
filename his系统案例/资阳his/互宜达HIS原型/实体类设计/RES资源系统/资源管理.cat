@@ -1,0 +1,4177 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "资源管理"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"sc"
+	    name       	"SourceControlSpec"
+	    value      	(value Text 
+|"$/实体类设计/RES资源系统", SDAAAAAA
+	    ))
+	(object Attribute
+	    tool       	"sc"
+	    name       	"SourceControlAuxProjPath"
+	    value      	"\\\\172.18.107.203\\HIPDesign$\\"))
+    quid       	"56D04AA40076"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "黑名单RSBlackList"
+	    quid       	"5660FEEA0141"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"5661009200AB")
+		(object ClassAttribute "名称Nam"
+		    quid       	"5661009B00CE")
+		(object ClassAttribute "(参与者)参与者编号PartyCd"
+		    quid       	"566100A7034F")
+		(object ClassAttribute "身份证号码IDNo"
+		    quid       	"566100B10046")
+		(object ClassAttribute "违约次数BreachTimes"
+		    quid       	"566100BD026E")
+		(object ClassAttribute "加入时间AddTime"
+		    quid       	"566100C603B7")
+		(object ClassAttribute "取消时间RemoveTime"
+		    quid       	"566100D00081")
+		(object ClassAttribute "取消人员RemoveStaffCd"
+		    quid       	"566100DA00F7")))
+	(object Class "排程类型RSResScheType"
+	    quid       	"56615507012F"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566155C9010A")
+		(object ClassAttribute "名称Nam"
+		    quid       	"566155D10288")
+		(object ClassAttribute "（排程类型）父排程类型ParResScheTp"
+		    quid       	"566155D702DA")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569DC201A2")))
+	(object Class "排程模板项RSSchedItem"
+	    quid       	"566156170046"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566156390220")
+		(object ClassAttribute "（资源排程模板）排班模板编号TempCd"
+		    quid       	"570B0F71033C")
+		(object ClassAttribute "（资源）资源编号ResourceCd"
+		    quid       	"5661563D033F")
+		(object ClassAttribute "(参与者) 归属科室编号OwnDptCd"
+		    quid       	"566169A902C8")
+		(object ClassAttribute "（参与者）服务提供者编号PartyCd"
+		    quid       	"570B074D0290")
+		(object ClassAttribute "（术语）星期SchedWeek"
+		    quid       	"566169DC0278")
+		(object ClassAttribute "（服务分类）服务分类编号SrvCateCd"
+		    quid       	"576A7D59017B")
+		(object ClassAttribute "（服务）服务编号ServiceCd"
+		    quid       	"56CECA7801B5")
+		(object ClassAttribute "（服务标准）服务标准编号ServStdCd"
+		    quid       	"5715DDCD0255")
+		(object ClassAttribute "（服务时段）服务时段编号SrvTimeCd"
+		    quid       	"566169E800F0")
+		(object ClassAttribute "开始时间StartTime"
+		    quid       	"5717758101DE")
+		(object ClassAttribute "结束时间EndTime"
+		    quid       	"571775840285")
+		(object ClassAttribute "服务总数ServiceTotal"
+		    quid       	"56616A2202B5")
+		(object ClassAttribute "预约服务上限ReservQuota"
+		    quid       	"572ACC1B00C9")
+		(object ClassAttribute "额外服务上限AdditiQuota"
+		    quid       	"572ACC1D03D5")
+		(object ClassAttribute "（资源）位置Position"
+		    quid       	"56616A380220")
+		(object ClassAttribute "延时服务总数DelayServTotal"
+		    quid       	"56616A540309")
+		(object ClassAttribute "单次时长OnceDura"
+		    quid       	"56616A940378")
+		(object ClassAttribute "（资源）使用对象（设备/人）UseObjCd"
+		    quid       	"56616A9F00E1")
+		(object ClassAttribute "（注意事项）注意事项编号AtteItemCd"
+		    quid       	"56617A9E02D8")
+		(object ClassAttribute "备注Note"
+		    quid       	"56616F320062")))
+	(object Class "服务科室关联SerDeptrRela"
+	    quid       	"56616B39015E"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "(参与者)科室编号DeptCd"
+		    quid       	"56616B9F0018")
+		(object ClassAttribute "(服务)服务编号ServiceCd"
+		    quid       	"56616BA80318")
+		(object ClassAttribute "（服务分类）服务分类编号SrvCateCd"
+		    quid       	"5770925C00F8")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569D7503BA")))
+	(object Class "排程模板份额设置RSSTAppoLotSet"
+	    quid       	"56616F600099"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56616F7101B0")
+		(object ClassAttribute "（字典）排程份额类型RSSLotTypeCd"
+		    quid       	"57302C1B032A")
+		(object ClassAttribute "（订购服务途径）途径WayCd"
+		    quid       	"56616F780049")
+		(object ClassAttribute "（排程模板项）排程模板项编号RSSchedItemCd"
+		    quid       	"5756824A03E5")
+		(object ClassAttribute "总数AppoTotal"
+		    quid       	"56616F9002F0")
+		(object ClassAttribute "起始号AppoOrigin"
+		    quid       	"56616FA403A0")
+		(object ClassAttribute "号前缀Prefix"
+		    quid       	"5715E0F4003C")))
+	(object Class "排班表RSSchedTable"
+	    quid       	"566176CE020F"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566176E802AA")
+		(object ClassAttribute "（资源）资源编号ResourceCd"
+		    quid       	"566176F10178")
+		(object ClassAttribute "(参与者) 归属科室编号OwnDptCd"
+		    quid       	"5661770F0118")
+		(object ClassAttribute "（参与者）服务提供者编号PartyCd"
+		    quid       	"570B09F20203")
+		(object ClassAttribute "日期SchedDate"
+		    quid       	"5661771600B8")
+		(object ClassAttribute "（服务分类）服务分类编号SrvCateCd"
+		    quid       	"5762A5960000")
+		(object ClassAttribute "（服务）服务编号ServiceCd"
+		    quid       	"56CF1BD70222")
+		(object ClassAttribute "（服务标准）服务标准编号ServStdCd"
+		    quid       	"5718353B030B")
+		(object ClassAttribute "（服务时段）服务时段编号SrvTimeCd"
+		    quid       	"566177220010")
+		(object ClassAttribute "开始时间StartTime"
+		    quid       	"5718343E0268")
+		(object ClassAttribute "截止时间EndTime"
+		    quid       	"571834410284")
+		(object ClassAttribute "服务总数ServiceTotal"
+		    quid       	"566177290000")
+		(object ClassAttribute "预约服务上限ReservQuota"
+		    quid       	"572ACFE602E7")
+		(object ClassAttribute "额外服务上限AdditiQuota"
+		    quid       	"572ACFEE019C")
+		(object ClassAttribute "（资源）位置Position"
+		    quid       	"5661773102E8")
+		(object ClassAttribute "延时服务总数DelayServTotal"
+		    quid       	"5661773802F8")
+		(object ClassAttribute "单次时长OnceDura"
+		    quid       	"56617752018A")
+		(object ClassAttribute "（资源）设备/人UseObjCd"
+		    quid       	"5661775A0108")
+		(object ClassAttribute "备注Note"
+		    quid       	"5661776103C9")
+		(object ClassAttribute "（排程类型）排程模板类型编号ScheTempTpCd"
+		    quid       	"566178FB013B")
+		(object ClassAttribute "（资源排程模板）排程模板编号ScheTempCd"
+		    quid       	"56617908016A")
+		(object ClassAttribute "（排班表）关联排班编号RelaSchedTabCd"
+		    quid       	"566179420028")
+		(object ClassAttribute "（注意事项）注意事项编号AtteItemCd"
+		    quid       	"56617ACF03B9")
+		(object ClassAttribute "排班表状态RSSchedStatus"
+		    quid       	"573A8FD300EC")))
+	(object Class "设备排班表RSEquiSchedTab"
+	    quid       	"566177750107"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（排班表）排班表编号SchedTabCd"
+		    quid       	"5661778C0294")
+		(object ClassAttribute "设备型号EquiModel"
+		    quid       	"566177A002C0")
+		(object ClassAttribute "设备用途EquiPurpose"
+		    quid       	"566177A60331")))
+	(object Class "排班份额设置RSSdTAppoLotSet"
+	    quid       	"566177BB02BA"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566177D20029")
+		(object ClassAttribute "（字典）排程份额类型RSSLotTypeCd"
+		    quid       	"5732E90E00C7")
+		(object ClassAttribute "（排班表）排班表编号SchedTabCd"
+		    quid       	"566177DA0351")
+		(object ClassAttribute "（订购服务途径）途径WayCd"
+		    quid       	"566177EA0162")
+		(object ClassAttribute "总数AppoTotal"
+		    quid       	"566177F00331")
+		(object ClassAttribute "起始号AppoOrigin"
+		    quid       	"566177F701B0")
+		(object ClassAttribute "序号队列SerialQue"
+		    quid       	"56617B0F0200")))
+	(object Class "门诊排班表RSOPSchedTable（作废）"
+	    quid       	"566177FD03DB"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566178160219")
+		(object ClassAttribute "（排班表）排班表编号SchedTabCd"
+		    quid       	"5661781D02F0")
+		(object ClassAttribute "（术语）亚专业SubSpe"
+		    quid       	"5661783101C0")
+		(object ClassAttribute "（术语） 挂号职称RegTitle"
+		    quid       	"5661783A0198")
+		(object ClassAttribute "费用Fee"
+		    quid       	"56C68C2A0374")))
+	(object Class "预约记录表RSAppoRecTable"
+	    quid       	"56617A1300D3"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56617A23027A")
+		(object ClassAttribute "（资源）资源编号ResourceCd"
+		    quid       	"56617D270358")
+		(object ClassAttribute "（排班表）排班表编号SchedTabCd"
+		    quid       	"56617A2800D0")
+		(object ClassAttribute "（参与者）订购人员编号OrderStaffCd"
+		    quid       	"56617A3F0081")
+		(object ClassAttribute "预约日期AppoDate"
+		    quid       	"56617A580179")
+		(object ClassAttribute "预约序号AppoSerial"
+		    quid       	"56617A6E0268")
+		(object ClassAttribute "（订购服务途径）预约方式编号AppoWayCd"
+		    quid       	"5715AE2D027A")
+		(object ClassAttribute "（账单）账单编号PatBillCd"
+		    quid       	"56617D630301")
+		(object ClassAttribute "（数据对象类型）数据对象类型编号DOTpCd"
+		    quid       	"57752BC30058")
+		(object ClassAttribute "数据对象编号DOCd"
+		    quid       	"57752BCF031B")))
+	(object Class "注意事项RSAtteItem"
+	    quid       	"56617B5B02A8"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56617B640130")
+		(object ClassAttribute "名称Nam"
+		    quid       	"56617B68033D")
+		(object ClassAttribute "描述Description"
+		    quid       	"56617B6F0328")
+		(object ClassAttribute "（数据对象类型） 数据对象类型编号DataObjTpCd"
+		    quid       	"56617B770348")
+		(object ClassAttribute "数据对象编号DataObjCd"
+		    quid       	"566186D70109")))
+	(object Class "违约记录表RSDefaultRecTab"
+	    quid       	"56617B9C0233"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56617BA70348")
+		(object ClassAttribute "（预约记录表） 预约记录编号AppoRecTabCd"
+		    quid       	"56617BAC0387")
+		(object ClassAttribute "（参与者）订购人员编号OrderStaffCd"
+		    quid       	"56617C2202D0")
+		(object ClassAttribute "预约日期AppoDate"
+		    quid       	"56617C7202C9")
+		(object ClassAttribute "(排程类型)排程类型编号ScheTpCd"
+		    quid       	"56617C91032F")
+		(object ClassAttribute "（资源）资源编号ResourceCd"
+		    quid       	"56617CB601B1")
+		(object ClassAttribute "备注Note"
+		    quid       	"56617C070258")))
+	(object Class "资源占用表RSResOccupyTab"
+	    quid       	"56618500032D"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"566185220399")
+		(object ClassAttribute "（资源）资源编号ResourceCd"
+		    quid       	"5661852A03D0")
+		(object ClassAttribute "（排班表）排班表编号SchedTabCd"
+		    quid       	"5661853B03D8")
+		(object ClassAttribute "（参与者）订购人员编号OrderStaffCd"
+		    quid       	"566185430129")
+		(object ClassAttribute "预约日期AppoDate"
+		    quid       	"566185550212")
+		(object ClassAttribute "（账单）账单编号PatBillCd"
+		    quid       	"566185850081")
+		(object ClassAttribute "（账单）退订账单编号RefundBillCd"
+		    quid       	"5715E78F0314")
+		(object ClassAttribute "（预约记录表）预约记录表编号AppoRecTabCd"
+		    quid       	"5661859000E8")
+		(object ClassAttribute "占用状态"
+		    quid       	"5715E77A01F3")
+		(object ClassAttribute "（订购服务途径）订购方式编号OrderWayCd(新增)"
+		    quid       	"577F689E00A1")))
+	(object Class "排班变更记录表RSSchedChanRec"
+	    quid       	"5661874E02DA"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"5661875E00EE")
+		(object ClassAttribute "（参与者）变更人员编号ChanStafCd"
+		    quid       	"566187620139")
+		(object ClassAttribute "（参与者）变更机构编号ChanOrgCd"
+		    quid       	"571837B50344")
+		(object ClassAttribute "（服务）变更服务编号ServiceCd"
+		    quid       	"5708C45B020E")
+		(object ClassAttribute "（服务标准）变更服务标准标号ServStdCd"
+		    quid       	"5718377002B3")
+		(object ClassAttribute "（字典）变更类型编号ChanReasonCd"
+		    quid       	"566187670348")
+		(object ClassAttribute "（片语）片语编号PhraseCd"
+		    quid       	"57183C070169")
+		(object ClassAttribute "变更原因描述Desc"
+		    quid       	"5708C2F802B2")
+		(object ClassAttribute "（排班表）排班表编号SchedTabCd"
+		    quid       	"5661876D0161")
+		(object ClassAttribute "变更时间ChanTime"
+		    quid       	"566187A103D1")))
+	(object Class "服务Service"
+	    quid       	"56CD6054003E"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56CD60A000BB")
+		(object ClassAttribute "名称Nam"
+		    quid       	"56CD60B00128")
+		(object ClassAttribute "助记码MneCd"
+		    quid       	"57459BC703A2")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569D790134")
+		(object ClassAttribute "（服务分类）服务分类编号SrvCateCd"
+		    quid       	"56CD61CC03D8")
+		(object ClassAttribute "（数据对象类型） 数据对象类型编号DataObjTpCd"
+		    quid       	"56CD623600AB")
+		(object ClassAttribute "数据对象编号DataObjCd"
+		    quid       	"56CD62C7002E")
+		(object ClassAttribute "服务费用Fee"
+		    quid       	"56CDC6A801D4")))
+	(object Class "服务分类ServiceCate"
+	    quid       	"56CD60FD00EA"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56CD613B0000")
+		(object ClassAttribute "名称Nam"
+		    quid       	"56CD61410251")
+		(object ClassAttribute "（服务分类）父分类ParCd"
+		    quid       	"56CDB56D032C")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569D6F03B9")))
+	(object Class "服务收费标准ServiceTollStd"
+	    quid       	"56CDC66401A5"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56CDC6F60222")
+		(object ClassAttribute "名称Nam"
+		    quid       	"56CDC6FE002E")
+		(object ClassAttribute "（服务标准）服务标准编号SrvStdCd"
+		    quid       	"56CDC7380261")
+		(object ClassAttribute "（收费项目）收费项目编号CItmCd"
+		    quid       	"56CDC763032C")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569DB200AF")))
+	(object Class "（专属对象）门诊预约挂号服务OutpatRegSrv"
+	    quid       	"56D50D320068"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56D50D6F0231")
+		(object ClassAttribute "名称Nam"
+		    quid       	"56D50D760245")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569D8601AD")
+		(object ClassAttribute "（服务分类）服务分类编号SrvCatCd"
+		    quid       	"56D50D9F0131")
+		(object ClassAttribute "（术语）亚专业编号SubSpeCd"
+		    quid       	"56D50DDA0176")
+		(object ClassAttribute "（术语） 挂号职称编号RegTitleCd"
+		    quid       	"56D50DCF02B5")))
+	(object Class "服务时段ServiceTime"
+	    quid       	"56D54A2603A3"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"56D54A530039")
+		(object ClassAttribute "名称Nam"
+		    quid       	"56D54ABC0336")
+		(object ClassAttribute "助记码MneCd"
+		    quid       	"57459BF4013A")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"575693E40310")
+		(object ClassAttribute "（服务分类）服务分类编号ServiceCateCd"
+		    quid       	"56D54D36013C")
+		(object ClassAttribute "（数据对象类型） 数据对象类型编号DataObjTpCd"
+		    quid       	"56D54AD2028C")
+		(object ClassAttribute "数据对象编号DataObjCd"
+		    quid       	"56D54B2A027D")
+		(object ClassAttribute "服务开始时间StartTime"
+		    quid       	"56D54B7103AE")
+		(object ClassAttribute "服务结束时间EndTime"
+		    quid       	"56D54B74035D")
+		(object ClassAttribute "退定时间点RtnTime"
+		    quid       	"5715E02F012C")
+		(object ClassAttribute "预约回归时间点RecoveryTime"
+		    quid       	"5715E0360004")))
+	(object Class "排班表模板RSSTemplate"
+	    quid       	"5704CB32035B"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"5704CB76002E")
+		(object ClassAttribute "名称Nam"
+		    quid       	"5704CB780222")))
+	(object Class "资源排程模板RSSchedTemp"
+	    quid       	"570B0F17003E"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"570B0F2E0109")
+		(object ClassAttribute "名称Nam"
+		    quid       	"570B0F31002E")
+		(object ClassAttribute "（排程类型）排程类型编号ResScheTpCd"
+		    quid       	"570B134801E4")
+		(object ClassAttribute "启用时间StratTime"
+		    quid       	"5754E19D0128")
+		(object ClassAttribute "停用时间EndTime"
+		    quid       	"5754E1AE0268")))
+	(object Class "会诊申请ConsulApplic"
+	    quid       	"5705F9880203"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"570605B7007D")
+		(object ClassAttribute "（）申请医院AppHospiCd"
+		    quid       	"570605CC03A9")
+		(object ClassAttribute "（参与者）申请科室AppDeptCd"
+		    quid       	"570605D200FA")
+		(object ClassAttribute "（参与者）申请医师AppDoctorCd"
+		    quid       	"570605D3030D")
+		(object ClassAttribute "联系电话ContNumber"
+		    quid       	"570605E1004E")
+		(object ClassAttribute "申请时间AppTime"
+		    quid       	"570605E40138")
+		(object ClassAttribute "（术语）会诊方式ConsulWayCd"
+		    quid       	"570605F00271")
+		(object ClassAttribute "（术语）会诊类型ConsulTypeCd"
+		    quid       	"570605F503A9")
+		(object ClassAttribute "（）会诊医院ConsulHospiCd"
+		    quid       	"5706060D034B")
+		(object ClassAttribute "（参与者）会诊科室ConsulDeptCd"
+		    quid       	"57060625035B")
+		(object ClassAttribute "（）会诊专家ConsulExpertCd"
+		    quid       	"5706061C037A")
+		(object ClassAttribute "（）会诊服务ConsulServeCd"
+		    quid       	"5706063D029F")
+		(object ClassAttribute "价格单位Price"
+		    quid       	"570606690261")
+		(object ClassAttribute "会诊费用ConsulFee"
+		    quid       	"5706066B0128")
+		(object ClassAttribute "会诊时间ConsulTim"
+		    quid       	"5706068A02BF")
+		(object ClassAttribute "连续会诊标志ContinConsul"
+		    quid       	"5706068102BF")
+		(object ClassAttribute "入院诊断Diagnosis"
+		    quid       	"570606D2036B")
+		(object ClassAttribute "现病史HisIllness"
+		    quid       	"570606DE0000")
+		(object ClassAttribute "查体Examination"
+		    quid       	"570606E40109")
+		(object ClassAttribute "检验结果TestResult"
+		    quid       	"570606EB0167")
+		(object ClassAttribute "给药情况AdminiOfCase"
+		    quid       	"570606F002AF")
+		(object ClassAttribute "会诊原因ConsulReacon"
+		    quid       	"570606F7038A")
+		(object ClassAttribute "备注Remark"
+		    quid       	"570606F902AF")
+		(object ClassAttribute "（会诊申请）历史记录HistoryRec"
+		    quid       	"5706100B029F")))
+	(object Class "服务预约ServiReserva"
+	    quid       	"5706049500EA"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"5706078302AF")
+		(object ClassAttribute "（）申请医院AppHospiCd"
+		    quid       	"5706078D00CB")
+		(object ClassAttribute "（参与者）申请科室AppDeptCd"
+		    quid       	"57060BDC0186")
+		(object ClassAttribute "（参与者）申请医师AppDoctorCd"
+		    quid       	"57060BE00213")
+		(object ClassAttribute "转入科室TransDept"
+		    quid       	"57060D7901C5")
+		(object ClassAttribute "预约医生ReservDoctor"
+		    quid       	"57060D9C032C")
+		(object ClassAttribute "影像"
+		    quid       	"57060DA8001F")
+		(object ClassAttribute "超声"
+		    quid       	"57060DAB033C")
+		(object ClassAttribute "检验"
+		    quid       	"57060DAD035B")))
+	(object Class "双向转诊Referral"
+	    quid       	"5706049A007D"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"570637E6032C")
+		(object ClassAttribute "（）申请医院AppHospiCd"
+		    quid       	"570637F1009C")
+		(object ClassAttribute "（参与者）申请科室AppDeptCd"
+		    quid       	"570637F503C8")
+		(object ClassAttribute "（参与者）申请医师AppDoctorCd"
+		    quid       	"570637FA03A9")
+		(object ClassAttribute "联系电话ContNumber"
+		    quid       	"57063803029F")
+		(object ClassAttribute "（）转入医院TransHospi"
+		    quid       	"5706380E01B5")
+		(object ClassAttribute "初步诊断Diagnosis"
+		    quid       	"5706381A0280")
+		(object ClassAttribute "现病史IllnessHis"
+		    quid       	"570638240196")
+		(object ClassAttribute "既往史PastHistory"
+		    quid       	"57063826030D")
+		(object ClassAttribute "（术语）参保类型InsuranType"
+		    quid       	"5706382D0186")))
+	(object Class "门诊协同服务CollaboServ"
+	    quid       	"570DF0AC036B"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "编号Cd"
+		    quid       	"570DF11B02E7")
+		(object ClassAttribute "名称Nam"
+		    quid       	"570DF15501B7")
+		(object ClassAttribute "（服务分类）服务分类编号SrvCatCd"
+		    quid       	"570DF1590018")
+		(object ClassAttribute "（术语）协同服务分类CollServTPCd"
+		    quid       	"570DF17A032A")
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"570EF2D3001C")
+		(object ClassAttribute "（参与者）申请医院AppHospiCd"
+		    quid       	"570EF3B5013B")
+		(object ClassAttribute "（参与者）申请科室AppDeptCd"
+		    quid       	"570EF3F3019E")
+		(object ClassAttribute "（参与者）申请医师AppDoctorCd"
+		    quid       	"570EF3FA0064")
+		(object ClassAttribute "申请时间AppTime"
+		    quid       	"570EF40B03B8")
+		(object ClassAttribute "（参与者）接收医院ReceHospiCd"
+		    quid       	"570EF4810035")
+		(object ClassAttribute "（参与者）接收科室ReceDeptCd"
+		    quid       	"570EF48401A0")
+		(object ClassAttribute "（参与者）接收医生ReceDeptDocCd"
+		    quid       	"570EF486022C")
+		(object ClassAttribute "（服务）服务编号SrvCd"
+		    quid       	"570EF48F034E")
+		(object ClassAttribute "原因Reason"
+		    quid       	"570EF61B0164")
+		(object ClassAttribute "备注Remark"
+		    quid       	"570EF5CA017A")
+		(object ClassAttribute "（术语）会诊方式ConsulWayCd"
+		    quid       	"570EF5DC032E")
+		(object ClassAttribute "（术语）会诊类型ConsulTypeCd"
+		    quid       	"570EF5E2001E")
+		(object ClassAttribute "会诊预计时间ConsulTim"
+		    quid       	"570EF5ED0135")
+		(object ClassAttribute "连续会诊标志ContinConsul"
+		    quid       	"570EF5F503CF")
+		(object ClassAttribute "（协同服务）历史记录HistoryRec"
+		    quid       	"570EF5FD0275")))
+	(object Class "预约退号份额设置RSAppoLotSet"
+	    quid       	"5715AE8500C8"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "预约份额AppoShare"
+		    quid       	"5715AF1902A3")
+		(object ClassAttribute "退号份额RefundShare"
+		    quid       	"5715AF4B0261")
+		(object ClassAttribute "时间间隔TimeInterval"
+		    quid       	"5715AED2039A")
+		(object ClassAttribute "（数据对象类型） 数据对象类型编号DataObjTpCd"
+		    quid       	"5716396B0006")
+		(object ClassAttribute "数据对象编号DataObjCd"
+		    quid       	"57163972024E")))
+	(object Class "排班计划生成设置RSSchedCreSet"
+	    quid       	"5715B1BB02A1"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（资源排程模板）模板编号ModeCd"
+		    quid       	"5715B1EA02A4")
+		(object ClassAttribute "生成间隔天数InterDay"
+		    quid       	"5715B21100AF")
+		(object ClassAttribute "提前创建天数CreatAdvanDay"
+		    quid       	"5715B2330364")
+		(object ClassAttribute "自动生成标志IsAuto"
+		    quid       	"5715C93F0261")))
+	(object Class "预约退号限额记录RSAppoLimitRec"
+	    quid       	"5715B019038D"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（病人）病人编号PatCd"
+		    quid       	"5715B03A0164")
+		(object ClassAttribute "已预约数AppoNum"
+		    quid       	"5715B044012F")
+		(object ClassAttribute "首次预约时间FirstAppoTim"
+		    quid       	"5715B06D01B8")
+		(object ClassAttribute "已退号数RefundNum"
+		    quid       	"5715B04C01CD")
+		(object ClassAttribute "首次退号时间FirstRefundTim"
+		    quid       	"5715B0760010")))
+	(object Class "服务标准ServiceStd"
+	    quid       	"5716355A010B"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "名称Nam"
+		    quid       	"571635E60144")
+		(object ClassAttribute "助记码MneCd"
+		    quid       	"57459BCC00C6")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569D82031E")
+		(object ClassAttribute "（服务）服务编号ServiceCd"
+		    quid       	"571638CA00F3")
+		(object ClassAttribute "费用总额TotalFee"
+		    quid       	"571638D30323")
+		(object ClassAttribute "（数据对象类型） 数据对象类型编号DataObjTpCd"
+		    quid       	"571638F70019")
+		(object ClassAttribute "数据对象编号DataObjCd"
+		    quid       	"571EE2D30089")))
+	(object Class "订购服务途径OrderWay"
+	    quid       	"5738154A004A"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"573815E50025")
+		(object ClassAttribute "（字典）排程份额类型RSSLotTypeCd"
+		    quid       	"575693D80007")
+		(object ClassAttribute "是否延迟收费IsDelayToll"
+		    quid       	"57381601031E")
+		(object ClassAttribute "代表字母Letter"
+		    quid       	"573C44F3026C")
+		(object ClassAttribute "助记码MneCd"
+		    quid       	"57459C0A00BB")))
+	(object Class "排程份额设置模板RSSTAppoLotMode"
+	    quid       	"574E551401C1"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "名称Nam"
+		    quid       	"574E56170127")
+		(object ClassAttribute "描述Description"
+		    quid       	"574E561901B6")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569DD200E1")))
+	(object Class "排程份额设置明细RSSTAppoLotDet"
+	    quid       	"574E578901EB"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "（排程份额设置模板）份额模板编号AppoLotModeCd"
+		    quid       	"574E57D8003B")
+		(object ClassAttribute "（字典）排程份额类型RSSLotTypeCd"
+		    quid       	"574E5805021B")
+		(object ClassAttribute "（订购服务途径）途径WayCd"
+		    quid       	"574E57E100B5")
+		(object ClassAttribute "总数AppoTotal"
+		    quid       	"574E57E802F8")
+		(object ClassAttribute "起始号AppoOrigin"
+		    quid       	"574E57ED00C7")
+		(object ClassAttribute "号前缀Prefix"
+		    quid       	"574E57F20103")
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"57569DD40199")))
+	(object Class "预约时段ReservTime"
+	    quid       	"5753D02001B4"
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "系统映射数据编码MapDataCode"
+		    quid       	"575693F20333")
+		(object ClassAttribute "（服务时段）服务时段编号ServiceTimCd"
+		    quid       	"575696D502DF")
+		(object ClassAttribute "起时间StartTime"
+		    quid       	"575697040290")
+		(object ClassAttribute "止时间EndTime"
+		    quid       	"57569709022F")
+		(object ClassAttribute "序号SeqNo"
+		    quid       	"5756971101A8")))
+	(object Association "$UNNAMED$0"
+	    quid       	"566131CA00FA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"566131CB00E4"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::资源RSResource"
+		    quidu      	"566108DE0107"
+		    client_cardinality 	(value cardinality "1..*"))
+		(object Role "$UNNAMED$2"
+		    quid       	"566131CB00E8"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::资源类型RSResourceType"
+		    quidu      	"56610821004C")))
+	(object Association "$UNNAMED$3"
+	    quid       	"566131E0001E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"566131E002FF"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::人员资源RSStaffMan"
+		    quidu      	"5661306202C3")
+		(object Role "$UNNAMED$5"
+		    quid       	"566131E00304"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::资源RSResource"
+		    quidu      	"566108DE0107")))
+	(object Association "$UNNAMED$6"
+	    quid       	"5661368101BB"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"566136820207"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::设备资源RSEquipmentMan"
+		    quidu      	"5661339B0251")
+		(object Role "$UNNAMED$8"
+		    quid       	"56613682020C"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::资源RSResource"
+		    quidu      	"566108DE0107")))
+	(object Association "$UNNAMED$9"
+	    quid       	"566139C10035"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$10"
+		    quid       	"566139C10333"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::位置资源RSPositionMan"
+		    quidu      	"566137130276")
+		(object Role "$UNNAMED$11"
+		    quid       	"566139C10337"
+		    supplier   	"Logical View::实体类设计::RES资源系统::医疗资源::资源RSResource"
+		    quidu      	"566108DE0107")))
+	(object Association "$UNNAMED$12"
+	    quid       	"5661567600CB"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"5661567602C6"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$14"
+		    quid       	"5661567602CB"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程类型RSResScheType"
+		    quidu      	"56615507012F")))
+	(object Association "$UNNAMED$15"
+	    quid       	"56616BBB00F4"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$16"
+		    quid       	"56616BBC0020"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务科室关联SerDeptrRela"
+		    quidu      	"56616B39015E"
+		    client_cardinality 	(value cardinality "0..*"))
+		(object Role "$UNNAMED$17"
+		    quid       	"56616BBC0025"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$18"
+	    quid       	"56616FD30100"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$19"
+		    quid       	"56616FD40265"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板份额设置RSSTAppoLotSet"
+		    quidu      	"56616F600099"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$20"
+		    quid       	"56616FD4026A"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")))
+	(object Association "$UNNAMED$21"
+	    quid       	"56616FDD0306"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$22"
+		    quid       	"56616FDE002B"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$23"
+		    quid       	"56616FDE0032"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板份额设置RSSTAppoLotSet"
+		    quidu      	"56616F600099")))
+	(object Association "$UNNAMED$24"
+	    quid       	"5661784B01D8"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$25"
+		    quid       	"5661784C00F0"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::设备排班表RSEquiSchedTab"
+		    quidu      	"566177750107"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$26"
+		    quid       	"5661784C00F6"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F")))
+	(object Association "$UNNAMED$27"
+	    quid       	"566178520220"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$28"
+		    quid       	"5661785300E6"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$29"
+		    quid       	"5661785300EE"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班份额设置RSSdTAppoLotSet"
+		    quidu      	"566177BB02BA")))
+	(object Association "$UNNAMED$30"
+	    quid       	"566178790230"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$31"
+		    quid       	"566178790361"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$32"
+		    quid       	"566178790367"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::设备排班表RSEquiSchedTab"
+		    quidu      	"566177750107")))
+	(object Association "$UNNAMED$33"
+	    quid       	"5661787C03B7"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$34"
+		    quid       	"5661787D00EB"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$35"
+		    quid       	"5661787D00F1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::门诊排班表RSOPSchedTable（作废）"
+		    quidu      	"566177FD03DB")))
+	(object Association "$UNNAMED$36"
+	    quid       	"56617C400009"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$37"
+		    quid       	"56617C40017B"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::预约记录表RSAppoRecTable"
+		    quidu      	"56617A1300D3"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$38"
+		    quid       	"56617C400180"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::违约记录表RSDefaultRecTab"
+		    quidu      	"56617B9C0233")))
+	(object Association "$UNNAMED$39"
+	    quid       	"566185A0006C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$40"
+		    quid       	"566185A001A1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::预约记录表RSAppoRecTable"
+		    quidu      	"56617A1300D3"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$41"
+		    quid       	"566185A001AB"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源占用表RSResOccupyTab"
+		    quidu      	"56618500032D")))
+	(object Association "$UNNAMED$42"
+	    quid       	"56618896030B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$43"
+		    quid       	"566188970038"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$44"
+		    quid       	"56618897004D"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班变更记录表RSSchedChanRec"
+		    quidu      	"5661874E02DA")))
+	(object Association "$UNNAMED$45"
+	    quid       	"5665374F0393"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$46"
+		    quid       	"5665375001A4"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::注意事项RSAtteItem"
+		    quidu      	"56617B5B02A8"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$47"
+		    quid       	"5665375001AF"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F")))
+	(object Association "$UNNAMED$48"
+	    quid       	"56CD61F7036B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$49"
+		    quid       	"56CD61F801C5"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")
+		(object Role "$UNNAMED$50"
+		    quid       	"56CD61F801C7"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务分类ServiceCate"
+		    quidu      	"56CD60FD00EA")))
+	(object Association "$UNNAMED$51"
+	    quid       	"56CDC6E70186"
+	    roles      	(list role_list
+		(object Role "n"
+		    quid       	"56CDC6EB00FA"
+		    label      	"n"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务收费标准ServiceTollStd"
+		    quidu      	"56CDC66401A5")
+		(object Role "1"
+		    quid       	"56CDC6EB00FC"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$52"
+	    quid       	"56CECA2903C8"
+	    roles      	(list role_list
+		(object Role "1"
+		    quid       	"56CECA2A0186"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm"
+		    quidu      	"566FE7E40108")
+		(object Role "1"
+		    quid       	"56CECA2A01A5"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务收费标准ServiceTollStd"
+		    quidu      	"56CDC66401A5")))
+	(object Association "$UNNAMED$53"
+	    quid       	"56CECAA102FD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$54"
+		    quid       	"56CECAA20138"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$55"
+		    quid       	"56CECAA2013A"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$56"
+	    quid       	"56D50DBF01C7"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$57"
+		    quid       	"56D50DBF0374"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::（专属对象）门诊预约挂号服务OutpatRegSrv"
+		    quidu      	"56D50D320068")
+		(object Role "$UNNAMED$58"
+		    quid       	"56D50DBF0386"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$59"
+	    quid       	"56D54DC70214"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$60"
+		    quid       	"56D54DC803C0"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务时段ServiceTime"
+		    quidu      	"56D54A2603A3")
+		(object Role "$UNNAMED$61"
+		    quid       	"56D54DC803C9"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")))
+	(object Association "$UNNAMED$62"
+	    quid       	"5704CB9B031C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$63"
+		    quid       	"5704CB9C00DA"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表模板RSSTemplate"
+		    quidu      	"5704CB32035B")
+		(object Role "$UNNAMED$64"
+		    quid       	"5704CB9C010A"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F")))
+	(object Association "$UNNAMED$65"
+	    quid       	"570B0F5301C5"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$66"
+		    quid       	"570B0F53037A"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$67"
+		    quid       	"570B0F5303D8"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp"
+		    quidu      	"570B0F17003E")))
+	(object Association "$UNNAMED$68"
+	    quid       	"570B0F630271"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$69"
+		    quid       	"570B0F640177"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$70"
+		    quid       	"570B0F640186"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp"
+		    quidu      	"570B0F17003E")))
+	(object Association "$UNNAMED$71"
+	    quid       	"570B57A702CE"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$72"
+		    quid       	"570B57A8002E"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程类型RSResScheType"
+		    quidu      	"56615507012F")
+		(object Role "$UNNAMED$73"
+		    quid       	"570B57A80030"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp"
+		    quidu      	"570B0F17003E")))
+	(object Association "$UNNAMED$74"
+	    quid       	"570C525D030D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$75"
+		    quid       	"570C525E008C"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F")
+		(object Role "$UNNAMED$76"
+		    quid       	"570C525E008E"
+		    supplier   	"Logical View::实体类设计::HIS医院业务数据库::挂号管理::挂号记录RegisterRecord"
+		    quidu      	"56C5850E03CE")))
+	(object Association "$UNNAMED$77"
+	    quid       	"570DEC79009E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$78"
+		    quid       	"570DEC79023E"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$79"
+		    quid       	"570DEC790240"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$80"
+	    quid       	"570DEC7F018B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$81"
+		    quid       	"570DEC7F03C5"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$82"
+		    quid       	"570DEC7F03C7"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp"
+		    quidu      	"570B0F17003E")))
+	(object Association "$UNNAMED$83"
+	    quid       	"570DEC8503CB"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$84"
+		    quid       	"570DEC860160"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程类型RSResScheType"
+		    quidu      	"56615507012F")
+		(object Role "$UNNAMED$85"
+		    quid       	"570DEC860164"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp"
+		    quidu      	"570B0F17003E")))
+	(object Association "$UNNAMED$86"
+	    quid       	"570DF13D0306"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$87"
+		    quid       	"570DF13E025D"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::门诊协同服务CollaboServ"
+		    quidu      	"570DF0AC036B")
+		(object Role "$UNNAMED$88"
+		    quid       	"570DF13E0260"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$89"
+	    quid       	"5715AF2302A2"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$90"
+		    quid       	"5715AF24008F"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::预约退号份额设置RSAppoLotSet"
+		    quidu      	"5715AE8500C8")
+		(object Role "$UNNAMED$91"
+		    quid       	"5715AF240091"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::预约记录表RSAppoRecTable"
+		    quidu      	"56617A1300D3")))
+	(object Association "$UNNAMED$92"
+	    quid       	"5715DD7D0126"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$93"
+		    quid       	"5715DD7E0049"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务科室关联SerDeptrRela"
+		    quidu      	"56616B39015E")
+		(object Role "$UNNAMED$94"
+		    quid       	"5715DD7E004E"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")))
+	(object Association "$UNNAMED$95"
+	    quid       	"5715E5A20171"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$96"
+		    quid       	"5715E5A202B2"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源占用表RSResOccupyTab"
+		    quidu      	"56618500032D")
+		(object Role "$UNNAMED$97"
+		    quid       	"5715E5A202B5"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable"
+		    quidu      	"566176CE020F")))
+	(object Association "$UNNAMED$98"
+	    quid       	"571635BA0024"
+	    roles      	(list role_list
+		(object Role "n"
+		    quid       	"571635BA01E2"
+		    label      	"n"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd"
+		    quidu      	"5716355A010B")
+		(object Role "1"
+		    quid       	"571635BA01E4"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$99"
+	    quid       	"571635CC02D0"
+	    roles      	(list role_list
+		(object Role "n"
+		    quid       	"571635CD0156"
+		    label      	"n"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务收费标准ServiceTollStd"
+		    quidu      	"56CDC66401A5")
+		(object Role "1"
+		    quid       	"571635CD0158"
+		    label      	"1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd"
+		    quidu      	"5716355A010B")))
+	(object Association "$UNNAMED$100"
+	    quid       	"571836FF01FD"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$101"
+		    quid       	"571836FF03AD"
+		    supplier   	"Logical View::实体类设计::RCF云动工厂::项目管理::审批记录ProApprRec"
+		    quidu      	"566FD50203A9")
+		(object Role "$UNNAMED$102"
+		    quid       	"571836FF03AF"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班变更记录表RSSchedChanRec"
+		    quidu      	"5661874E02DA")))
+	(object Association "$UNNAMED$103"
+	    quid       	"57300B690317"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$104"
+		    quid       	"57300B6A0151"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd"
+		    quidu      	"5716355A010B"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$105"
+		    quid       	"57300B6A021A"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::（专属对象）门诊预约挂号服务OutpatRegSrv"
+		    quidu      	"56D50D320068")))
+	(object Association "$UNNAMED$106"
+	    quid       	"57300B9C01B8"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$107"
+		    quid       	"57300B9C035D"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd"
+		    quidu      	"5716355A010B")
+		(object Role "$UNNAMED$108"
+		    quid       	"57300B9C038C"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::（专属对象）门诊预约挂号服务OutpatRegSrv"
+		    quidu      	"56D50D320068")))
+	(object Association "$UNNAMED$109"
+	    quid       	"57300C100210"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$110"
+		    quid       	"57300C1003A1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::（专属对象）门诊预约挂号服务OutpatRegSrv"
+		    quidu      	"56D50D320068")
+		(object Role "$UNNAMED$111"
+		    quid       	"57300C1003C6"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$112"
+	    quid       	"573027260073"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$113"
+		    quid       	"5730272602CC"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd"
+		    quidu      	"5716355A010B")
+		(object Role "$UNNAMED$114"
+		    quid       	"57302726034F"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::（专属对象）门诊预约挂号服务OutpatRegSrv"
+		    quidu      	"56D50D320068")))
+	(object Association "$UNNAMED$115"
+	    quid       	"573815A7036D"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$116"
+		    quid       	"573815A80100"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板份额设置RSSTAppoLotSet"
+		    quidu      	"56616F600099")
+		(object Role "$UNNAMED$117"
+		    quid       	"573815A80105"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::订购服务途径OrderWay"
+		    quidu      	"5738154A004A")))
+	(object Association "$UNNAMED$118"
+	    quid       	"5746C1B50140"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$119"
+		    quid       	"5746C1B601EA"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务科室关联SerDeptrRela"
+		    quidu      	"56616B39015E")
+		(object Role "$UNNAMED$120"
+		    quid       	"5746C1B601EC"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务Service"
+		    quidu      	"56CD6054003E")))
+	(object Association "$UNNAMED$121"
+	    quid       	"574E55BA0077"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$122"
+		    quid       	"574E55BA024A"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程份额设置模板RSSTAppoLotMode"
+		    quidu      	"574E551401C1")
+		(object Role "$UNNAMED$123"
+		    quid       	"574E55BA024C"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板份额设置RSSTAppoLotSet"
+		    quidu      	"56616F600099")))
+	(object Association "$UNNAMED$124"
+	    quid       	"574E55BC004E"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$125"
+		    quid       	"574E55BC0195"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$126"
+		    quid       	"574E55BC0197"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程份额设置模板RSSTAppoLotMode"
+		    quidu      	"574E551401C1")))
+	(object Association "$UNNAMED$127"
+	    quid       	"574E577D0292"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$128"
+		    quid       	"574E577D03DF"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem"
+		    quidu      	"566156170046")
+		(object Role "$UNNAMED$129"
+		    quid       	"574E577D03E1"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程模板份额设置RSSTAppoLotSet"
+		    quidu      	"56616F600099")))
+	(object Association "$UNNAMED$130"
+	    quid       	"574E57AF03CC"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$131"
+		    quid       	"574E57B0019C"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程份额设置明细RSSTAppoLotDet"
+		    quidu      	"574E578901EB"
+		    client_cardinality 	(value cardinality "1..*"))
+		(object Role "$UNNAMED$132"
+		    quid       	"574E57B0019E"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排程份额设置模板RSSTAppoLotMode"
+		    quidu      	"574E551401C1"
+		    client_cardinality 	(value cardinality "1"))))
+	(object Association "$UNNAMED$133"
+	    quid       	"575696FF02E2"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$134"
+		    quid       	"575697000037"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务时段ServiceTime"
+		    quidu      	"56D54A2603A3")
+		(object Role "$UNNAMED$135"
+		    quid       	"575697000047"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::预约时段ReservTime"
+		    quidu      	"5753D02001B4")))
+	(object Association "$UNNAMED$136"
+	    quid       	"575FC85600F8"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$137"
+		    quid       	"575FC8560270"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd"
+		    quidu      	"5716355A010B")
+		(object Role "$UNNAMED$138"
+		    quid       	"575FC8560281"
+		    supplier   	"Logical View::实体类设计::RVT远程教学::远程计费::服务关联交易类型ServDealRela"
+		    quidu      	"575E7ED402D3")))
+	(object Association "$UNNAMED$139"
+	    quid       	"57BA56030085"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$140"
+		    quid       	"57BA56030224"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::排班计划生成设置RSSchedCreSet"
+		    quidu      	"5715B1BB02A1")
+		(object Role "$UNNAMED$141"
+		    quid       	"57BA56030234"
+		    supplier   	"Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp"
+		    quidu      	"570B0F17003E"))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "资源管理"
+	    quid       	"565FF5450133"
+	    title      	"资源管理"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	2075
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::黑名单RSBlackList" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2874, 4107)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(2585, 3896)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	578
+			justify    	0
+			label      	"黑名单RSBlackList")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5660FEEA0141"
+		    compartment 	(object Compartment
+			Parent_View 	@1
+			location   	(2585, 3948)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	9
+			max_width  	581
+			justify    	1)
+		    width      	596
+		    height     	442
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::注意事项RSAtteItem" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(556, 4045)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(70, 3896)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	972
+			justify    	0
+			label      	"注意事项RSAtteItem")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56617B5B02A8"
+		    compartment 	(object Compartment
+			Parent_View 	@2
+			location   	(70, 3948)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	971
+			justify    	1)
+		    width      	990
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object NoteView @3
+		    location   	(231, 278)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(43, 25)
+			fill_color 	13434879
+			nlines     	12
+			max_width  	340
+			justify    	1
+			label      	
+|门诊服务:
+|挂号服务
+|网络门诊
+|急诊挂号服务
+|
+|网络预约服务:
+|检验服务
+|院间转诊
+|检查服务
+|
+|检查服务:
+|CT检查
+|B超
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	400
+		    height     	519)
+		(object NoteView @4
+		    location   	(3674, 1453)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(3449, 1347)
+			fill_color 	13434879
+			nlines     	5
+			max_width  	414
+			justify    	1
+			label      	"开始时间结束时间均无具体日期,只是小时分钟秒的标签")
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	474
+		    height     	224)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::预约退号份额设置RSAppoLotSet" @5
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1750, 5151)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1264, 5002)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	972
+			justify    	0
+			label      	"预约退号份额设置RSAppoLotSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5715AE8500C8"
+		    compartment 	(object Compartment
+			Parent_View 	@5
+			location   	(1264, 5054)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	970
+			justify    	1)
+		    width      	990
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排班计划生成设置RSSchedCreSet" @6
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1545, 1940)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@6
+			location   	(1187, 1811)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	716
+			justify    	0
+			label      	"排班计划生成设置RSSchedCreSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5715B1BB02A1"
+		    compartment 	(object Compartment
+			Parent_View 	@6
+			location   	(1187, 1863)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	673
+			justify    	1)
+		    width      	734
+		    height     	278
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::预约退号限额记录RSAppoLimitRec" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(819, 5157)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(462, 5008)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	714
+			justify    	0
+			label      	"预约退号限额记录RSAppoLimitRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5715B019038D"
+		    compartment 	(object Compartment
+			Parent_View 	@7
+			location   	(462, 5060)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	606
+			justify    	1)
+		    width      	732
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::违约记录表RSDefaultRecTab" @8
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2155, 4646)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(1719, 4456)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	872
+			justify    	0
+			label      	"违约记录表RSDefaultRecTab")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56617B9C0233"
+		    compartment 	(object Compartment
+			Parent_View 	@8
+			location   	(1719, 4508)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	870
+			justify    	1)
+		    width      	890
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::预约记录表RSAppoRecTable" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(892, 4674)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(472, 4423)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	840
+			justify    	0
+			label      	"预约记录表RSAppoRecTable")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56617A1300D3"
+		    compartment 	(object Compartment
+			Parent_View 	@9
+			location   	(472, 4475)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	11
+			max_width  	838
+			justify    	1)
+		    width      	858
+		    height     	522
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$36" @10
+		    location   	(1515, 4659)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56617C400009"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$37" @11
+			    Parent_View 	@10
+			    location   	(-47, -439)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56617C40017B"
+			    client     	@10
+			    supplier   	@9
+			    vertices   	(list Points
+				(1515, 4659)
+				(1321, 4664))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$38" @12
+			    Parent_View 	@10
+			    location   	(-47, -439)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56617C400180"
+			    client     	@10
+			    supplier   	@8
+			    vertices   	(list Points
+				(1515, 4659)
+				(1709, 4655))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排班份额设置RSSdTAppoLotSet" @13
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2680, 2853)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@13
+			location   	(2317, 2663)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	726
+			justify    	0
+			label      	"排班份额设置RSSdTAppoLotSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566177BB02BA"
+		    compartment 	(object Compartment
+			Parent_View 	@13
+			location   	(2317, 2715)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	728
+			justify    	1)
+		    width      	744
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::设备排班表RSEquiSchedTab" @14
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(658, 3722)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@14
+			location   	(317, 3614)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	682
+			justify    	0
+			label      	"设备排班表RSEquiSchedTab")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566177750107"
+		    compartment 	(object Compartment
+			Parent_View 	@14
+			location   	(317, 3666)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	4
+			max_width  	684
+			justify    	1)
+		    width      	700
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::门诊排班表RSOPSchedTable（作废）" @15
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2717, 3386)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@15
+			location   	(2360, 3237)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	714
+			justify    	0
+			label      	"门诊排班表RSOPSchedTable（作废）")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566177FD03DB"
+		    compartment 	(object Compartment
+			Parent_View 	@15
+			location   	(2360, 3289)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	684
+			justify    	1)
+		    width      	732
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::资源占用表RSResOccupyTab" @16
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1619, 4082)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@16
+			location   	(1136, 3831)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	966
+			justify    	0
+			label      	"资源占用表RSResOccupyTab")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56618500032D"
+		    compartment 	(object Compartment
+			Parent_View 	@16
+			location   	(1136, 3883)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	11
+			max_width  	971
+			justify    	1)
+		    width      	984
+		    height     	522
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$39" @17
+		    location   	(1254, 4377)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"566185A0006C"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$40" @18
+			    Parent_View 	@17
+			    location   	(725, -947)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"566185A001A1"
+			    client     	@17
+			    supplier   	@9
+			    vertices   	(list Points
+				(1254, 4377)
+				(1211, 4412))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$41" @19
+			    Parent_View 	@17
+			    location   	(725, -947)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"566185A001AB"
+			    client     	@17
+			    supplier   	@16
+			    vertices   	(list Points
+				(1254, 4377)
+				(1297, 4343))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排班表RSSchedTable" @20
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1669, 3157)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@20
+			location   	(1225, 2619)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	888
+			justify    	0
+			label      	"排班表RSSchedTable")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566176CE020F"
+		    compartment 	(object Compartment
+			Parent_View 	@20
+			location   	(1225, 2671)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	25
+			max_width  	890
+			justify    	1)
+		    width      	906
+		    height     	1096
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$27" @21
+		    location   	(2214, 2992)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"566178520220"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$28" @22
+			    Parent_View 	@21
+			    location   	(-412, -680)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5661785300E6"
+			    client     	@21
+			    supplier   	@20
+			    vertices   	(list Points
+				(2214, 2992)
+				(2122, 3018))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$29" @23
+			    Parent_View 	@21
+			    location   	(-412, -680)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5661785300EE"
+			    client     	@21
+			    supplier   	@13
+			    vertices   	(list Points
+				(2214, 2992)
+				(2307, 2963))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$30" @24
+		    location   	(1040, 3505)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"566178790230"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$31" @25
+			    Parent_View 	@24
+			    location   	(186, -1162)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"566178790361"
+			    client     	@24
+			    supplier   	@20
+			    vertices   	(list Points
+				(1040, 3505)
+				(1215, 3407))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$32" @26
+			    Parent_View 	@24
+			    location   	(186, -1162)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"566178790367"
+			    client     	@24
+			    supplier   	@14
+			    vertices   	(list Points
+				(1040, 3505)
+				(864, 3603))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$33" @27
+		    location   	(2236, 3279)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5661787C03B7"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$34" @28
+			    Parent_View 	@27
+			    location   	(-504, -1027)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5661787D00EB"
+			    client     	@27
+			    supplier   	@20
+			    vertices   	(list Points
+				(2236, 3279)
+				(2122, 3253))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$35" @29
+			    Parent_View 	@27
+			    location   	(-504, -1027)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5661787D00F1"
+			    client     	@27
+			    supplier   	@15
+			    vertices   	(list Points
+				(2236, 3279)
+				(2350, 3303))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$95" @30
+		    location   	(1635, 3762)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5715E5A20171"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$96" @31
+			    Parent_View 	@30
+			    location   	(-88, 849)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5715E5A202B2"
+			    client     	@30
+			    supplier   	@16
+			    vertices   	(list Points
+				(1635, 3762)
+				(1619, 4082))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$97" @32
+			    Parent_View 	@30
+			    location   	(-88, 849)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5715E5A202B5"
+			    client     	@30
+			    supplier   	@20
+			    vertices   	(list Points
+				(1635, 3762)
+				(1669, 3157))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RCF云动工厂::项目管理::审批记录ProApprRec" @33
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(570, 3247)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@33
+			location   	(68, 2998)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	1004
+			justify    	0
+			label      	"审批记录ProApprRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FD50203A9"
+		    compartment 	(object Compartment
+			Parent_View 	@33
+			location   	(68, 3084)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	10
+			max_width  	1003
+			justify    	1)
+		    width      	1022
+		    height     	518
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排班变更记录表RSSchedChanRec" @34
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(533, 2638)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@34
+			location   	(122, 2387)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	822
+			justify    	0
+			label      	"排班变更记录表RSSchedChanRec")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5661874E02DA"
+		    compartment 	(object Compartment
+			Parent_View 	@34
+			location   	(122, 2439)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	11
+			max_width  	825
+			justify    	1)
+		    width      	840
+		    height     	522
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$42" @35
+		    location   	(1084, 2888)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56618896030B"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$43" @36
+			    Parent_View 	@35
+			    location   	(709, -585)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"566188970038"
+			    client     	@35
+			    supplier   	@20
+			    vertices   	(list Points
+				(1084, 2888)
+				(1215, 2948))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$44" @37
+			    Parent_View 	@35
+			    location   	(709, -585)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56618897004D"
+			    client     	@35
+			    supplier   	@34
+			    vertices   	(list Points
+				(1084, 2888)
+				(953, 2827))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$100" @38
+		    location   	(550, 2943)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"571836FF01FD"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$101" @39
+			    Parent_View 	@38
+			    location   	(47, 814)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571836FF03AD"
+			    client     	@38
+			    supplier   	@33
+			    vertices   	(list Points
+				(550, 2943)
+				(570, 3247))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$102" @40
+			    Parent_View 	@38
+			    location   	(47, 814)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571836FF03AF"
+			    client     	@38
+			    supplier   	@34
+			    vertices   	(list Points
+				(550, 2943)
+				(533, 2638))
+			    line_style 	0)))
+		(object NoteView @41
+		    location   	(2498, 3726)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@41
+			location   	(2226, 3667)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	509
+			justify    	1
+			label      	
+|排班表状态：
+|停诊，替诊，正常
+			)
+		    line_color 	3342489
+		    fill_color 	13434879
+		    width      	569
+		    height     	131)
+		(object AttachView "" @42
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@20
+		    supplier   	@41
+		    vertices   	(list Points
+			(2122, 3468)
+			(2404, 3660))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::订购服务途径OrderWay" @43
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(519, 1787)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@43
+			location   	(157, 1638)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	724
+			justify    	0
+			label      	"订购服务途径OrderWay")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5738154A004A"
+		    compartment 	(object Compartment
+			Parent_View 	@43
+			location   	(157, 1690)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	728
+			justify    	1)
+		    width      	742
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排程份额设置明细RSSTAppoLotDet" @44
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2045, 2305)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@44
+			location   	(1546, 2115)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	998
+			justify    	0
+			label      	"排程份额设置明细RSSTAppoLotDet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574E578901EB"
+		    compartment 	(object Compartment
+			Parent_View 	@44
+			location   	(1546, 2167)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	995
+			justify    	1)
+		    width      	1016
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排程份额设置模板RSSTAppoLotMode" @45
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1002, 2221)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@45
+			location   	(620, 2113)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	764
+			justify    	0
+			label      	"排程份额设置模板RSSTAppoLotMode")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"574E551401C1"
+		    compartment 	(object Compartment
+			Parent_View 	@45
+			location   	(620, 2165)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	4
+			max_width  	625
+			justify    	1)
+		    width      	782
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$130" @46
+		    location   	(1464, 2257)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574E57AF03CC"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$131" @47
+			    Parent_View 	@46
+			    location   	(819, 80)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574E57B0019C"
+			    client     	@46
+			    supplier   	@44
+			    vertices   	(list Points
+				(1464, 2257)
+				(1536, 2263))
+			    line_style 	0
+			    label      	(object SegLabel @48
+				Parent_View 	@47
+				location   	(1526, 2316)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1..*"
+				pctDist    	0.900000
+				height     	54
+				orientation 	1))
+			(object RoleView "$UNNAMED$132" @49
+			    Parent_View 	@46
+			    location   	(819, 80)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574E57B0019E"
+			    client     	@46
+			    supplier   	@45
+			    vertices   	(list Points
+				(1464, 2257)
+				(1393, 2251))
+			    line_style 	0
+			    label      	(object SegLabel @50
+				Parent_View 	@49
+				location   	(1398, 2307)
+				font       	(object Font
+				    size       	10
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	15
+				justify    	0
+				label      	"1"
+				pctDist    	0.900000
+				height     	54
+				orientation 	0))))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排程类型RSResScheType" @51
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(512, 945)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@51
+			location   	(130, 817)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	764
+			justify    	0
+			label      	"排程类型RSResScheType")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56615507012F"
+		    compartment 	(object Compartment
+			Parent_View 	@51
+			location   	(130, 869)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	768
+			justify    	1)
+		    width      	782
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::预约时段ReservTime" @52
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3670, 2011)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@52
+			location   	(3266, 1862)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	808
+			justify    	0
+			label      	"预约时段ReservTime")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5753D02001B4"
+		    width      	826
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::BAS基础信息库::术语::（专属对象）收费项目ChargeItm" @53
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4998, 414)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@53
+			location   	(4595, 124)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	806
+			justify    	0
+			label      	"（专属对象）收费项目ChargeItm")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566FE7E40108"
+		    width      	824
+		    height     	600
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::资源排程模板RSSchedTemp" @54
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    location   	(867, 558)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@54
+			location   	(475, 409)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	784
+			justify    	0
+			label      	"资源排程模板RSSchedTemp")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"570B0F17003E"
+		    compartment 	(object Compartment
+			Parent_View 	@54
+			location   	(475, 461)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	6
+			max_width  	787
+			justify    	1)
+		    width      	802
+		    height     	318
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$83" @55
+		    location   	(677, 761)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"570DEC8503CB"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$84" @56
+			    Parent_View 	@55
+			    location   	(-85, -11)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DEC860160"
+			    client     	@55
+			    supplier   	@51
+			    vertices   	(list Points
+				(677, 761)
+				(635, 806))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$85" @57
+			    Parent_View 	@55
+			    location   	(-85, -11)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DEC860164"
+			    client     	@55
+			    supplier   	@54
+			    vertices   	(list Points
+				(677, 761)
+				(867, 558))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务科室关联SerDeptrRela" @58
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2567, 1903)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@58
+			location   	(2197, 1775)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	740
+			justify    	0
+			label      	"服务科室关联SerDeptrRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56616B39015E"
+		    compartment 	(object Compartment
+			Parent_View 	@58
+			location   	(2197, 1827)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	743
+			justify    	1)
+		    width      	758
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排程模板份额设置RSSTAppoLotSet" @59
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(609, 1349)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@59
+			location   	(156, 1159)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	906
+			justify    	0
+			label      	"排程模板份额设置RSSTAppoLotSet")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56616F600099"
+		    compartment 	(object Compartment
+			Parent_View 	@59
+			location   	(156, 1211)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	912
+			justify    	1)
+		    width      	924
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务时段ServiceTime" @60
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2822, 1417)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@60
+			location   	(2338, 1125)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	968
+			justify    	0
+			label      	"服务时段ServiceTime")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56D54A2603A3"
+		    compartment 	(object Compartment
+			Parent_View 	@60
+			location   	(2338, 1177)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	12
+			max_width  	971
+			justify    	1)
+		    width      	986
+		    height     	604
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @61
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@60
+		    supplier   	@4
+		    vertices   	(list Points
+			(3315, 1437)
+			(3436, 1442))
+		    line_style 	0)
+		(object AssociationViewNew "$UNNAMED$133" @62
+		    location   	(3348, 1785)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"575696FF02E2"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$134" @63
+			    Parent_View 	@62
+			    location   	(-285, -207)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"575697000037"
+			    client     	@62
+			    supplier   	@60
+			    vertices   	(list Points
+				(3348, 1785)
+				(3255, 1719))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$135" @64
+			    Parent_View 	@62
+			    location   	(-285, -207)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"575697000047"
+			    client     	@62
+			    supplier   	@52
+			    vertices   	(list Points
+				(3348, 1785)
+				(3443, 1851))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务收费标准ServiceTollStd" @65
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(4040, 269)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@65
+			location   	(3681, 100)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	718
+			justify    	0
+			label      	"服务收费标准ServiceTollStd")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CDC66401A5"
+		    width      	736
+		    height     	358
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$52" @66
+		    location   	(4496, 337)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CECA2903C8"
+		    roleview_list 	(list RoleViews
+			(object RoleView "1" @67
+			    Parent_View 	@66
+			    location   	(1434, 72)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @68
+				Parent_View 	@67
+				location   	(4561, 389)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+1"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CECA2A0186"
+			    client     	@66
+			    supplier   	@53
+			    vertices   	(list Points
+				(4496, 337)
+				(4585, 350))
+			    line_style 	0)
+			(object RoleView "1" @69
+			    Parent_View 	@66
+			    location   	(1434, 72)
+			    font       	(object Font
+				size       	12
+				face       	"Arial"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @70
+				Parent_View 	@69
+				location   	(4422, 369)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+1"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CECA2A01A5"
+			    client     	@66
+			    supplier   	@65
+			    vertices   	(list Points
+				(4496, 337)
+				(4408, 323))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::（专属对象）门诊预约挂号服务OutpatRegSrv" @71
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3086, 819)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@71
+			location   	(2622, 650)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	928
+			justify    	0
+			label      	"（专属对象）门诊预约挂号服务OutpatRegSrv")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56D50D320068"
+		    compartment 	(object Compartment
+			Parent_View 	@71
+			location   	(2622, 702)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	7
+			max_width  	721
+			justify    	1)
+		    width      	946
+		    height     	358
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务分类ServiceCate" @72
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(911, 169)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@72
+			location   	(601, 41)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	620
+			justify    	0
+			label      	"服务分类ServiceCate")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CD60FD00EA"
+		    compartment 	(object Compartment
+			Parent_View 	@72
+			location   	(601, 93)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	625
+			justify    	1)
+		    width      	638
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AttachView "" @73
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    client     	@3
+		    supplier   	@72
+		    vertices   	(list Points
+			(431, 244)
+			(591, 219))
+		    line_style 	0)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务科室关联SerDeptrRela" @74
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1764, 153)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@74
+			location   	(1394, 25)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	740
+			justify    	0
+			label      	"服务科室关联SerDeptrRela")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56616B39015E"
+		    compartment 	(object Compartment
+			Parent_View 	@74
+			location   	(1394, 77)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	5
+			max_width  	743
+			justify    	1)
+		    width      	758
+		    height     	276
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::排程模板项RSSchedItem" @75
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1720, 1269)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@75
+			location   	(1330, 792)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	780
+			justify    	0
+			label      	"排程模板项RSSchedItem")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"566156170046"
+		    compartment 	(object Compartment
+			Parent_View 	@75
+			location   	(1330, 844)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	22
+			max_width  	784
+			justify    	1)
+		    width      	798
+		    height     	974
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$80" @76
+		    location   	(1189, 826)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"570DEC7F018B"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$81" @77
+			    Parent_View 	@76
+			    location   	(427, 54)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DEC7F03C5"
+			    client     	@76
+			    supplier   	@75
+			    vertices   	(list Points
+				(1189, 826)
+				(1320, 935))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$82" @78
+			    Parent_View 	@76
+			    location   	(427, 54)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DEC7F03C7"
+			    client     	@76
+			    supplier   	@54
+			    vertices   	(list Points
+				(1189, 826)
+				(1059, 717))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$92" @79
+		    location   	(2251, 1666)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5715DD7D0126"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$93" @80
+			    Parent_View 	@79
+			    location   	(468, 176)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5715DD7E0049"
+			    client     	@79
+			    supplier   	@58
+			    vertices   	(list Points
+				(2251, 1666)
+				(2383, 1764))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$94" @81
+			    Parent_View 	@79
+			    location   	(468, 176)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5715DD7E004E"
+			    client     	@79
+			    supplier   	@75
+			    vertices   	(list Points
+				(2251, 1666)
+				(2119, 1566))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$127" @82
+		    location   	(1195, 1306)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"574E577D0292"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$128" @83
+			    Parent_View 	@82
+			    location   	(617, -357)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574E577D03DF"
+			    client     	@82
+			    supplier   	@75
+			    vertices   	(list Points
+				(1195, 1306)
+				(1320, 1296))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$129" @84
+			    Parent_View 	@82
+			    location   	(617, -357)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"574E577D03E1"
+			    client     	@82
+			    supplier   	@59
+			    vertices   	(list Points
+				(1195, 1306)
+				(1071, 1313))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$59" @85
+		    location   	(2223, 1335)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56D54DC70214"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$60" @86
+			    Parent_View 	@85
+			    location   	(307, -181)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56D54DC803C0"
+			    client     	@85
+			    supplier   	@60
+			    vertices   	(list Points
+				(2223, 1335)
+				(2328, 1348))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$61" @87
+			    Parent_View 	@85
+			    location   	(307, -181)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56D54DC803C9"
+			    client     	@85
+			    supplier   	@75
+			    vertices   	(list Points
+				(2223, 1335)
+				(2119, 1320))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务标准ServiceStd" @88
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(3026, 247)
+		    font       	(object Font
+			size       	10
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@88
+			location   	(2542, 57)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	968
+			justify    	0
+			label      	"服务标准ServiceStd")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5716355A010B"
+		    compartment 	(object Compartment
+			Parent_View 	@88
+			location   	(2542, 109)
+			font       	(object Font
+			    size       	10
+			    face       	"宋体"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	8
+			max_width  	971
+			justify    	1)
+		    width      	986
+		    height     	400
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$99" @89
+		    location   	(3595, 258)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"571635CC02D0"
+		    roleview_list 	(list RoleViews
+			(object RoleView "n" @90
+			    Parent_View 	@89
+			    location   	(513, -86)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @91
+				Parent_View 	@90
+				location   	(3656, 219)
+				font       	(object Font
+				    size       	12
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+n"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571635CD0156"
+			    client     	@89
+			    supplier   	@65
+			    vertices   	(list Points
+				(3595, 258)
+				(3671, 259))
+			    line_style 	0)
+			(object RoleView "1" @92
+			    Parent_View 	@89
+			    location   	(513, -86)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @93
+				Parent_View 	@92
+				location   	(3536, 217)
+				font       	(object Font
+				    size       	12
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+1"
+				pctDist    	0.789566
+				height     	41
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571635CD0158"
+			    client     	@89
+			    supplier   	@88
+			    vertices   	(list Points
+				(3595, 258)
+				(3519, 255))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$112" @94
+		    location   	(3056, 543)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"573027260073"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$113" @95
+			    Parent_View 	@94
+			    location   	(161, -310)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5730272602CC"
+			    client     	@94
+			    supplier   	@88
+			    vertices   	(list Points
+				(3056, 543)
+				(3045, 447))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$114" @96
+			    Parent_View 	@94
+			    location   	(161, -310)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"57302726034F"
+			    client     	@94
+			    supplier   	@71
+			    vertices   	(list Points
+				(3056, 543)
+				(3066, 639))
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::实体类设计::RES资源系统::资源管理::服务Service" @97
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1850, 525)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@97
+			location   	(1366, 315)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	968
+			justify    	0
+			label      	"服务Service")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"56CD6054003E"
+		    compartment 	(object Compartment
+			Parent_View 	@97
+			location   	(1366, 367)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	134
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			icon_style 	"Icon"
+			fill_color 	16777215
+			anchor     	2
+			nlines     	9
+			max_width  	971
+			justify    	1)
+		    width      	986
+		    height     	440
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$48" @98
+		    location   	(1293, 313)
+		    font       	(object Font
+			size       	12
+			face       	"Arial"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"56CD61F7036B"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$49" @99
+			    Parent_View 	@98
+			    location   	(128, 88)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD61F801C5"
+			    client     	@98
+			    supplier   	@97
+			    vertices   	(list Points
+				(1293, 313)
+				(1356, 336))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$50" @100
+			    Parent_View 	@98
+			    location   	(128, 88)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"56CD61F801C7"
+			    client     	@98
+			    supplier   	@72
+			    vertices   	(list Points
+				(1293, 313)
+				(1230, 289))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$118" @101
+		    location   	(1807, 339)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5746C1B50140"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$119" @102
+			    Parent_View 	@101
+			    location   	(-124, -177)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @103
+				Parent_View 	@102
+				location   	(1732, 146)
+				font       	(object Font
+				    size       	12
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				hidden     	TRUE
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	""
+				pctDist    	1.078654
+				height     	31
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5746C1B601EA"
+			    client     	@101
+			    supplier   	@74
+			    vertices   	(list Points
+				(1807, 339)
+				(1764, 153))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$120" @104
+			    Parent_View 	@101
+			    location   	(-124, -177)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @105
+				Parent_View 	@104
+				location   	(1882, 480)
+				font       	(object Font
+				    size       	12
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				hidden     	TRUE
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	""
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"5746C1B601EC"
+			    client     	@101
+			    supplier   	@97
+			    vertices   	(list Points
+				(1807, 339)
+				(1807, 339))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$77" @106
+		    location   	(1785, 897)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"570DEC79009E"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$78" @107
+			    Parent_View 	@106
+			    location   	(11, 594)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DEC79023E"
+			    client     	@106
+			    supplier   	@75
+			    vertices   	(list Points
+				(1785, 897)
+				(1785, 897))
+			    line_style 	0)
+			(object RoleView "$UNNAMED$79" @108
+			    Parent_View 	@106
+			    location   	(11, 594)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"570DEC790240"
+			    client     	@106
+			    supplier   	@97
+			    vertices   	(list Points
+				(1785, 897)
+				(1811, 745))
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$98" @109
+		    location   	(2437, 384)
+		    font       	(object Font
+			size       	12
+			face       	"宋体"
+			charSet    	134
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"571635BA0024"
+		    roleview_list 	(list RoleViews
+			(object RoleView "n" @110
+			    Parent_View 	@109
+			    location   	(420, 61)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @111
+				Parent_View 	@110
+				location   	(2521, 408)
+				font       	(object Font
+				    size       	12
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+n"
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571635BA01E2"
+			    client     	@109
+			    supplier   	@88
+			    vertices   	(list Points
+				(2437, 384)
+				(2532, 360))
+			    line_style 	0)
+			(object RoleView "1" @112
+			    Parent_View 	@109
+			    location   	(420, 61)
+			    font       	(object Font
+				size       	12
+				face       	"宋体"
+				charSet    	134
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @113
+				Parent_View 	@112
+				location   	(2372, 443)
+				font       	(object Font
+				    size       	12
+				    face       	"宋体"
+				    charSet    	134
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	60
+				justify    	0
+				label      	"+1"
+				pctDist    	0.800000
+				height     	42
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"571635BA01E4"
+			    client     	@109
+			    supplier   	@97
+			    vertices   	(list Points
+				(2437, 384)
+				(2343, 405))
+			    line_style 	0)))))))
