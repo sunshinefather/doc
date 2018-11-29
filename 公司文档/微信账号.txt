@@ -1,0 +1,73 @@
+
+http://172.27.16.17:18080/api
+api密码
+18000000000@qq.com
+admin
+
+192.168.1.199
+share
+test
+
+http://192.168.1.199:8080
+luohu
+56325632
+
+git
+luohu
+pf12345678
+
+
+原公众号服务器
+服务器地址(URL)
+http://test123.scnewstar.com/index.php/api/MbTXENO0O0Ok
+
+令牌(Token)
+nwjqww1432614496
+
+消息加解密密钥(EncodingAESKey)
+i9SMS2F71qRfQqq8nc1q77MQQnQp77cFS4S795fQmR1
+
+消息加解密方式
+明文模式
+
+微信登陆账号
+postmaster@cdsunhealth.com
+sunhealth666
+
+小程序账号
+邮箱: tech2@cdsunhealth.com
+密码: sunhealth666
+
+邮箱地址：https://qiye.aliyun.com/alimail/
+邮箱：tech2@cdsunhealth.com
+密码：Cdsunhealth028
+问题 1
+答案 1
+问题 2
+答案 2
+
+1001300000328529 银行账号
+
+微信支付商户号
+
+1500858861
+商户平台登录帐号
+
+1500858861@1500858861
+申请对应的公众号
+
+上和健康
+公众号APPID
+
+wxfa5602e82e4920f1
+
+
+jenkins
+http://172.27.16.16:8080/
+用户名：developer
+密码： pf12345678
+
+微信开放平台
+阿里云邮箱
+tech3@cdsunhealth.com         
+Cdsunhealth028
