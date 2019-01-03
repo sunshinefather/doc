@@ -20,6 +20,10 @@ old			111.231.222.139(172.27.16.7)	root    zD*Espvc!4-*	zhangchao ZczybyJ1-*XH
 //腾讯云账号
 tech@cdsunhealth.com
 sunhealth_028
+账号ID：100004799685
+APPID ：1256417895
+SecretId：AKIDBB9tQjhaIlzyiDlSOHvKTN4XkiZFwqmT
+SecretKey：av10mJdjbDZggRwBBwRggXAgYEg291A8
 
 //腾讯区块链
 470918743@qq.com
