@@ -1,0 +1,27 @@
+丹和诊所
+172.27.100.11
+hxshorigin
+&^%_>{688JJkk
+
+安孕儿
+172.27.100.11
+hxshorigin_anyuner
+&^%_>{688JJkk
+
+演示环境
+148.70.44.190
+hxshorigin
+&^%_>{599JJkk
+
+开发环境
+172.27.16.4
+hxsh_pro
+Shzys790,,.uuU//
+
+测试环境
+172.27.10.16:13306
+zhaoyoulian
+IOUU990&&&
+
+
+mysqldump -h172.27.100.11 -uhxshorigin -p --databases clinic_file clinic_wechat > d://11.sql
