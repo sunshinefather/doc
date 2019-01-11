@@ -24,4 +24,6 @@ zhaoyoulian
 IOUU990&&&
 
 
-mysqldump -h172.27.100.11 -uhxshorigin -p --databases clinic_file clinic_wechat > d://11.sql
+mysqldump -h172.27.100.11 -uhxshorigin -p --all-databases > d://12.sql
+
+mysql -h127.0.0.1 -p -uroot <d://12.sql
