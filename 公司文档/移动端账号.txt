@@ -1,0 +1,99 @@
+电子病历开发环境服务器(windows 2016)
+mstsc 172.27.16.15   hxsh    ZczybyJ1-*XH
+
+api文档服务器通用账号
+http://172.27.16.17:18080/api
+18000000000@qq.com
+admin
+
+共享文档服务
+\\192.168.1.199
+share
+test
+
+
+原公众号服务器
+服务器地址(URL)
+http://test123.scnewstar.com/index.php/api/MbTXENO0O0Ok
+令牌(Token)
+nwjqww1432614496
+消息加解密密钥(EncodingAESKey)
+i9SMS2F71qRfQqq8nc1q77MQQnQp77cFS4S795fQmR1
+消息加解密方式
+明文模式
+
+微信公众号平台(上和健康)
+(
+服务号登陆账号
+postmaster@cdsunhealth.com
+sunhealth666
+注册信息原始ID:gh_2f54f47f481f
+开发者ID(AppID):wxfa5602e82e4920f1
+服务器地址(URL):http://yl.medichains.cn/clinic_wechat/api/checkToken
+令牌(Token):clinic_wechat
+消息加解密密钥(EncodingAESKey):i9SMS2F71qRfQqq8nc1q77MQQnQp77cFS4S795fQmR1
+消息加解密方式:明文模式
+
+小程序账号
+邮箱: tech2@cdsunhealth.com
+密码: sunhealth666
+)
+
+邮箱地址：https://qiye.aliyun.com/alimail/
+邮箱：tech2@cdsunhealth.com
+密码：Cdsunhealth028
+邮箱：tech3@cdsunhealth.com  
+密码：Cdsunhealth028
+问题 1
+答案 1
+问题 2
+答案 2
+
+微信支付
+商户平台
+(
+对公银行账号
+1001-3000-0032-8529
+
+微信支付商户号
+1500858861
+sunhealth666!@
+
+登录帐号
+1500858861@1500858861
+申请对应的公众号
+)
+
+api 密钥
+55d34a5e3af04daaada7d881ae958e06
+操作密码：sunhealth666!@
+
+微信开放平台
+登陆账号
+tech3@cdsunhealth.com  
+sunhealth666
+
+安孕儿
+服务号
+udo1@udomedical.com
+UDOMedical2016
+
+小程序
+udo_udomedical@163.com
+UDOMedical2016
+
+开放平台
+udo1_udomedical@163.com
+UDOMedical2016
+
+jenkins
+http://172.27.16.16:8080/
+用户名：developer
+密码： pf12345678
+
+公网ip地址
+118.24.18.114
+
+
+
+
