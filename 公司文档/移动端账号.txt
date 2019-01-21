@@ -23,6 +23,7 @@ i9SMS2F71qRfQqq8nc1q77MQQnQp77cFS4S795fQmR1
 明文模式
 
 微信公众号平台(上和健康)
+mp.weixin.qq.com
 (
 服务号登陆账号
 postmaster@cdsunhealth.com
@@ -37,6 +38,16 @@ sunhealth666
 小程序账号
 邮箱: tech2@cdsunhealth.com
 密码: sunhealth666
+)
+
+
+
+微信开放平台
+open.weixin.qq.com
+(
+登陆账号
+tech3@cdsunhealth.com  
+sunhealth666
 )
 
 邮箱地址：https://qiye.aliyun.com/alimail/
@@ -67,11 +78,6 @@ sunhealth666!@
 api 密钥
 55d34a5e3af04daaada7d881ae958e06
 操作密码：sunhealth666!@
-
-微信开放平台
-登陆账号
-tech3@cdsunhealth.com  
-sunhealth666
 
 安孕儿
 服务号
