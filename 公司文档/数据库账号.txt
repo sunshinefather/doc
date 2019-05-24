@@ -23,6 +23,11 @@ Shzys790,,.uuU//
 zhaoyoulian
 IOUU990&&&
 
+预发布环境
+172.27.50.17
+hxshorigin
+&^%_>{599JJkk
+
 
 mysqldump -h172.27.100.11 -uhxshorigin -p --all-databases > d://12.sql
 
